@@ -1,0 +1,41 @@
+name: Recommend a recipient / 推荐获奖人
+description: Recommend evidenced contributions without prematurely publishing an identity.
+title: "[Recipient] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use RECIPIENT-<ENTRY>-A placeholders before written confirmation. Do not put unconfirmed names in the title, body, attachments, or commits.
+        书面确认前一律使用占位符，不得在标题、正文、附件或提交中公布未经确认的姓名。请勿提交私人联系方式、确认原件或收款信息。
+  - type: input
+    id: entry
+    attributes:
+      label: Related problem or entry / 关联题目或条目
+    validations:
+      required: true
+  - type: input
+    id: recipient
+    attributes:
+      label: Recipient placeholder or confirmed public ID / 占位符或已确认公开 ID
+    validations:
+      required: true
+  - type: textarea
+    id: contributions
+    attributes:
+      label: Contributions and evidence / 贡献与证据
+      description: Distinguish the proof, formalization, operation, exposition and independent contributions. Use public evidence that does not expose an unconfirmed identity.
+    validations:
+      required: true
+  - type: textarea
+    id: confirmation
+    attributes:
+      label: Confirmation status / 确认情况
+      description: State whether written confirmation exists; link only an authorized public attestation. Otherwise write pending.
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Attribution questions and conflicts / 归属疑点与利益冲突
+    validations:
+      required: true

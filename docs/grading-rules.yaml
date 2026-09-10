@@ -1,0 +1,8 @@
+# Machine-readable companion to docs/grading.md; not a replacement policy.
+# The framework gives the level order but not the full §3.2 / §2.1 tables.
+# Do not populate these values from illustrative awards or reverse-engineer them.
+version: v0.8
+status: awaiting-policy
+levels: [JSP-4, JSP-3, JSP-2, JSP-1]
+score_to_level: null
+amounts_usd: null

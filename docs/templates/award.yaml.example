@@ -1,0 +1,27 @@
+# Draft template only; replace the synthetic problem before publishing.
+id: example-problem
+batch: null
+rules: null
+problem:
+  source: example.invalid
+  number: example
+  title_en: Example solved problem — replace before publication
+  title_zh: 示例已解决题目——公示前替换
+  posed:
+    year: 2000
+    basis: earliest-reference
+    citation: Replace with an original public reference
+  resolved:
+    year: 2026
+tier: null
+award_structure: null
+recipients: []
+payout: null
+contributions: null
+verification:
+  peer_review: null
+  formal: null
+  independent_review: null
+conflicts: []
+status: draft
+revocation: null

@@ -1,0 +1,41 @@
+name: Formal dispute / 正式异议
+description: The formal entry point for disputes about announced awards.
+title: "[Dispute] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the sole formal dispute entry point. The supplied framework specifies a 30-day window under policy Chapter 9, review by someone uninvolved in the original assessment, and publication of the outcome.
+        本模板是正式异议的唯一入口。框架要求依制度第九章适用 30 日窗口，由未参与原评定者复核并公示结论；Discussions 发言不构成正式异议。具体起算与适用方式须对照正式制度。
+        Submit public evidence only; do not publish private identity or payment information.
+  - type: input
+    id: award
+    attributes:
+      label: Award and announcement / 授奖条目与公示
+    validations:
+      required: true
+  - type: input
+    id: timing
+    attributes:
+      label: Relevant dates / 相关日期
+      description: Give the announcement date and the basis for the applicable window; maintainers will check the policy.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Disputed claim / 异议主张
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and requested resolution / 证据与期望处理
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Conflicts and reviewer recusal / 利益冲突及复核回避
+    validations:
+      required: true

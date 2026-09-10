@@ -1,1 +1,32 @@
-A prize program recognizing mathematical achievements formalized in Lean, with public rules, candidate records, verification evidence, and award decisions.
+# Justin Sun Prize · 孙宇晨奖
+
+[中文](README.zh.md)
+
+A public repository for the Justin Sun Prize: recognizing mathematical breakthroughs and machine-verifiable formal proofs through a problem-list-based academic bounty mechanism.
+
+[About the prize](docs/about.md) · [中文介绍](docs/zh/about.md)
+
+## Explore
+
+| Topic | Source |
+| --- | --- |
+| Purpose, scope, and governance | [About](docs/about.md) |
+| Award levels and prize money | [Grading](docs/grading.md) |
+| Recipients and attribution | [Attribution](docs/attribution.md) |
+| Formal verification and review | [Verification](docs/verification.md) |
+| Confirmed, publicly announced awards | [Awards](awards/README.md) |
+| Public candidates | [Candidates](candidates/README.md) |
+| Public roles and recusals | [People](people/README.md) |
+| Machine-readable data and schemas | [Data](data/README.md) |
+
+Award entries are confirmed and publicly announced decisions; candidates are tracked separately. This repository is being initialized, and detailed policies remain drafts.
+
+## Participate
+
+You can recommend a problem, recommend a recipient, correct a record, or raise a dispute using the four [issue forms](.github/ISSUE_TEMPLATE/). Read [CONTRIBUTING.md](CONTRIBUTING.md) for evidence requirements and handling steps, and follow the [Code of Conduct](CODE_OF_CONDUCT.md). Do not submit private personal information through public issues.
+
+## Repository maintenance
+
+See the [record guide](docs/records.md) for templates, validation commands, and data generation. Source records live in `awards/` and `candidates/`; `data/*.json` is generated automatically.
+
+Code: [LICENSE](LICENSE). Documentation and data: [LICENSE-CONTENT](LICENSE-CONTENT).

@@ -1,0 +1,35 @@
+name: Correction / 补充更正
+description: Correct a public record or document with evidence.
+title: "[Correction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The curatorial committee provisionally handles corrections. Substantive changes require committee confirmation.
+        暂由策展委员会处理；实质性更正须委员会确认。请勿重复粘贴私人信息。
+  - type: input
+    id: target
+    attributes:
+      label: Record or document / 记录或文档
+      description: Link the exact file or section.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Current text and proposed correction / 原文与建议更正
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and affected records / 依据与受影响记录
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Relevant conflicts / 相关利益冲突
+      description: State relevant public professional relationships, or write none.
+    validations:
+      required: true
