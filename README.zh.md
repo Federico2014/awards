@@ -14,6 +14,7 @@
 | 奖金与评级制度 | [奖金与评级](docs/zh/grading.md) |
 | 获奖人的认定与归属 | [归属制度](docs/zh/attribution.md) |
 | 形式化验证的采信与核验 | [核验制度](docs/zh/verification.md) |
+| 数学题库：1,027 道题及核对修订记录 | [题库索引](problems/README.md) |
 | 已确认并公示的授奖 | [授奖记录](awards/README.md) |
 | 公开候选池 | [候选记录](candidates/README.md) |
 | 公开职务与回避记录 | [人员档案](people/README.md) |
