@@ -2,9 +2,9 @@
 
 [Repository home](../README.md)
 
-This catalog contains **1,027 mathematical problems**.
+This catalog contains **1,022 mathematical problems**.
 
-Problems are grouped into volumes of 100 records, with a heading, a field table, and any review notes for each problem. **Eligible to claim** appears as a separate column in the index below and as a field in every problem’s detail table.
+Problems are grouped into volumes by their original identifier ranges, with a heading, a field table, and any review notes for each problem. **Eligible to claim** appears as a separate column in the index below and as a field in every problem’s detail table.
 
 Some dates are explicitly marked as assumptions or pending confirmation. Formal nominations and award records remain in [candidates/](../candidates/README.md) and [awards/](../awards/README.md).
 
@@ -20,11 +20,11 @@ The catalogs retain solution status, Lean proof status, historical bounty, elaps
 
 The index preserves Lean evidence qualifications: **Reported; standalone source not located** does not confirm a complete Lean proof of that problem. A linked proof of a related problem is identified as such in the full record.
 
-In the **Eligible to claim** column, **Yes** marks records whose **Current status** is **Solved** and whose **Lean proof** is **Yes**, including affirmative entries with explanatory qualifiers such as **Yes (three-dimensional counterexample)**. **Pending verification** means the evidence may warrant further review, but eligibility has not been established. **No** means the record is not currently marked eligible. These are problem-bank screening flags; they do not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. Public candidates exist only as records in [candidates/](../candidates/README.md); the screening flags are separate from that directory's pools and lifecycle statuses. Every record displays its current eligibility in both the index and its detail table.
+In the **Eligible to claim** column, **Yes** marks records whose **Current status** is **Solved** and whose **Lean proof** is **Yes**. **Pending verification** means the evidence may warrant further review, but eligibility has not been established. **No** means the record is not currently marked eligible. These are problem-bank screening flags; they do not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. Public candidates exist only as records in [candidates/](../candidates/README.md); the screening flags are separate from that directory's pools and lifecycle statuses. Every record displays its current eligibility in both the index and its detail table. For a combined record, partial results or a proof covering only one case do not make the whole problem solved or eligible; each result retains its stated scope.
 
 ## Volumes
 
-| Problem range | File |
+| Identifier range | File |
 | --- | --- |
 | 1–100 | [catalog-0001-0100.md](catalog-0001-0100.md) |
 | 101–200 | [catalog-0101-0200.md](catalog-0101-0200.md) |
@@ -40,7 +40,7 @@ In the **Eligible to claim** column, **Yes** marks records whose **Current statu
 
 ## Problem index
 
-The **No.** column contains each problem’s six-digit identifier, such as **JSP-000001**. The **Problem** column contains only the linked problem title. Catalog headings use **JSP-000001 · problem title**, with matching anchors such as `#JSP-000001`. Follow each index link for the full record.
+The **No.** column contains each problem’s six-digit identifier, such as **JSP-000001**. The **Problem** column contains only the linked problem title. Catalog headings use **JSP-000001 · problem title**, with matching anchors such as `#JSP-000001`. Follow each index link for the full record. Identifiers remain stable after merges and may have gaps; the volume ranges are identifier ranges, not counts. Former identifiers remain as anchors or links to the combined record and are not counted as separate problems.
 
 ### Problems 1–100
 
@@ -82,8 +82,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000034 | [Sidorenko conjecture](catalog-0001-0100.md#JSP-000034) | Open | No | No |
 | JSP-000035 | [Catalan conjecture](catalog-0001-0100.md#JSP-000035) | Solved | No | No |
 | JSP-000036 | [Modularity theorem for rational elliptic curves (Taniyama–Shimura–Weil conjecture)](catalog-0001-0100.md#JSP-000036) | Solved | No | No |
-| JSP-000037 | [Jacobian conjecture (n≥3)](catalog-0001-0100.md#JSP-000037) | Solved | Yes (three-dimensional counterexample) | Yes |
-| JSP-000038 | [Jacobian conjecture (dimension two)](catalog-0001-0100.md#JSP-000038) | Open | No | No |
+| JSP-000037 | [Jacobian conjecture](catalog-0001-0100.md#JSP-000037) | Progress (not fully resolved) | Partial (three-dimensional counterexample only) | No |
 | JSP-000039 | [Sendov conjecture](catalog-0001-0100.md#JSP-000039) | Solved | Yes | Yes |
 | JSP-000040 | [DGG cost-preserving conjecture](catalog-0001-0100.md#JSP-000040) | Solved | Yes | Yes |
 | JSP-000041 | [Anderson problem on weakly quasi-complete local rings](catalog-0001-0100.md#JSP-000041) | Solved | Yes | Yes |
@@ -211,7 +210,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000158 | [How many vertices force a four-cycle in one color or a clique of prescribed size in the other color in every two-coloring of a complete graph?](catalog-0101-0200.md#JSP-000158) | Open | No | No |
 | JSP-000159 | [How many colors are needed to color consecutive integers so that every four-term arithmetic progression uses at least three colors?](catalog-0101-0200.md#JSP-000159) | Progress | No | No |
 | JSP-000160 | [How does density affect the threshold for finding the specified color-balanced structure in a two-colored hypergraph?](catalog-0101-0200.md#JSP-000160) | Progress | No | No |
-| JSP-000161 | [In a two-edge-coloring of a complete graph, require both colors to occupy a prescribed proportion of the edges in every sufficiently large vertex subset. Is the optimal subset-size threshold asymptotically logarithmic in the total number of vertices?](catalog-0101-0200.md#JSP-000161) | Open | No | No |
+| JSP-000161 | [Locally balanced two-colorings of complete graphs](catalog-0101-0200.md#JSP-000161) | Open | No | No |
 | JSP-000162 | [Linear Ramsey bounds for graphs of bounded degeneracy](catalog-0101-0200.md#JSP-000162) | Solved | No | No |
 | JSP-000163 | [What is the precise asymptotic growth of the Ramsey number for a triangle versus a large clique?](catalog-0101-0200.md#JSP-000163) | Progress | No | No |
 | JSP-000164 | [How many vertices can a two-colored complete graph have while avoiding a four-vertex clique in one color and a prescribed large clique in the other?](catalog-0101-0200.md#JSP-000164) | Solved | No | No |
@@ -466,7 +465,6 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 
 | No. | Problem | Current status | Lean proof | Eligible to claim |
 | --- | --- | --- | --- | --- |
-| JSP-000401 | [Littlewood conjecture](catalog-0401-0500.md#JSP-000401) | Open | No | No |
 | JSP-000402 | [Can a sum of two integer squares approximate an irrational multiple of an integer square sufficiently closely?](catalog-0401-0500.md#JSP-000402) | Solved | No | No |
 | JSP-000403 | [How many edges can a three-uniform hypergraph have while excluding the complete three-uniform hypergraph on four vertices?](catalog-0401-0500.md#JSP-000403) | Open | No | No |
 | JSP-000404 | [Under the specified measure restrictions on a set mapping, must there be a sufficiently large set whose elements avoid one another's images?](catalog-0401-0500.md#JSP-000404) | Solved | No | No |
@@ -521,7 +519,6 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000453 | [What is the minimum host edge count forcing a monochromatic prescribed balanced complete bipartite graph under every two-coloring?](catalog-0401-0500.md#JSP-000453) | Progress | No | No |
 | JSP-000454 | [What is the minimum host edge count forcing the corresponding monochromatic copy of one of two prescribed star forests?](catalog-0401-0500.md#JSP-000454) | Progress | No | No |
 | JSP-000455 | [How many levels in an exponential tower are needed to describe the growth of uniform-hypergraph Ramsey numbers?](catalog-0401-0500.md#JSP-000455) | Open | No | No |
-| JSP-000456 | [Require both edge colors to occupy a prescribed proportion in every sufficiently large vertex subset of a complete graph. Does the optimal subset threshold have precise logarithmic asymptotics?](catalog-0401-0500.md#JSP-000456) | Open | No | No |
 | JSP-000457 | [Do two-color Ramsey numbers of three-uniform hypergraphs satisfy the predicted double-exponential lower bound?](catalog-0401-0500.md#JSP-000457) | Progress | No | No |
 | JSP-000458 | [Is the two-color induced Ramsey number at most exponential in the order of the target graph?](catalog-0401-0500.md#JSP-000458) | Solved | No | No |
 | JSP-000459 | [Under the specified local edge restrictions on one graph, is its Ramsey number against another graph linear in the latter's edge count?](catalog-0401-0500.md#JSP-000459) | Progress | No | No |
@@ -628,7 +625,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000555 | [Near every integer, is there another integer whose least prime factor exceeds the square of their distance?](catalog-0501-0600.md#JSP-000555) | Open | No | No |
 | JSP-000556 | [Near every integer, is there a composite integer whose least prime factor exceeds the square of their distance?](catalog-0501-0600.md#JSP-000556) | Open | No | No |
 | JSP-000557 | [Between consecutive primes, is there an integer whose least prime factor is at least their gap?](catalog-0501-0600.md#JSP-000557) | Solved | No | No |
-| JSP-000558 | [What uniform lower bounds on the largest prime factor of a binomial coefficient hold in terms of its parameters?](catalog-0501-0600.md#JSP-000558) | Progress | No | No |
+| JSP-000558 | [Large prime factors of binomial coefficients and runs of smooth integers](catalog-0501-0600.md#JSP-000558) | Progress | No | No |
 | JSP-000559 | [When does the small-prime part of a binomial coefficient exceed the square of its upper parameter?](catalog-0501-0600.md#JSP-000559) | Progress | No | No |
 | JSP-000560 | [What asymptotic formulas describe the number of distinct prime factors of binomial coefficients as their parameters vary?](catalog-0501-0600.md#JSP-000560) | Open | No | No |
 | JSP-000561 | [Can every integer at least two be a ratio of products of two disjoint equal-length positive-integer intervals, each of length at least two?](catalog-0501-0600.md#JSP-000561) | Open | No | No |
@@ -888,7 +885,6 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | --- | --- | --- | --- | --- |
 | JSP-000801 | [How large can the difference between the two largest distance multiplicities of a planar point set be?](catalog-0801-0900.md#JSP-000801) | Progress | No | No |
 | JSP-000802 | [If a point set determines many ordinary lines, must it have a large subset whose every joining line is ordinary in the original set?](catalog-0801-0900.md#JSP-000802) | Solved | No | No |
-| JSP-000803 | [How long can a run of consecutive integers having only prime factors below the prescribed bound be?](catalog-0801-0900.md#JSP-000803) | Progress | No | No |
 | JSP-000804 | [How long can a consecutive-integer interval be if each term has a prime factor larger than its length?](catalog-0801-0900.md#JSP-000804) | Progress | No | No |
 | JSP-000805 | [How large a subset with all subset sums distinct must every finite real set contain?](catalog-0801-0900.md#JSP-000805) | Open | No | No |
 | JSP-000806 | [What is the density of indices where a prime divided by its index exceeds the corresponding ratio at the preceding index?](catalog-0801-0900.md#JSP-000806) | Progress | No | No |
@@ -932,7 +928,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000844 | [How many triangles must a graph have once its edge count exceeds the maximum bipartite edge count?](catalog-0801-0900.md#JSP-000844) | Solved | No | No |
 | JSP-000845 | [Under a high-chromatic-number condition, how many edges force a triangle?](catalog-0801-0900.md#JSP-000845) | Progress | No | No |
 | JSP-000846 | [What graph density forces a cycle containing nearly all vertices?](catalog-0801-0900.md#JSP-000846) | Solved | No | No |
-| JSP-000847 | [How few vertices can a triangle-free graph of prescribed chromatic number have?](catalog-0801-0900.md#JSP-000847) | Progress | No | No |
+| JSP-000847 | [Chromatic number and minimum order of triangle-free graphs](catalog-0801-0900.md#JSP-000847) | Progress | No | No |
 | JSP-000848 | [With one off-diagonal Ramsey parameter fixed, does the ratio of successive values in the other parameter tend to one?](catalog-0801-0900.md#JSP-000848) | Solved | Yes | Yes |
 | JSP-000849 | [How few vertices need remain uncovered by disjoint monochromatic cliques in an edge-colored complete graph?](catalog-0801-0900.md#JSP-000849) | Solved | No | No |
 | JSP-000850 | [pancyclic graphs](catalog-0801-0900.md#JSP-000850) | Open | No | No |
@@ -1010,7 +1006,6 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000917 | [How many consecutive ordered divisor pairs are coprime, and how does this count grow?](catalog-0901-1000.md#JSP-000917) | Progress | No | No |
 | JSP-000918 | [Can a pairwise coprime integer sequence leave relatively small gaps after all its multiples are excluded?](catalog-0901-1000.md#JSP-000918) | Progress | No | No |
 | JSP-000919 | [Is there an infinite integer sequence with every pairwise sum squarefree, and how slowly can it grow?](catalog-0901-1000.md#JSP-000919) | Progress | No | No |
-| JSP-000920 | [What is the largest chromatic number of a triangle-free graph of prescribed order?](catalog-0901-1000.md#JSP-000920) | Open | No | No |
 | JSP-000921 | [How many edge colors can be used while avoiding the specified rainbow cycle or path?](catalog-0901-1000.md#JSP-000921) | Solved | No | No |
 | JSP-000922 | [How many distinct prime factors occur among a sequence of integer partition numbers?](catalog-0901-1000.md#JSP-000922) | Progress | No | No |
 | JSP-000923 | [For each prescribed order, is every sufficiently large integer a sum of one more than that order many integers whose prime-factor exponents are all at least that order?](catalog-0901-1000.md#JSP-000923) | Progress | No | No |
