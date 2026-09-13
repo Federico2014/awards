@@ -1,6 +1,6 @@
 # Mathematical problem bank
 
-[Repository home](../README.md)
+[Repository home](../README.md) · [Problem bank sources](../docs/problem-bank-sources.md)
 
 This catalog contains **1,022 mathematical problems**.
 
