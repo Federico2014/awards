@@ -102,7 +102,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | JSP-000054 | [Does the alternating series formed by weighting reciprocal primes by their indices converge?](catalog-0001-0100.md#JSP-000054) | Progress | No | No |
 | JSP-000055 | [cluster primes](catalog-0001-0100.md#JSP-000055) | Progress | No | No |
 | JSP-000056 | [practical numbers](catalog-0001-0100.md#JSP-000056) | Progress | No | No |
-| JSP-000057 | [Is the union of n edge-disjoint complete graphs, each on n vertices, always properly colorable with n colors?](catalog-0001-0100.md#JSP-000057) | Open | No | No |
+| JSP-000057 | [Is the union of n edge-disjoint complete graphs, each on n vertices, always properly colorable with n colors?](catalog-0001-0100.md#JSP-000057) | Progress | No | No |
 | JSP-000058 | [sunflower conjecture](catalog-0001-0100.md#JSP-000058) | Progress | No | No |
 | JSP-000059 | [Can every triangle-free graph on 5k vertices be made bipartite by deleting at most k² edges?](catalog-0001-0100.md#JSP-000059) | Open | No | No |
 | JSP-000060 | [Do the integers remaining after successively avoiding the prescribed congruence classes necessarily have logarithmic density?](catalog-0001-0100.md#JSP-000060) | Open | No | No |
@@ -362,7 +362,7 @@ The **No.** column contains each problem’s six-digit identifier, such as **JSP
 | No. | Problem | Current status | Lean proof | Eligible to claim |
 | --- | --- | --- | --- | --- |
 | JSP-000301 | [Are there three consecutive powerful positive integers, each divisible by the square of every prime dividing it?](catalog-0301-0400.md#JSP-000301) | Open | No | No |
-| JSP-000302 | [If two consecutive positive integers are powerful, must at least one be a perfect square?](catalog-0301-0400.md#JSP-000302) | Progress | No | No |
+| JSP-000302 | [If two consecutive positive integers are powerful, must at least one be a perfect square?](catalog-0301-0400.md#JSP-000302) | Solved | No | No |
 | JSP-000303 | [ambiguous statement](catalog-0301-0400.md#JSP-000303) | Open | No | No |
 | JSP-000304 | [How large can the product of the powerful parts of consecutive integers be?](catalog-0301-0400.md#JSP-000304) | Open | No | No |
 | JSP-000305 | [How large a prime factor must the product of two consecutive positive integers have?](catalog-0301-0400.md#JSP-000305) | Progress | No | No |
