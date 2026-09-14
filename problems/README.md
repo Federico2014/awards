@@ -44,7 +44,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 1–100
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000001 | [Riemann hypothesis](catalog-0001-0100.md#JSP-000001) | Open | No | No | unavailable |
 | JSP-000002 | [P versus NP problem](catalog-0001-0100.md#JSP-000002) | Open | No | No | unavailable |
@@ -149,7 +149,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 101–200
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000101 | [Is the minimum-degree threshold forcing a quadrilateral monotone in the relevant size parameter?](catalog-0101-0200.md#JSP-000101) | Open | No | No | unavailable |
 | JSP-000102 | [What proportion of the edges of a high-dimensional hypercube can be retained without creating a quadrilateral?](catalog-0101-0200.md#JSP-000102) | Progress | No | No | unavailable |
@@ -254,7 +254,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 201–300
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000201 | [How large can gaps between consecutive integers representable as sums of two squares be?](catalog-0201-0300.md#JSP-000201) | Progress | No | No | unavailable |
 | JSP-000202 | [For a finite point set of fixed diameter in higher-dimensional space, how many pairs can attain that diameter?](catalog-0201-0300.md#JSP-000202) | Solved | No | No | unavailable |
@@ -359,7 +359,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 301–400
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000301 | [If two consecutive positive integers are powerful, must at least one be a perfect square?](catalog-0301-0400.md#JSP-000301) | Solved | No | No | unavailable |
 | JSP-000302 | [ambiguous statement](catalog-0301-0400.md#JSP-000302) | Open | No | No | unavailable |
@@ -464,7 +464,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 401–500
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000401 | [How many edges can a three-uniform hypergraph have while excluding the complete three-uniform hypergraph on four vertices?](catalog-0401-0500.md#JSP-000401) | Open | No | No | unavailable |
 | JSP-000402 | [Under the specified measure restrictions on a set mapping, must there be a sufficiently large set whose elements avoid one another's images?](catalog-0401-0500.md#JSP-000402) | Solved | No | No | unavailable |
@@ -569,7 +569,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 501–600
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000501 | [How many edges must be added to a triangle-free graph to reduce its diameter to at most four while keeping it triangle-free?](catalog-0501-0600.md#JSP-000501) | Solved | Yes | Yes | unclaimed |
 | JSP-000502 | [Large triangle-free induced subgraphs in K4-free graphs](catalog-0501-0600.md#JSP-000502) | Progress | No | No | unavailable |
@@ -674,7 +674,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 601–700
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000601 | [How many distinct line-multiplicity counting sequences can planar point sets determine?](catalog-0601-0700.md#JSP-000601) | Solved | No | No | unavailable |
 | JSP-000602 | [Which pairwise balanced designs exist when repeated block sizes have bounded multiplicity?](catalog-0601-0700.md#JSP-000602) | Progress | No | No | unavailable |
@@ -779,7 +779,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 701–800
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000701 | [How large can an integer-interval subset be if every pairwise product plus one has a nontrivial square factor?](catalog-0701-0800.md#JSP-000701) | Open | No | No | unavailable |
 | JSP-000702 | [Singmaster's conjecture](catalog-0701-0800.md#JSP-000702) | Progress | No | No | unavailable |
@@ -884,7 +884,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 801–900
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000801 | [How large a subset with all subset sums distinct must every finite real set contain?](catalog-0801-0900.md#JSP-000801) | Open | No | No | unavailable |
 | JSP-000802 | [What is the density of indices where a prime divided by its index exceeds the corresponding ratio at the preceding index?](catalog-0801-0900.md#JSP-000802) | Progress | No | No | unavailable |
@@ -989,7 +989,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 901–1000
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-000901 | [contact number problem](catalog-0901-1000.md#JSP-000901) | Progress | No | No | unavailable |
 | JSP-000902 | [How many unit-distance pairs can a finite point set in the specified higher-dimensional space have?](catalog-0901-1000.md#JSP-000902) | Progress | No | No | unavailable |
@@ -1094,7 +1094,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 
 ### Problems 1001–1022
 
-| No. | Problem | Current status | Lean proof | Eligible to claim | claim status |
+| No. | Problem | Current status | Lean proof | Eligible to claim | Claim status |
 | --- | --- | --- | --- | --- | --- |
 | JSP-001001 | [How large can the sum of reciprocal integer-logarithm weights be over a primitive set of large integers?](catalog-1001-1022.md#JSP-001001) | Solved | Yes | Yes | unclaimed |
 | JSP-001002 | [Can integer dilates of a positive-measure real set cover all sufficiently distant lattice points along almost every prescribed ray?](catalog-1001-1022.md#JSP-001002) | Solved | Yes | Yes | unclaimed |
