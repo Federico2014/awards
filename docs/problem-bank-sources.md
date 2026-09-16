@@ -4,6 +4,8 @@
 
 The problem bank is compiled from publicly documented mathematical problems and research literature. Its sources include public problem collections, academic papers and monographs, research updates, and formal proof repositories. The project organizes these materials into a common catalog, using JSP identifiers to connect problem statements, known results, references, and subsequent updates.
 
+The [disclaimer and correction process](../problems/README.md#disclaimer-and-corrections) applies to all information in the problem bank.
+
 ## Source materials
 
 Different sources serve different purposes:
@@ -36,5 +38,7 @@ Inclusion in the catalog is separate from eligibility to claim a reward. Each en
 ## Tracing a particular problem
 
 Find the JSP identifier in the [problem index](../problems/README.md), then follow its entry to the problem description, publication details, proof links, and review notes. Some references are bibliographic records rather than direct links to a paper; the entry identifies that distinction.
+
+Where present, **Attribution basis** provides **Solver attribution source** and **Lean attribution source** links for the displayed contributors. The [attribution conventions](../problems/README.md#attribution-conventions) explain the short labels and the scope of these credits.
 
 Corrections and additional sources can be submitted through the process in [CONTRIBUTING.md](../CONTRIBUTING.md). Include the JSP identifier and supporting public references so that the proposed correction can be checked against the problem's scope and existing evidence.

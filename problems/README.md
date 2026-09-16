@@ -8,6 +8,12 @@ Problems are numbered consecutively and grouped into volumes of 100 records (22 
 
 Some dates are explicitly marked as assumptions or pending confirmation. Formal nominations and award records remain in [candidates/](../candidates/README.md) and [awards/](../awards/README.md).
 
+## Disclaimer and corrections
+
+Information in this problem bank—including problem descriptions, dates, solution status, contributor attributions, Lean proof records, historical bounties, and references—is compiled from publicly available online sources and the project's summaries and assessments of those sources. It is provided for reference and may contain errors, omissions, or outdated information. Inclusion does not by itself constitute independent verification of a result or confirmation of an award or entitlement to payment.
+
+If you find inaccurate, incomplete, or outdated information, please contact the maintainers by [opening a correction issue](https://github.com/TheJustinSunPrize/awards/issues/new?template=correction.yml). Include the JSP identifier, the information in question, your proposed correction, and supporting public sources so the record can be reviewed and corrected.
+
 ## Reading conventions
 
 Each introduction has three rows: **Date proposed**, **Mathematical area**, and **Problem description**. Date proposed identifies when the mathematical problem was posed; it is not an application submission date for this award.
@@ -16,7 +22,21 @@ The catalogs retain solution status, Lean proof status, historical bounty, elaps
 
 **Current status** records the status and explicitly credited result contributors: **Solved by …** for a solution, **Progress by …** for partial results, and announcement or proof-contributor credits where appropriate. **Publication details** contains titles, dates, venues, links, and the scope of the cited results, without repeating author lists. A link labeled **bibliographic record** is a reference entry, not a verified direct link to the paper.
 
-**Lean proof** combines the proof status, source links, and formalization contributor credits, including earlier conditional proofs or reused work when relevant. Mathematical discovery, formalization, and **Independent verification** can have different contributors. A repository owner, commit author, statement author, or AI tool is not automatically the mathematical solver. Credits follow explicit source statements; missing or ambiguous attribution is marked as unverified. A successful kernel check does not by itself establish independent human review or award eligibility.
+**Lean proof** combines the proof status, source links, and formalization contributor credits. Earlier conditional proofs and reused work may be documented separately in source or review notes. Mathematical discovery, formalization, and **Independent verification** can have different contributors. A repository owner, commit author, statement author, or AI tool is not automatically the mathematical solver. Credits follow explicit source statements or a display convention identified in **Attribution basis**; unresolved attribution is otherwise marked as unverified. A successful kernel check does not by itself establish independent human review or award eligibility.
+
+<a id="attribution-conventions"></a>
+
+**Attribution conventions (updated 2026-09-16).** The 66 records with an **Attribution basis** row describe credits for the selected completed proof version. Each row provides sources and any problem-specific qualifications. **Solver attribution source** links to evidence supporting the listed solver credits; **Lean attribution source** links to evidence supporting the listed Lean credits.
+
+Short attribution notes mean:
+
+- **Paper/report authors:** mathematical credit follows the corresponding author list. This does not establish each author's role as an AI operator or proof discoverer.
+- **Repository-owner attribution:** when individual Lean authorship is missing, the owner of the selected completed proof repository supplies the display credit. Ownership or a completion commit does not establish who personally wrote every proof step.
+- **Project authorship and evaluation/publication role:** Lean credit follows the named project role in `formalization.yaml`.
+
+Other credits follow explicit authorship or documented participation. Earlier conditional versions and independent proof routes are not accumulated into these display credits. Lists longer than three names show the first three followed by “et al.”; individual AI models are omitted.
+
+These credits do not establish first-discovery priority, sole manual authorship, independent verification or recipient eligibility.
 
 The index preserves Lean evidence qualifications: **Reported; standalone source not located** does not confirm a complete Lean proof of that problem. A linked proof of a related problem is identified as such in the full record.
 
