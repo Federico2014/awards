@@ -78,7 +78,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000002 | [P versus NP problem](catalog-0001-0100.md#JSP-000002) | Open | No | No | Unavailable |
 | JSP-000003 | [Birch–Swinnerton-Dyer conjecture (BSD)](catalog-0001-0100.md#JSP-000003) | Open | No | No | Unavailable |
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | Open | No | No | Unavailable |
-| JSP-000005 | [Three-dimensional Navier–Stokes existence and smoothness](catalog-0001-0100.md#JSP-000005) | Solved | Yes | Yes | Unclaimed |
+| JSP-000005 | [Existence and smoothness of the 3D Navier–Stokes equations](catalog-0001-0100.md#JSP-000005) | Solved | Yes | Yes | Unclaimed |
 | JSP-000006 | [Yang–Mills existence and mass gap](catalog-0001-0100.md#JSP-000006) | Open | No | No | Unavailable |
 | JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | No | No | Unavailable |
 | JSP-000008 | [Goldbach conjecture (strong Goldbach)](catalog-0001-0100.md#JSP-000008) | Open | No | No | Unavailable |
