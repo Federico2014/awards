@@ -51,8 +51,11 @@ completeness before approving a PR.
 
 Use the default PR template and edit the relevant existing
 `problems/catalog-XXXX-XXXX.md` file. External PRs may update **Current status**
-(for mathematical solver credits), **Lean proof**, **Attribution basis**, and
-**Publication details**. Explain proposed status changes for maintainer review;
+(including mathematical solver credits), **Lean proof**, **Attribution basis**, and
+**Publication details**. Use only **Open** or **Solved** as the status; record
+complete-solution credits in the same **Current status** field after
+**Proof contributors:**. Do not add intermediate results or incomplete
+formalizations. Explain proposed status changes for maintainer review;
 maintainers reconcile index/status/eligibility fields after review. Use issues for
 other corrections or requests rather than changing unrelated repository files.
 
