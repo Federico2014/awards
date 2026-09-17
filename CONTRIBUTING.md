@@ -7,7 +7,7 @@ Contributions maintain the public problem bank, evidence, candidate records, and
 | Type | Include | Handling |
 | --- | --- | --- |
 | Recommend a problem | Precise statement, significance, original references, known results, formalization links | Maintainers check scope, sources and duplicates. |
-| Claim an award | Problem ID, original Lean proof repository owned by the submitting GitHub account, public follow-up email, contribution role and related claims | Maintainers verify source attribution and the applicant's identity; payment arrangements are handled privately after award confirmation. |
+| Claim an award | Problem-bank link, original Lean proof repository owned by the submitting GitHub account, public follow-up email, contribution role and related claims | Maintainers verify source attribution and the applicant's identity; payment arrangements are handled privately after award confirmation. |
 | Correction | Exact record, current text, proposed correction and supporting sources | Maintainers review the evidence and record the outcome. |
 | Dispute | Announced award, disputed claim, evidence, requested resolution and conflicts | Maintainers record the concern and arrange review. |
 
@@ -18,7 +18,7 @@ actual contributor applying for themselves. Proxy applications and collection on
 another person's behalf are not accepted. Both mathematical and Lean contributions
 can be claimed in the same issue and are
 reviewed separately using the evidence already in the problem bank. Every claim
-must provide the JSP problem ID, the original Lean proof repository URL and a
+must provide the problem-bank link, the original Lean proof repository URL and a
 follow-up contact email. The repository owner must match the issue author's GitHub
 account; mirrors or collections of someone else's proof do not qualify. The email
 will be public, so use an address intended for public correspondence. A contact

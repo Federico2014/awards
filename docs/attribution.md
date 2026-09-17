@@ -14,7 +14,7 @@ Use the [award claim form](../.github/ISSUE_TEMPLATE/claim-award.yml) only
 for your own contribution. The issue author's GitHub account is the applicant
 account; entering someone else's account in the text does not change the applicant.
 Proxy applications and collection on another person's behalf are not accepted.
-Every application must include the JSP problem ID, the original Lean proof
+Every application must include the problem-bank link, the original Lean proof
 repository URL and a follow-up contact email. The repository must belong to the
 same GitHub account that submits the issue. The contact email is public; provide
 an address intended for public correspondence. It is a communication channel,
@@ -23,8 +23,8 @@ update an existing application instead of submitting duplicates.
 
 Only complete solutions to the original problem are accepted. Partial mathematical
 results and incomplete Lean formalizations are not eligible. Select mathematical
-solution, Lean formalization, or both, and identify the problem-bank entry by its
-JSP ID. Maintainers use its existing proof, source and attribution references
+solution, Lean formalization, or both, and link the problem-bank entry for the
+JSP ID in the issue title. Maintainers use its existing proof, source and attribution references
 together with the required original repository URL; applicants do not need
 to resubmit proof materials. Explain only unresolved account-to-contributor links
 or attribution discrepancies. If catalog information is missing or incorrect,

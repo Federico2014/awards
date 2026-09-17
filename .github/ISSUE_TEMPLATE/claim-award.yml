@@ -14,9 +14,9 @@ body:
   - type: input
     id: entry
     attributes:
-      label: Problem ID
-      description: Enter the JSP identifier from the problem bank and include it in the issue title.
-      placeholder: JSP-000123
+      label: Problem link
+      description: Provide the problem-bank link for the JSP identifier in the issue title.
+      placeholder: https://github.com/TheJustinSunPrize/awards/blob/main/problems/catalog-0101-0200.md#JSP-000123
     validations:
       required: true
   - type: input
