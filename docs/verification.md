@@ -21,6 +21,9 @@ proof commit and obtain an overall **Verification passed (`验证通过`)** resu
 This applies to initial submissions, replacement proofs and combined solver/Lean
 submissions. Solver-only submissions and attribution-only corrections that
 introduce no proof version do not require this check.
+Mathematical solvers submitting only a solution, publication or solver information
+need no Lean repository, self-check declaration or Lean verification report.
+For combined submissions, this requirement applies only to the Lean proof.
 
 This is a contributor pre-submission self-check. Its declaration, report and logs
 are submitter-provided evidence, not independent certification. Maintainers must

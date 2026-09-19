@@ -33,6 +33,9 @@ for the exact proof commit.** This includes replacement proofs and combined
 submissions. Declare the completed self-check and summarize the result below;
 full report and log links are recommended, not required. See the
 [pre-submission instructions](https://github.com/TheJustinSunPrize/awards/blob/main/docs/verification.md#required-lean-pre-submission-check).
+Mathematical solvers submitting only a solution, publication or solver information
+do not need to use this skill or supply a Lean self-check. In a combined
+submission, the requirement applies only to the Lean proof.
 
 ## Problem
 
