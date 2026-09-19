@@ -24,6 +24,11 @@ Award entries are confirmed and publicly announced decisions; candidates are tra
 ## Participate
 
 Submit solution and proof evidence using the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
+Before opening a PR that submits a Lean proof, run the repository's
+[`lean-verify` skill](skills/lean-verify/SKILL.md) on the exact proof commit and
+obtain a **Verification passed** result. Declare the completed self-check in the
+PR with the commit, date, conclusion and a short summary. Full report and log
+links are recommended; see the [pre-submission check](docs/verification.md#required-lean-pre-submission-check).
 Verification and merge start **14 days of public review for each contribution role**
 when an accepted formalization source is available. Open a claim-award issue and
 complete identity checks alongside the review. Solvers awaiting formalization may

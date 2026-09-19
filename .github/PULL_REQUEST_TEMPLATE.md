@@ -26,6 +26,14 @@ Claims and identity checks can proceed alongside public review. See the
 **Only complete solutions to the original problem are accepted. Do not submit
 partial mathematical results or incomplete Lean formalizations.**
 
+**Before opening a PR that submits a Lean proof, obtain a Verification passed
+(`验证通过`) self-check result from the repository's
+[`lean-verify` skill](https://github.com/TheJustinSunPrize/awards/blob/main/skills/lean-verify/SKILL.md)
+for the exact proof commit.** This includes replacement proofs and combined
+submissions. Declare the completed self-check and summarize the result below;
+full report and log links are recommended, not required. See the
+[pre-submission instructions](https://github.com/TheJustinSunPrize/awards/blob/main/docs/verification.md#required-lean-pre-submission-check).
+
 ## Problem
 
 - Problem ID(s): JSP-______
@@ -111,6 +119,31 @@ target; the submitted proof must not depend on that placeholder (`sorryAx`) or
 on unproved assumptions added to replace missing proof steps. Report all axiom
 dependencies for review; standard Lean axioms are not automatically disqualifying.
 
+## Pre-submission Lean verification
+
+Required when submitting a Lean proof, including replacement proofs and combined
+submissions; otherwise remove this section.
+
+Required self-check details:
+
+- Proof repository and full commit SHA checked locally (must match Proof submission above): REPLACE_WITH_REPOSITORY_AND_FULL_COMMIT_SHA
+- Verification date and overall conclusion (must be Verification passed / 验证通过): REPLACE_WITH_DATE_AND_CONCLUSION
+- Short result summary for every submitted problem and proof version (statement correspondence, full coverage, actual Lean checks, verification levels and trust dependencies): REPLACE_WITH_SUMMARY
+
+Recommended supporting material (optional; remove fields not supplied):
+
+- `lean-verify` skill version (awards repository commit containing the skill): REPLACE_WITH_FULL_COMMIT_SHA
+- Full verification report link, or a short report pasted into this PR: REPLACE_WITH_LINK_OR_REPORT
+- Target manifest, build/axiom logs and checker evidence links: REPLACE_WITH_EVIDENCE_LINKS
+
+Rerun `lean-verify` whenever the selected proof commit changes. A build, CI run
+or audit-script exit code alone is insufficient. Conditional pass, partial
+coverage, failed or incomplete verification does not satisfy this pre-submission
+requirement. Keep proof source and large artifacts in the external proof/evidence
+repository. This declaration and any supplied report are submitter-provided
+evidence. Maintainers must independently check the statement and reproduce
+verification before acceptance; the declaration does not determine awards.
+
 ## Attribution
 
 - Mathematical solver(s) and contribution, if applicable: REPLACE_WITH_NAMES_AND_CONTRIBUTIONS
@@ -129,6 +162,7 @@ credits. Do not include private identity documents or contact/payment informatio
 - [ ] I supplied the evidence required for the type of change above.
 - [ ] Any solution submitted for acceptance fully solves the original problem. Any submitted Lean proof is complete at the specified commit and does not depend on `sorry`, `admit` or added unproved assumptions, including placeholders in challenge files.
 - [ ] For a Lean contribution, I identified the formal statement and proof entry, explained their correspondence to the original problem, and supplied reproduction commands and the target theorem's axiom audit.
+- [ ] I confirm that, before opening this PR, every Lean proof submitted here passed my local self-check using the bundled `lean-verify` skill at the exact listed commit. I supplied the commit, verification date, conclusion and summary, and reran verification after any change to the selected proof commit. (Not applicable to solver-only or attribution-only changes with no proof submission.)
 - [ ] This PR contains no proof source files, archives, binaries or vendored dependencies.
 - [ ] Any Lean reference identifies a commit contained in the named branch and the exact version for review.
 - [ ] For a Lean submission, I am the contributor using my own GitHub account and original proof repository, not registering someone else's proof or a mirror on their behalf.

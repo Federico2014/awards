@@ -63,6 +63,18 @@ proof entry, reproduction instructions and attribution evidence requested by the
 template. The selected commit is both the version reviewed and the time anchor
 used for the formalization priority comparison.
 
+Before opening the PR, run the bundled
+[`lean-verify` skill](../skills/lean-verify/SKILL.md) against that exact commit
+and obtain an overall **Verification passed** result for every submitted problem
+and proof version. Confirm completion in the PR checklist and record the commit,
+date, conclusion and a short summary in its pre-submission verification section.
+Full report and log links are recommended, not required; a short report may be
+included in the PR body. Rerun the check whenever the selected proof
+commit changes. See the [pre-submission instructions](verification.md#required-lean-pre-submission-check).
+Maintainers independently check the statement and reproduce verification in the
+review and registration sequence below; a submitter declaration does not replace
+that review.
+
 After the mathematical solution has passed review and the solver candidate has
 been registered, maintainers verify the Lean
 proof before comparing priority. If no formalization

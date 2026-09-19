@@ -92,6 +92,24 @@ proof steps is not accepted. A complete mathematical solution does not make an
 incomplete Lean formalization eligible for submission. Reviewers must verify
 completeness before approving a PR.
 
+**Before opening a PR that submits a Lean proof, you must run the bundled
+[`lean-verify` skill](skills/lean-verify/SKILL.md) and obtain an overall
+Verification passed (`验证通过`) result for the exact submitted commit.**
+This applies to initial proofs, replacement proofs and combined solver/Lean
+submissions. Confirm completion in the PR checklist and provide the proof commit,
+verification date, conclusion and a short result summary. Full report and log
+links are recommended, not required; a short report may be included directly in
+the PR body. Rerun verification if the selected proof commit changes. Solver-only
+submissions and attribution-only corrections that introduce no proof version
+are exempt.
+
+Follow the [pre-submission instructions](docs/verification.md#required-lean-pre-submission-check).
+A successful `lake build`, CI run or audit-script exit code alone does not meet
+this requirement. The declaration and any supplied report are submitter-provided
+evidence. Maintainers must independently check statement correspondence and
+reproduce verification before acceptance, following mathematical review and
+solver registration.
+
 Fork this repository, use the default PR template and edit the relevant existing
 `problems/catalog-XXXX-XXXX.md` file. External PRs may update **Current status**
 (including mathematical solver credits), **Lean proof**, **Attribution basis**, and
