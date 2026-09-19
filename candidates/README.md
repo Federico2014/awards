@@ -11,11 +11,18 @@ Neither category is an award. Both use the award record layout, including
 review is pending.
 
 An accepted contribution enters **14-day public review at PR merge** when the
-problem has an accepted formalization source. Maintainers publish the candidate
+problem's mathematical solution has passed review and its Lean proof has then
+passed verification. Maintainers publish the candidate
 and its review start time in the notice table as part of acceptance. A solver
 awaiting formalization is notified and enters public review when formalization
 becomes available. The claim issue and identity checks proceed alongside public
 review; they do not determine its start time.
+
+Candidate registration is ordered as well: approve the mathematical solution and
+register the solver candidate first, then verify and register the Lean contributor.
+A solver candidate awaiting formalization may have empty Lean cells and no review
+start time. A Lean candidate cannot be registered without the prior solver record.
+If the solver has since received an award, retain a link to that award record.
 
 Each role has its own record and clock. An accepted priority replacement replaces the
 affected candidate and starts a new 14-day period; an unaffected role keeps its

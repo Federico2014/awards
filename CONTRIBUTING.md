@@ -17,7 +17,7 @@ required before announcement and delivery of prize money and a medal.
 | Type | Include | Handling |
 | --- | --- | --- |
 | Recommend a problem | Precise statement, significance, original references, known results, formalization links | Maintainers check scope, sources and duplicates. |
-| Claim an award | Problem-bank link, merged PR, role-appropriate Lean repository URL or None, public follow-up email, contribution role and related claims | Maintainers verify contribution and identity alongside public review; written confirmation and delivery arrangements are handled by email. |
+| Claim an award | Problem-bank link, merged PR, contribution role, Lean repository URL for Lean or both-role claims (optional for solver-only claims), public follow-up email and related claims | Maintainers verify contribution and identity alongside public review; written confirmation and delivery arrangements are handled by email. |
 | Correction | Exact record, current text, proposed correction and supporting sources | Maintainers review the evidence and record the outcome. |
 | Dispute | Candidate or announced award, disputed claim, evidence, relevant dates, requested resolution and conflicts | Maintainers review the concern; unresolved candidate objections hold final award confirmation and payment. |
 
@@ -30,8 +30,10 @@ role and public follow-up email. Use your GitHub account as your public identity
 
 For Lean or both-role claims, provide your own original repository already
 recorded as the formalization source; its owner must match your submitting
-account. For a solver-only claim, provide the recorded formalization repository
-URL regardless of ownership, or `None` while awaiting formalization. Mirrors and
+account. For a solver-only claim, leave the repository field blank or optionally
+link the recorded source regardless of ownership; `None` is also accepted while
+awaiting formalization. Maintainers require a repository URL before approving a
+Lean or both-role claim. Mirrors and
 copies of someone else's proof do not qualify as your own formalization.
 
 Do not resubmit proof materials in the issue. Send real names, affiliations,
@@ -75,6 +77,13 @@ is not eligible for submission, whether mathematical or in Lean.**
 Mathematical submissions must resolve the full original statement, including all
 required cases. Special cases, intermediate lemmas, weaker results and conditional
 arguments that depend on additional unproved assumptions are not accepted.
+
+Mathematical review must pass and the solver candidate must be registered first.
+Only then verify the Lean proof and register its contributor. Lean submissions
+identify the accepted mathematical solution, review evidence and prior solver
+candidate record (or its subsequent award record). If both are submitted together,
+complete solver registration before accepting and registering the Lean contribution.
+Separate records and claims do not change this order.
 
 Lean submissions must provide a complete formal proof of the original problem at
 the specified commit. A statement alone, a partial formalization, or a proof that

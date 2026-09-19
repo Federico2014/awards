@@ -14,6 +14,9 @@ Use this PR template when submitting a solution or proof reference or making a
 supported catalog update, and link any related issue below.
 See the [submission requirements](https://github.com/TheJustinSunPrize/awards/blob/main/CONTRIBUTING.md#external-solver-and-lean-submissions).
 
+The mathematical solution must pass review and its solver candidate must be
+registered before Lean verification and Lean candidate registration. For a
+combined submission, maintainers must still register the solver candidate first.
 Verified contributions enter a separate 14-day public review for each role at
 merge, provided the problem has an accepted formalization source. Solver-only
 submissions without formalization are retained without starting public review.
@@ -35,10 +38,18 @@ For mathematical solver or publication updates, also provide:
 - Public mathematical proof or publication: REPLACE_WITH_HTTPS_LINK
 - Relevant pages, theorem, version or date: REPLACE_WITH_DETAILS
 
+For a solver-only submission, update the catalog's **Current status** (including
+**Proof contributors:**), **Publication details** and supporting **Attribution basis**
+as applicable. Complete Problem and Attribution; remove the Lean-only sections.
+Maintainers review the complete result and attribution before merging and reconcile
+the problem index and eligibility fields.
+
 ## Formal statement
 
 Required for Lean contributions; otherwise remove this section.
 
+- Accepted mathematical solution and review reference (or mathematical solution evidence in this PR, to be reviewed first): REPLACE_WITH_LINKS
+- Prior solver candidate record or its subsequent award record (for a combined submission, maintainers must create the solver candidate before accepting and registering the Lean contribution): REPLACE_WITH_LINK_OR_PENDING_SOLVER_REGISTRATION
 - Challenge file or equivalent statement location (link pinned to a full commit SHA): REPLACE_WITH_LINK
 - Fully qualified target theorem name: REPLACE_WITH_THEOREM_NAME
 - Statement origin (maintainer-approved reference with link, or submitter-proposed statement requiring review): REPLACE_WITH_DETAILS

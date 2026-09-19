@@ -40,6 +40,14 @@ and `jsp-000305-lean`, and reference the same problem. Record the role in
 `contribution_en` and the English citation. The same confirmed recipient profile
 may be referenced by both records; a claim issue may cover both roles.
 
+Mathematical solution review must pass and the solver candidate must be registered
+before Lean verification and Lean candidate registration. Create the solver
+record first, including while it awaits formalization. Each Lean record's citation
+links the prior solver candidate record (or its subsequent award record), the
+accepted mathematical result and review evidence. Separate contribution records
+support individual claim and award handling; they do not permit Lean-first
+candidate registration. Update links when the solver record moves into awards.
+
 An accepted role's 14-day public review starts at PR merge when an accepted
 formalization source exists. Publish the corresponding candidate record and
 [public notice table](../candidates/public-notice.md) entry at acceptance.

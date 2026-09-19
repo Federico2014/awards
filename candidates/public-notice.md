@@ -13,6 +13,14 @@ before a candidate becomes an announced award.
 
 No candidates are currently published for public review.
 
+Register the solver candidate first, after mathematical solution review passes.
+At this stage the Lean candidate and formalization review date cells stay empty;
+the solver's review date also stays empty while formalization is missing.
+Only after solver registration and successful Lean verification may maintainers
+add the Lean contributor to the same problem row and set the applicable review
+start times. Do not register a Lean candidate with no prior solver candidate record.
+Existing attribution alone does not establish that registration.
+
 A blank date means that role has not entered public review. In particular, an
 accepted solver awaiting formalization has no review start time. At acceptance
 and merge, maintainers publish the applicable start time and candidate record
@@ -39,6 +47,8 @@ Send private identity evidence only to **thejustinsunprize@hejustinsun.com**.
 
 Detailed challenge handling, identity-verification materials, application timestamps,
 payment/delivery information and email correspondence do not belong in this table.
-When a role is announced, remove its candidate/date cells from the active notice
-and retain its public review dates in its award record. Remove an empty problem
-row once neither role remains a candidate; an ongoing role stays listed.
+When a role is announced while the other remains a candidate, replace its cell
+with an explicitly labeled link to the award record, retaining the completed
+review dates in that record. This preserves the prior solver registration link
+while Lean review or confirmation is still pending. Remove the problem row once
+neither role remains a candidate.

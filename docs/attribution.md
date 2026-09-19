@@ -15,6 +15,12 @@ a separate 14-day public review for each role when an accepted formalization
 source is available. Claim and identity checks proceed alongside that review;
 they do not set its start time. Follow the [award process](award-process.md).
 
+Register the solver candidate after mathematical review passes, before verifying
+and registering the Lean contributor. Individual claims and review clocks do not
+permit the Lean candidate to be registered first. A prior solver record remains
+required even if the solver has not yet submitted a claim issue or has already
+moved from candidates into an award batch.
+
 Use the [award claim form](../.github/ISSUE_TEMPLATE/claim-award.yml) only for your
 own contribution using your own GitHub account. Proxy applications and collection
 on another person's behalf are not accepted. Include the problem-bank link, JSP
@@ -23,9 +29,12 @@ Update an existing application instead of submitting duplicates.
 
 For Lean or both-role claims, supply your own original proof repository already
 recorded as the formalization source. It must belong to your submitting GitHub
-account. For mathematical solution only, supply the recorded formalization
-repository URL, even if it belongs to someone else, or `None` if no source is
-recorded. An accepted solver may register an application before formalization is
+account. For mathematical solution only, the repository field is optional:
+leave it blank or link the recorded formalization source, even if it belongs to
+someone else. Maintainers use the catalog's existing source when available;
+`None` is also accepted while awaiting formalization. For Lean or both-role
+claims, request a missing repository URL before approval even though the form
+permits a blank field. An accepted solver may register an application before formalization is
 available, regardless of the catalog's current **Eligible to claim** flag; retain
 the application time, but do not start public review or pay an award. Notify the
 solver and start their review once an accepted formalization source is available.

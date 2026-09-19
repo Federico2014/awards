@@ -2,9 +2,11 @@
 
 [Home](../README.md) · [Contribution guidelines](../CONTRIBUTING.md)
 
-Submit a PR → verification and merge → 14-day public review for each contribution
-role, with the claim and identity checks handled alongside it → written recipient
-confirmation → announcement, prize money and medal.
+Submit solution evidence → mathematical solution passes review → register the
+solver candidate → verify the Lean proof → accept the formalization and register
+the Lean contributor candidate → 14-day public review for each
+registered contribution role, with claims and identity checks handled alongside
+it → written recipient confirmation → announcement, prize money and medal.
 
 Submission, acceptance and PR merge do not constitute an award. Verification,
 public review, recipient confirmation and announcement are separate steps.
@@ -24,6 +26,30 @@ the relevant catalog entry in your fork, and open a PR. Complete the automatical
 provided [PR template](../.github/PULL_REQUEST_TEMPLATE.md).
 Only complete solutions and complete Lean proofs of the original problem are accepted.
 
+**First approve the mathematical solution and register its solver candidate;
+only then proceed to Lean verification and register the Lean contributor.**
+Merge an accepted solver submission and create its candidate record even while
+formalization is missing. If both contributions are submitted together, maintainers
+must still complete mathematical review and solver registration before accepting
+and registering the Lean contribution. A Lean submission identifies the accepted
+solution, review evidence and existing solver candidate record (or its subsequent
+award record). A proof build cannot bypass these prerequisites.
+
+### Mathematical solution only
+
+You do not need a Lean repository. Remove the Lean-only sections from the PR
+template and supply the mathematical proof/publication, relevant theorem or pages,
+solver contribution and public authorship evidence in the Problem and Attribution
+sections. Maintainers check the result and attribution before merging.
+
+After the solver PR passes review and merges, register the solver candidate first.
+If formalization is missing, retain that candidate and any application, including
+the application time, without starting the 14-day public review. Register the Lean
+contributor only after the solver candidate exists and Lean verification passes.
+Once formalization is available, notify the solver and publish the applicable
+review start times. Formalization is a prerequisite for the timed public review
+and award payment, not for initial solver candidate registration.
+
 ### Lean formalization or both roles
 
 Register the original repository containing your own Lean proof. The GitHub
@@ -37,7 +63,9 @@ proof entry, reproduction instructions and attribution evidence requested by the
 template. The selected commit is both the version reviewed and the time anchor
 used for the formalization priority comparison.
 
-Maintainers verify the Lean proof before comparing priority. If no formalization
+After the mathematical solution has passed review and the solver candidate has
+been registered, maintainers verify the Lean
+proof before comparing priority. If no formalization
 source is already recorded, the accepted submission becomes the earliest recorded
 source. If multiple submissions pass verification in the same review period,
 the earliest selected commit in the contributors' own repositories takes priority.
@@ -64,20 +92,6 @@ during public review. Merge does not award the prize.
 Routine catalog corrections, documentation updates and additional evidence for an
 unchanged accepted contribution do not create a new candidate or restart its clock.
 
-### Mathematical solution only
-
-You do not need a Lean repository. Remove the Lean-only sections from the PR
-template and supply the mathematical proof/publication, relevant theorem or pages,
-solver contribution and public authorship evidence in the Problem and Attribution
-sections. Maintainers check the result and attribution before merging.
-
-If the problem already has an accepted formalization source, the solver candidate
-is published and its 14-day review starts at merge. If it has no such source,
-the solution attribution and application are recorded and the application time
-is retained, but public review does not start. Once formalization is available,
-maintainers notify the solver and publish the solver's review start time.
-Formalization is a prerequisite for entry into public review and award payment.
-
 ### Keep notifications enabled
 
 Check that email notifications for your GitHub account are enabled so you receive
@@ -100,8 +114,12 @@ Fill **Original Lean proof repository** according to your role:
 | Claim role | What to enter |
 | --- | --- |
 | Lean formalization or both | Your own original repository already recorded as the problem's formalization source. |
-| Mathematical solution only, with a recorded formalization | The recorded formalization repository URL; it need not belong to you. |
-| Mathematical solution only, without a recorded formalization | `None`. The application is retained while awaiting formalization. |
+| Mathematical solution only, with a recorded formalization | Optional: leave blank or link the recorded formalization repository. It need not belong to you; maintainers use the catalog's source. |
+| Mathematical solution only, without a recorded formalization | Leave blank (`None` is also accepted). The application is retained while awaiting formalization. |
+
+The form accepts a blank repository field so solver-only applicants can submit.
+For Lean or both-role claims, the repository remains a review requirement;
+maintainers request a missing URL before approving the claim.
 
 **Eligible to claim: Yes** remains the catalog's screening flag for a solved
 problem with a Lean proof. A solver whose complete solution has been accepted may
@@ -135,8 +153,11 @@ establish identity. Keep private evidence in email. See the
 ### The 14-day public review
 
 The [public notice table](../candidates/public-notice.md) lists separate start
-times for mathematical solution and Lean formalization. **Each role has its own
-14-day clock; the roles do not wait for each other.** Opening the claim issue or
+times for mathematical solution and Lean formalization. After the mathematical
+solution has passed review, its solver candidate has been registered, and
+formalization has been verified, **each registered role has its own 14-day clock**.
+Separate claim handling does not permit the Lean candidate to be registered first.
+Opening the claim issue or
 finishing identity checks does not restart or delay an already running clock.
 
 Anyone may challenge a public candidate's result, attribution, priority, identity
