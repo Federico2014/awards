@@ -13,6 +13,16 @@ accepted. Partial mathematical progress and incomplete Lean formalizations are n
 eligible for submission. The catalog records complete solutions only, without
 intermediate results. See the [contribution guidelines](../CONTRIBUTING.md#external-solver-and-lean-submissions).
 
+Follow the [award process](../docs/award-process.md): submit solution and proof
+evidence by PR. Verification and merge start an independent 14-day public review
+for each role when an accepted formalization source is available. Claim-award
+applications and identity checks proceed alongside review. Solvers without a
+formalization source may register an application, but public review and payment
+wait for formalization. Raise candidate or award challenges through the Formal
+dispute issue form and ordinary record corrections through the Correction issue
+form. Submit replacement proofs or catalog updates in a linked PR.
+See the [public notice table](../candidates/public-notice.md).
+
 ## Disclaimer and corrections
 
 Information in this problem bank—including problem descriptions, dates, solution status, contributor attributions, Lean proof records, historical bounties, and references—is compiled from publicly available online sources and the project's summaries and assessments of those sources. It is provided for reference and may contain errors, omissions, or outdated information. Inclusion does not by itself constitute independent verification of a result or confirmation of an award or entitlement to payment.
@@ -50,11 +60,11 @@ In the **Eligible to claim** column, **Yes** marks records whose **Current statu
 
 **Claim status** is the final column of the problem index and records whether a problem is available to claim and whether it has been claimed:
 
-- **Unavailable** means the mathematical problem has not been fully solved or does not have a Lean formal proof, so it cannot be claimed.
+- **Unavailable** means the mathematical problem has not been fully solved or does not have a Lean formal proof, so it is not ready for award processing. A solver whose complete solution has been accepted may still register an application awaiting formalization; that does not start public review or permit payment.
 - **Unclaimed** means the problem is eligible to claim but has not yet been claimed.
-- **Claimed** means the problem has been claimed.
+- **Claimed** means a claim has been recorded for the problem; it does not mean both contribution roles have been awarded or prevent the other contributor from applying. Consult the role-specific claim issues and candidate/award records for the current outcomes.
 
-When a problem is fully solved, has a Lean formal proof, and becomes eligible to claim, update **Claim status** from **Unavailable** to **Unclaimed**. Once it has been claimed, update **Unclaimed** to **Claimed**.
+When a problem is fully solved, has a Lean formal proof, and becomes eligible to claim, update **Claim status** from **Unavailable** to **Unclaimed**. Once it has been claimed, update **Unclaimed** to **Claimed**. An application retained while awaiting formalization does not by itself change **Unavailable**. These problem-level flags do not track the two roles' separate public-review clocks.
 
 ## Volumes
 

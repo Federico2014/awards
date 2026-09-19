@@ -7,11 +7,18 @@ Select both when applicable. Remove sections that do not apply.
 
 To report a problem with a recorded result, proof, attribution or priority, use
 the [Correction issue form](https://github.com/TheJustinSunPrize/awards/issues/new?template=correction.yml).
-For objections to an announced award, use the
+For challenges to a public candidate or announced award, including priority,
+identity or eligibility objections, use the
 [Formal dispute issue form](https://github.com/TheJustinSunPrize/awards/issues/new?template=dispute.yml).
 Use this PR template when submitting a solution or proof reference or making a
 supported catalog update, and link any related issue below.
-See the [submission requirements](../CONTRIBUTING.md#external-solver-and-lean-submissions).
+See the [submission requirements](https://github.com/TheJustinSunPrize/awards/blob/main/CONTRIBUTING.md#external-solver-and-lean-submissions).
+
+Verified contributions enter a separate 14-day public review for each role at
+merge, provided the problem has an accepted formalization source. Solver-only
+submissions without formalization are retained without starting public review.
+Claims and identity checks can proceed alongside public review. See the
+[award process](https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process.md).
 
 **Only complete solutions to the original problem are accepted. Do not submit
 partial mathematical results or incomplete Lean formalizations.**
@@ -50,6 +57,11 @@ against the original problem before accepting the proof.
 Required for Lean contributions; otherwise remove this section.
 Use the full 40-character commit SHA of the proof version selected for
 review. Add an object for each additional proof repository.
+
+Use your own original proof repository. The GitHub account submitting this PR
+must own the repository; do not register another person's proof, a mirror or a
+copy on their behalf. The selected commit is the verification target and the time
+anchor for priority comparison, independent of when this PR is opened.
 
 ```json
 [
@@ -108,5 +120,6 @@ credits. Do not include private identity documents or contact/payment informatio
 - [ ] For a Lean contribution, I identified the formal statement and proof entry, explained their correspondence to the original problem, and supplied reproduction commands and the target theorem's axiom audit.
 - [ ] This PR contains no proof source files, archives, binaries or vendored dependencies.
 - [ ] Any Lean reference identifies a commit contained in the named branch and the exact version for review.
+- [ ] For a Lean submission, I am the contributor using my own GitHub account and original proof repository, not registering someone else's proof or a mirror on their behalf.
 
 For unrelated corrections, use an issue.

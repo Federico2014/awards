@@ -19,7 +19,7 @@ candidates/observation/<entry-id>/
     verification/statements/<id>.yaml  # only when retaining superseded statements
 ```
 
-The last file layout applies to all three entry locations. A stable ID occurs in exactly one location. `observation` and `verified-pending` are pool names, not status values. The `verified-pending` pool contains formal candidates under active verification or with verification completed but written recipient confirmation still pending. The pool name alone does not establish successful verification; consult the record's status and evidence. An entry awaiting written recipient confirmation stays in candidates until the announcement requirements are met.
+The last file layout applies to all three entry locations. A stable ID occurs in exactly one location. `observation` and `verified-pending` are pool names, not status values. The `verified-pending` pool contains formal candidates under verification, in public review, or awaiting written recipient confirmation. The pool name alone does not establish successful verification; consult the record's status and evidence. An entry awaiting written recipient confirmation stays in candidates until the announcement requirements are met.
 
 The **Eligible to claim** flags **Yes** and **Pending verification** in the [problem bank](../problems/README.md) are screening markers, separate from these pools and lifecycle statuses. Neither creates a formal nomination or public candidate record. A problem enters the public candidate list only when its record is published under `candidates/`.
 
@@ -30,6 +30,64 @@ The **Eligible to claim** flags **Yes** and **Pending verification** in the [pro
 | Confirmed awards | `announced`, `disputed`, `paid`, `revoked` |
 
 An award batch is created only for actual, verified, confirmed, announced awards. Revoked awards stay in their original batch: append `revocation` with the reason, evidence and verification failure point; preserve the original decision, recipients and verification. The problem bank is separate from award records.
+
+## Independent contribution records and public review
+
+Maintain separate contribution records for the mathematical solution and Lean
+formalization of a problem so their review, confirmation and announcement can
+proceed independently. Use distinct stable IDs, for example `jsp-000305-solver`
+and `jsp-000305-lean`, and reference the same problem. Record the role in
+`contribution_en` and the English citation. The same confirmed recipient profile
+may be referenced by both records; a claim issue may cover both roles.
+
+An accepted role's 14-day public review starts at PR merge when an accepted
+formalization source exists. Publish the corresponding candidate record and
+[public notice table](../candidates/public-notice.md) entry at acceptance.
+A solver awaiting formalization has no public-review start; notify the solver and
+start that clock once formalization becomes available. Claims and identity checks
+proceed alongside public review, with placeholders before identity confirmation.
+
+Keep the public notice table and each contribution's `citation.md` consistent:
+identify the role, accepted submission PR, review start and scheduled end in UTC
+(14 full days apart). A successful replacement gets a new full period for the
+affected role. Do not restart an unaffected role. A challenge raised during the
+period must be resolved before review ends, and written recipient confirmation
+is required before announcement. Explain a displaced claim in its issue without
+publishing private verification or correspondence.
+
+For a priority replacement before announcement, update the affected contribution
+record, proof references, recipient and review dates together. Use a new
+maintainer-assigned recipient placeholder for an unconfirmed replacement person;
+do not reuse the displaced person's identity, confirmation or payment instructions.
+An existing confirmed profile still needs confirmation for the replacement claim
+and contribution. Link the replacement PR and claim when available. If the formal
+statement changes, follow the statement-versioning rules below.
+
+A successful correctness challenge without a replacement does not start a new
+period. Remove the invalid contribution from the active notice and hold the
+affected record under verification with no active public-review dates. Keep any
+previously published statement and review dates in the record history; they do
+not establish current eligibility. If formalization is no longer available,
+retain the solver's application without an active clock. Routine corrections do
+not restart public review for an unchanged accepted contribution.
+
+Before moving a record into awards, check the current contributor's claim and
+written confirmation, the full applicable 14-day period, resolution of all relevant
+challenges and objections, and the accepted proof evidence. CI does not establish
+these facts. A previously announced award follows the dispute/revocation rules;
+it must not be overwritten with a replacement candidate or moved back into candidates.
+
+Move only the confirmed contribution record into an announced award batch,
+retaining its ID and published evidence. The other role can remain a candidate
+under its different ID. Update the active public notice table accordingly and
+retain the completed public-review dates in the award citation. Each announced
+role still requires completed formal verification evidence for the problem,
+including a solver award supported by someone else's formalization.
+
+The existing schemas support separate IDs for the same problem; no new lifecycle
+status or structured field is needed. Start times and substantive challenge
+outcomes require maintainer review; CI does not time the 14-day period, resolve
+priority or automatically publish candidates. See the [award process](award-process.md).
 
 ## Source files
 
