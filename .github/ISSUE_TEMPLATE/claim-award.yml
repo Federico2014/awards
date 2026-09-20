@@ -10,7 +10,7 @@ body:
         **Only the contributor may submit this claim. Do not apply or collect an award on someone else's behalf.**
         Your submitting GitHub account is the applicant account. Select both roles if you are claiming both contributions. Update an existing claim instead of submitting a duplicate.
 
-        Mathematical-solution-only applicants may leave the Lean repository blank; maintainers use the recorded source if one exists. A solver whose complete solution PR has merged may also register a claim while formalization is missing. That application is retained without starting public review or permitting payment. Submit new proofs through the normal PR template. Raise candidate or award challenges, including priority objections, through the Formal dispute issue form and link any proposed replacement PR.
+        Mathematical-solution-only applicants should leave the Lean repository field blank. A solver whose complete solution PR has merged may also register a claim while formalization is missing. That application is retained without starting public review or permitting payment. Submit new proofs through the normal PR template. Raise candidate or award challenges, including priority objections, through the Formal dispute issue form and link any proposed replacement PR.
 
         When an accepted formalization source is available, each contribution type's 14-day public review starts when its candidate is added to the public register in candidates/ and public notice begins. The recorded public-notice start, not a PR merge time, determines the period. Claims and identity checks proceed alongside that review. A successful priority challenge replaces the affected candidate; that contribution type's new 14-day period starts when the replacement is added to candidates/ and its public notice begins. Before concluding public review, maintainers check pending PRs for the same problem and contribution type (mathematical solution or Lean formalization), regardless of submitter, and wait for reviews that could affect correctness, contribution attribution or priority. Final awards require the full review period, resolution of challenges and relevant pending PR reviews, and written recipient confirmation. See the [award process](https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process.md).
 
@@ -50,8 +50,8 @@ body:
     id: lean_repository
     attributes:
       label: Original Lean proof repository
-      description: Required for Lean formalization or Both claims; provide the original repository already recorded as this problem's formalization source. It may belong to your submitting account or an organization. Organization repositories require verifiable evidence of your contribution; reference it in the attribution field below. Mirrors or copies of another person's proof do not qualify. Optional for Mathematical solution only; leave blank or link the recorded source even if owned by someone else.
-      placeholder: https://github.com/OWNER/REPOSITORY (solver-only applicants may leave blank)
+      description: Required for Lean formalization or Both claims; provide the original repository already recorded as this problem's formalization source. It may belong to your submitting account or an organization. Organization repositories require verifiable evidence of your contribution; reference it in the attribution field below. Mirrors or copies of another person's proof do not qualify. For Mathematical solution only, leave this field blank.
+      placeholder: https://github.com/OWNER/REPOSITORY (leave blank for solver-only claims)
     validations:
       required: false
   - type: input

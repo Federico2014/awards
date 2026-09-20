@@ -132,8 +132,7 @@ Fill **Original Lean proof repository** according to your role:
 | Claim role | What to enter |
 | --- | --- |
 | Lean formalization or both | The original repository already recorded as the problem's formalization source, owned by your account or an organization. Organization repositories require verifiable evidence of your contribution. |
-| Mathematical solution only, with a recorded formalization | Optional: leave blank or link the recorded formalization repository. It need not belong to you; maintainers use the catalog's source. |
-| Mathematical solution only, without a recorded formalization | Leave blank (`None` is also accepted). The application is retained while awaiting formalization. |
+| Mathematical solution only | Leave this field blank. |
 
 The form accepts a blank repository field so solver-only applicants can submit.
 For Lean or both-role claims, the repository remains a review requirement;
