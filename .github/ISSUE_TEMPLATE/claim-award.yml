@@ -48,7 +48,7 @@ body:
     id: lean_repository
     attributes:
       label: Original Lean proof repository
-      description: Required for Lean formalization or Both claims; provide your own original repository already recorded as this problem's formalization source. Its owner must match your submitting account; mirrors or copies of another person's proof do not qualify. Optional for Mathematical solution only; leave blank or link the recorded source even if owned by someone else. Maintainers check the requirement for the selected role before approving a claim.
+      description: Required for Lean formalization or Both claims; provide the original repository already recorded as this problem's formalization source. It may belong to your submitting account or an organization. Organization repositories require verifiable evidence of your contribution; reference it in the attribution field below. Mirrors or copies of another person's proof do not qualify. Optional for Mathematical solution only; leave blank or link the recorded source even if owned by someone else.
       placeholder: https://github.com/OWNER/REPOSITORY (solver-only applicants may leave blank)
     validations:
       required: false
@@ -68,8 +68,8 @@ body:
   - type: textarea
     id: attribution_clarification
     attributes:
-      label: Identity or attribution clarification (if needed)
-      description: Leave blank if the catalog already identifies your contribution clearly. Explain only what is needed to connect your applicant account to the credited contributor, such as bot commits or a shared project account. Link a correction issue or PR if the catalog needs updating. Do not repeat proof materials or post private identity information.
+      label: Contribution evidence and attribution clarification
+      description: For an organization repository, link verifiable evidence connecting your account to the claimed proof files or theorems, such as merged PRs, attributable changes or project authorship records; you may reference evidence already recorded in the catalog or merged submission PR. Organization membership or repository access alone is insufficient. Otherwise leave blank if attribution is clear, or explain any bot/shared-account mismatch. Link a correction issue or PR if needed. Do not post private identity information.
   - type: textarea
     id: related_claims
     attributes:
@@ -88,7 +88,7 @@ body:
           required: true
         - label: My claim concerns my own contribution to the complete solution or Lean proof referenced in the identified problem-bank entry. I have identified any attribution discrepancies that need review.
           required: true
-        - label: If claiming Lean formalization or Both, I have provided my original Lean proof repository URL above. For Mathematical solution only, this field may be blank.
+        - label: If claiming Lean formalization or Both, I have provided the original proof repository URL and, for an organization repository, linked verifiable evidence of my contribution. For Mathematical solution only, the repository field may be blank.
           required: true
         - label: I understand that every applicant must send an identity-verification email from the follow-up address above to thejustinsunprize@hejustinsun.com after opening this issue, linking this issue and the merged PR, including for Lean-only claims with existing authorship evidence.
           required: true

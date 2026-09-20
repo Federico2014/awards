@@ -52,10 +52,12 @@ and award payment, not for initial solver candidate registration.
 
 ### Lean formalization or both roles
 
-Register the original repository containing your own Lean proof. The GitHub
-account submitting the PR must own that repository. Do not register a mirror or
-copy of someone else's proof or submit on another person's behalf. Repository
-ownership does not by itself establish authorship.
+Register the original repository containing your Lean contribution. It may be
+owned by your submitting GitHub account or an organization. For organization
+repositories, provide [verifiable contribution evidence](attribution.md#lean-contributor-verification)
+connecting your account to the claimed work. Do not register a mirror or copy of
+someone else's proof or submit on another person's behalf. Repository ownership
+or organization membership alone does not establish authorship.
 
 Keep Lean source and build artifacts in that external repository. Supply its URL,
 branch and full 40-character commit SHA in the PR, together with the statement,
@@ -63,13 +65,11 @@ proof entry, reproduction instructions and attribution evidence requested by the
 template. The selected commit is both the version reviewed and the time anchor
 used for the formalization priority comparison.
 
-Before opening the PR, we recommend checking the exact proof commit with the
-bundled [`lean-verify` skill](../skills/lean-verify/SKILL.md). Using this skill and
-sharing a self-check report are optional; other verification methods are welcome.
-If you share a self-check, identify the checked commit, method, date, actual
-conclusion and limitations in the template's optional verification section.
-Recheck a changed proof commit before claiming the report covers that version.
-See the [self-check guidance](verification.md#recommended-lean-pre-submission-check).
+For a pre-submission self-check, we recommend the optional
+[`lean-verify` skill](../skills/lean-verify/SKILL.md). Other methods are welcome;
+reports and log links are optional. Follow the
+[verification guide](verification.md#recommended-lean-pre-submission-check)
+to check the exact proof commit and describe any supplied results.
 Maintainers independently check the statement and reproduce verification before
 acceptance, whether or not a self-check report is supplied.
 
@@ -77,7 +77,7 @@ After the mathematical solution has passed review, maintainers verify the Lean
 proof before comparing priority. Solver registration is not a prerequisite. If no formalization
 source is already recorded, the accepted submission becomes the earliest recorded
 source. If multiple submissions pass verification in the same review period,
-the earliest selected commit in the contributors' own repositories takes priority.
+the earliest selected commit in the accepted original proof repositories takes priority.
 If a source is already recorded, a new submission replaces it on priority grounds
 only after verification establishes that the selected complete proof is earlier.
 A later or unproven priority claim does not replace the source or restart public
@@ -95,15 +95,8 @@ For example, a complete proof committed on March 1 and submitted here on Septemb
 18, subject to verification of the selected proofs and their history.
 
 The accepted contribution PR records the current formalization source. After
-the participant PR merges, maintainers publish candidates in `candidates/`.
-The [candidate register](../candidates/README.md#candidate-register) is the public
-notice table. **The 14-day public review starts when the candidate is added to
-that register and public notice begins.** Record this public-notice start in the
-register; it is the basis for calculating the period, not any PR's merge time.
-A verified earlier submission may replace the source during public review.
-Publishing a candidate does not award the prize.
-Routine catalog corrections, documentation updates and additional evidence for an
-unchanged accepted contribution do not create a new candidate or restart its clock.
+it merges, maintainers publish candidates under the
+[public-review rules](#the-14-day-public-review) below.
 
 ### Keep notifications enabled
 
@@ -126,7 +119,7 @@ Fill **Original Lean proof repository** according to your role:
 
 | Claim role | What to enter |
 | --- | --- |
-| Lean formalization or both | Your own original repository already recorded as the problem's formalization source. |
+| Lean formalization or both | The original repository already recorded as the problem's formalization source, owned by your account or an organization. Organization repositories require verifiable evidence of your contribution. |
 | Mathematical solution only, with a recorded formalization | Optional: leave blank or link the recorded formalization repository. It need not belong to you; maintainers use the catalog's source. |
 | Mathematical solution only, without a recorded formalization | Leave blank (`None` is also accepted). The application is retained while awaiting formalization. |
 
@@ -172,12 +165,15 @@ publish the candidates in
 clock starts when its candidate is added to the public register and public
 notice begins.** Record the actual public-notice start in UTC; the scheduled end
 is 14 full days later. Do not derive the start from a PR's merge time.
+Retain date-only precision for historical entries; do not invent a time of day.
 Verification completion or receipt of a claim issue alone does not start the
 clock. Adding the candidate to the published register is the public-notice step.
 Each contribution type can be registered independently; an unregistered solver
 does not block publication of an accepted Lean candidate.
 Opening the claim issue or
 finishing identity checks does not restart or delay an already running clock.
+Routine catalog corrections, documentation updates and additional evidence for an
+unchanged accepted contribution do not create a new candidate or restart its clock.
 
 Anyone may challenge a public candidate's result, attribution, priority, identity
 or eligibility through the
@@ -189,8 +185,9 @@ If you propose a replacement proof or catalog update, open a linked PR using the
 [normal submission template](../.github/PULL_REQUEST_TEMPLATE.md) and supply its
 applicable evidence. Reporting a flaw does not require a replacement proof.
 
-A Lean priority challenger must identify an earlier selected commit in their own
-original repository and pass the same verification as an initial submission.
+A Lean priority challenger must identify an earlier selected commit in the
+original repository containing their contribution and pass the same verification
+and attribution review as an initial submission, including for organization repositories.
 A verified earlier Lean proof replaces the current source. A mathematical-solution
 priority challenger supplies the earlier complete proof or publication, dated
 public evidence and authorship evidence; a Lean repository is not required for
@@ -226,6 +223,8 @@ contribution attribution or priority, wait until its review is complete before
 concluding public review. Unrelated changes, including routine documentation
 updates, do not hold up the process. Waiting does not itself restart the clock;
 an accepted replacement starts a new period under the publication rule above.
+Record the check time, relevant PRs, review outcomes and completion decision using
+the [citation template](templates/citation.md) or an equivalent maintainer record.
 After 14 full days, with no unresolved challenges or relevant pending PR reviews,
 the contribution can proceed to recipient confirmation and award.
 
@@ -233,9 +232,7 @@ For identity or recipient-eligibility objections, use a
 [dispute issue](https://github.com/TheJustinSunPrize/awards/issues/new?template=dispute.yml)
 with public evidence; send private identity materials to the official email.
 Such unresolved objections must also be addressed before award confirmation.
-For an already announced award, use the dispute process and retain the published
-award history. Do not move an announced award back to candidates or overwrite its
-recipient as though it were an ongoing candidate replacement.
+For an already announced award, use the dispute process.
 
 ## Step 3: Recipient confirmation and award delivery
 
@@ -251,7 +248,7 @@ pending PR review remains.
 An elapsed clock alone does not permit an award.
 
 Once the applicable review and confirmation requirements are complete, maintainers
-move the confirmed contribution record to the relevant monthly batch under
+publish the confirmed contribution record in Markdown under
 [awards/](../awards/README.md) and publish the announcement. They then send the
 prize money and medal and confirm delivery.
 
@@ -273,8 +270,6 @@ Required:
 Recommended, if available:
 - Public evidence connecting me to the credited author: ORCID, paper DOI,
   attributed repository/commit links, or other public records:
-- Maintainer-assigned recipient placeholder, if already provided:
-  (Do not create your own placeholder.)
 
 May be supplied at the award-delivery stage:
 - Payment network and address:

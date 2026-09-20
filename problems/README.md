@@ -13,15 +13,9 @@ accepted. Partial mathematical progress and incomplete Lean formalizations are n
 eligible for submission. The catalog records complete solutions only, without
 intermediate results. See the [contribution guidelines](../CONTRIBUTING.md#external-solver-and-lean-submissions).
 
-Follow the [award process](../docs/award-process.md): submit solution and proof
-evidence by PR. Verification and merge start an independent 14-day public review
-for each role when an accepted formalization source is available. Claim-award
-applications and identity checks proceed alongside review. Solvers without a
-formalization source may register an application, but public review and payment
-wait for formalization. Raise candidate or award challenges through the Formal
-dispute issue form and ordinary record corrections through the Correction issue
-form. Submit replacement proofs or catalog updates in a linked PR.
-See the [public notice table](../candidates/README.md#candidate-register).
+For submission, claims, public review and challenges, follow the
+[award process](../docs/award-process.md). Current candidates and review dates
+appear in the [public notice table](../candidates/README.md#candidate-register).
 
 ## Disclaimer and corrections
 
@@ -34,7 +28,7 @@ If you find inaccurate, incomplete, or outdated information, please contact the 
 
 Each introduction has three rows: **Date proposed**, **Mathematical area**, and **Problem description**. Date proposed identifies when the mathematical problem was posed; it is not an application submission date for this award.
 
-The catalogs retain solution status, Lean proof status, historical bounty, elapsed years, publication details, and public-review notes. Review notes document evidence limitations and eligibility considerations.
+The catalogs retain solution status, Lean proof status, historical bounty, elapsed years, publication details, and scholarly recognition. **Scholarly recognition** records external academic recognition or review of the result. Review notes document evidence limitations and eligibility considerations.
 
 **Current status** uses only **Open** or **Solved** as its status. The index shows the status alone; catalog entries include any complete-solution contributor credits in the same field as **Solved**, after **Proof contributors:**. **Open** means a complete solution to the stated problem is not recorded; partial results and unconfirmed solutions do not change this status. **Solved** means a complete resolution is recorded, including a disproof or an independence result where applicable. Solution explanations belong in **Review notes**. The catalog does not track intermediate mathematical results or incomplete Lean formalizations. **Publication details** records complete-solution references and supporting literature, with titles, dates, venues and links, without repeating author lists. A link labeled **bibliographic record** is a reference entry, not a verified direct link to the paper.
 
@@ -56,15 +50,15 @@ These credits do not establish first-discovery priority, sole manual authorship,
 
 The index preserves Lean evidence qualifications: **Reported; standalone source not located** does not confirm a complete Lean proof of that problem. A linked proof of a related problem is identified as such in the full record.
 
-In the **Eligible to claim** column, **Yes** marks records whose **Current status** is **Solved** and whose **Lean proof** is **Yes**. **Pending verification** means the evidence may warrant further review, but eligibility has not been established. **No** means the record is not currently marked eligible. These are problem-bank screening flags; they do not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. Public candidates exist only as records in [candidates/](../candidates/README.md); the screening flags are separate from that directory's pools and lifecycle statuses. Every record displays its current eligibility in both the index and its detail table. For a combined record, partial results or a proof covering only one case do not make the whole problem solved or eligible; the entry remains **Open** until its full stated scope is resolved.
+In the **Eligible to claim** column, **Yes** marks records whose **Current status** is **Solved** and whose **Lean proof** is **Yes**. **Pending verification** means the evidence may warrant further review, but eligibility has not been established. **No** means the record is not currently marked eligible. These are problem-bank screening flags; they do not create a formal nomination, a public candidate record, an approved award, or a right to claim payment. Public candidates exist only as records in [candidates/](../candidates/README.md). Every record displays its current eligibility in both the index and its detail table. For a combined record, partial results or a proof covering only one case do not make the whole problem solved or eligible; the entry remains **Open** until its full stated scope is resolved.
 
-**Claim status** is the final column of the problem index and records whether a problem is available to claim and whether it has been claimed:
+**Claim status** is the final column of the problem index and records whether a problem is available to claim and whether applications for both contribution types have been registered:
 
 - **Unavailable** means the mathematical problem has not been fully solved or does not have a Lean formal proof, so it is not ready for award processing. A solver whose complete solution has been accepted may still register an application awaiting formalization; that does not start public review or permit payment.
-- **Unclaimed** means the problem is eligible to claim but has not yet been claimed.
-- **Claimed** means a claim has been recorded for the problem; it does not mean both contribution roles have been awarded or prevent the other contributor from applying. Consult the role-specific claim issues and candidate/award records for the current outcomes.
+- **Unclaimed** means the problem is eligible to claim, but applications for one or both contribution types have not yet been registered. It does not necessarily mean that no application exists.
+- **Claimed** means applications for both **Mathematical solver** and **Lean formalizer** have been registered. It does not mean either contribution has been awarded. Consult the candidate register and related claim or award records for each contribution type's applicants and outcome.
 
-When a problem is fully solved, has a Lean formal proof, and becomes eligible to claim, update **Claim status** from **Unavailable** to **Unclaimed**. Once it has been claimed, update **Unclaimed** to **Claimed**. An application retained while awaiting formalization does not by itself change **Unavailable**. These problem-level flags do not track the two roles' separate public-review clocks.
+When a problem is fully solved, has a Lean formal proof, and becomes eligible to claim, use **Unclaimed** until applications for both contribution types have been registered, then mark it **Claimed**. Registering only one contribution type leaves it **Unclaimed**. An application retained while awaiting formalization does not by itself change **Unavailable**. These problem-level flags do not track the two roles' separate public-review clocks.
 
 ## Volumes
 
@@ -640,7 +634,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001022** in d
 | JSP-000523 | [How many edges force a uniform hypergraph to contain two distinct pairs of disjoint edges with the same union?](catalog-0501-0600.md#JSP-000523) | Open | No | No | Unavailable |
 | JSP-000524 | [If each prescribed local part of a set family has a two-point transversal, how many points suffice to meet the whole family?](catalog-0501-0600.md#JSP-000524) | Open | No | No | Unavailable |
 | JSP-000525 | [Does adding each integer's divisor count produce the specified new lower barriers or uncrossable numerical thresholds?](catalog-0501-0600.md#JSP-000525) | Open | No | No | Unavailable |
-| JSP-000526 | [For distinct given integers, how many distinct representatives divisible by their respective integers can be chosen in the specified interval?](catalog-0501-0600.md#JSP-000526) | Solved | Yes | Yes | Unclaimed |
+| JSP-000526 | [For distinct given integers, how many distinct representatives divisible by their respective integers can be chosen in the specified interval?](catalog-0501-0600.md#JSP-000526) | Solved | Yes | Yes | Claimed |
 | JSP-000527 | [In higher-dimensional general position, is the number of points forcing a convex subset exponential in the target size?](catalog-0501-0600.md#JSP-000527) | Solved | No | No | Unavailable |
 | JSP-000528 | [How many points of a planar set can each determine only a small number of distances to the other points?](catalog-0501-0600.md#JSP-000528) | Solved | No | No | Unavailable |
 | JSP-000529 | [How many distinct values can the per-point counts of distinct distances have in a planar point set?](catalog-0501-0600.md#JSP-000529) | Open | No | No | Unavailable |
