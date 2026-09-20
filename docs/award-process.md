@@ -2,11 +2,11 @@
 
 [Home](../README.md) · [Contribution guidelines](../CONTRIBUTING.md)
 
-Submit solution evidence → mathematical solution passes review → register the
-solver candidate → verify the Lean proof → accept the formalization and register
-the Lean contributor candidate → 14-day public review for each
-registered contribution role, with claims and identity checks handled alongside
-it → written recipient confirmation → announcement, prize money and medal.
+Submit contribution evidence → review the mathematical solution and verify any
+submitted Lean proof → merge the participant PR → maintainers publish candidates
+in `candidates/` → start 14-day public review for each published contribution type,
+with claims and identity checks handled alongside it → written recipient
+confirmation → announcement, prize money and medal.
 
 Submission, acceptance and PR merge do not constitute an award. Verification,
 public review, recipient confirmation and announcement are separate steps.
@@ -26,14 +26,13 @@ the relevant catalog entry in your fork, and open a PR. Complete the automatical
 provided [PR template](../.github/PULL_REQUEST_TEMPLATE.md).
 Only complete solutions and complete Lean proofs of the original problem are accepted.
 
-**First approve the mathematical solution and register its solver candidate;
-only then proceed to Lean verification and register the Lean contributor.**
-Merge an accepted solver submission and create its candidate record even while
-formalization is missing. If both contributions are submitted together, maintainers
-must still complete mathematical review and solver registration before accepting
-and registering the Lean contribution. A Lean submission identifies the accepted
-solution, review evidence and existing solver candidate record (or its subsequent
-award record). A proof build cannot bypass these prerequisites.
+**The mathematical solution must pass review, but Lean verification and candidate
+registration do not require the solver to have registered or claimed an award.**
+A Lean submission identifies the mathematical solution and review evidence, or
+supplies the solution evidence for review in the same PR. A proof build cannot
+replace mathematical review. Review both contribution types independently when
+submitted together; neither contributor must register before the other.
+An accepted solver application may be retained while formalization is missing.
 
 ### Mathematical solution only
 
@@ -42,12 +41,13 @@ template and supply the mathematical proof/publication, relevant theorem or page
 solver contribution and public authorship evidence in the Problem and Attribution
 sections. Maintainers check the result and attribution before merging.
 
-After the solver PR passes review and merges, register the solver candidate first.
-If formalization is missing, retain that candidate and any application, including
-the application time, without starting the 14-day public review. Register the Lean
-contributor only after the solver candidate exists and Lean verification passes.
-Once formalization is available, notify the solver and publish the applicable
-review start times. Formalization is a prerequisite for the timed public review
+After the solver PR passes review and merges, retain the solver application.
+If formalization is missing, preserve the application and its submission time
+without starting the 14-day public review. A Lean contributor can be verified and
+registered independently of whether the solver has applied or been registered.
+Once formalization is available, notify the solver and add the candidate to
+`candidates/` for public notice. The applicable review starts when that public
+notice begins. Formalization is a prerequisite for the timed public review
 and award payment, not for initial solver candidate registration.
 
 ### Lean formalization or both roles
@@ -63,21 +63,18 @@ proof entry, reproduction instructions and attribution evidence requested by the
 template. The selected commit is both the version reviewed and the time anchor
 used for the formalization priority comparison.
 
-Before opening the PR, run the bundled
-[`lean-verify` skill](../skills/lean-verify/SKILL.md) against that exact commit
-and obtain an overall **Verification passed** result for every submitted problem
-and proof version. Confirm completion in the PR checklist and record the commit,
-date, conclusion and a short summary in its pre-submission verification section.
-Full report and log links are recommended, not required; a short report may be
-included in the PR body. Rerun the check whenever the selected proof
-commit changes. See the [pre-submission instructions](verification.md#required-lean-pre-submission-check).
-Maintainers independently check the statement and reproduce verification in the
-review and registration sequence below; a submitter declaration does not replace
-that review.
+Before opening the PR, we recommend checking the exact proof commit with the
+bundled [`lean-verify` skill](../skills/lean-verify/SKILL.md). Using this skill and
+sharing a self-check report are optional; other verification methods are welcome.
+If you share a self-check, identify the checked commit, method, date, actual
+conclusion and limitations in the template's optional verification section.
+Recheck a changed proof commit before claiming the report covers that version.
+See the [self-check guidance](verification.md#recommended-lean-pre-submission-check).
+Maintainers independently check the statement and reproduce verification before
+acceptance, whether or not a self-check report is supplied.
 
-After the mathematical solution has passed review and the solver candidate has
-been registered, maintainers verify the Lean
-proof before comparing priority. If no formalization
+After the mathematical solution has passed review, maintainers verify the Lean
+proof before comparing priority. Solver registration is not a prerequisite. If no formalization
 source is already recorded, the accepted submission becomes the earliest recorded
 source. If multiple submissions pass verification in the same review period,
 the earliest selected commit in the contributors' own repositories takes priority.
@@ -97,10 +94,14 @@ For example, a complete proof committed on March 1 and submitted here on Septemb
 20 precedes a complete proof committed on June 1 and submitted here on September
 18, subject to verification of the selected proofs and their history.
 
-The accepted PR records the current formalization source. At merge, maintainers
-publish the candidate in the [public notice table](../candidates/public-notice.md)
-and start its 14-day review. A verified earlier submission may replace that source
-during public review. Merge does not award the prize.
+The accepted contribution PR records the current formalization source. After
+the participant PR merges, maintainers publish candidates in `candidates/`.
+The [candidate register](../candidates/README.md#candidate-register) is the public
+notice table. **The 14-day public review starts when the candidate is added to
+that register and public notice begins.** Record this public-notice start in the
+register; it is the basis for calculating the period, not any PR's merge time.
+A verified earlier submission may replace the source during public review.
+Publishing a candidate does not award the prize.
 Routine catalog corrections, documentation updates and additional evidence for an
 unchanged accepted contribution do not create a new candidate or restart its clock.
 
@@ -140,19 +141,18 @@ not Yes. This does not start public review or permit payment.
 
 The **Follow-up contact email** in the issue is your public correspondence address;
 no extra comment is needed to designate it. Use your GitHub account as your public
-identity in the issue. Real names, affiliations and private contact details go
-by email. Before identity confirmation, candidate records use maintainer-assigned
-recipient placeholders. Confirmed names are published only with consent.
+identity in the issue. Private identity materials and private contact details go
+by email.
 
 ### Complete identity verification by email
 
-Send email from the follow-up address in your issue to
-**thejustinsunprize@hejustinsun.com**, linking the issue and merged PR and using
-the [email template below](#email-template). Mathematical solver claims, including
-both-role claims, require independent identity verification. Lean-only applicants
-need no separate identity-verification email when source attribution already
-establishes the account-to-author connection; written recipient confirmation is
-still required before an award.
+Every applicant must send an identity-verification email from the follow-up
+address in their claim issue to **thejustinsunprize@hejustinsun.com**, linking the
+issue and merged PR and using the [email template below](#email-template).
+This applies to mathematical-solution-only, Lean-only and both-role claims.
+Existing source attribution does not waive the email requirement. Maintainers
+verify the applicant's identity and claimed contribution; written recipient
+confirmation is still required before an award.
 
 You may verify through an author email listed in the publication, an established
 institutional or author website, a historical signing key already linked to the
@@ -164,11 +164,18 @@ establish identity. Keep private evidence in email. See the
 
 ### The 14-day public review
 
-The [public notice table](../candidates/public-notice.md) lists separate start
+The [public notice table](../candidates/README.md#candidate-register) lists separate start
 times for mathematical solution and Lean formalization. After the mathematical
-solution has passed review, its solver candidate has been registered, and
-formalization has been verified, **each registered role has its own 14-day clock**.
-Separate claim handling does not permit the Lean candidate to be registered first.
+solution has passed review and formalization has been verified, maintainers
+publish the candidates in
+`candidates/` after the participant PR merges. **Each contribution type's 14-day
+clock starts when its candidate is added to the public register and public
+notice begins.** Record the actual public-notice start in UTC; the scheduled end
+is 14 full days later. Do not derive the start from a PR's merge time.
+Verification completion or receipt of a claim issue alone does not start the
+clock. Adding the candidate to the published register is the public-notice step.
+Each contribution type can be registered independently; an unregistered solver
+does not block publication of an accepted Lean candidate.
 Opening the claim issue or
 finishing identity checks does not restart or delay an already running clock.
 
@@ -195,7 +202,8 @@ claim issue and close the displaced claim. For an issue claiming both roles,
 only the displaced role is closed out; the issue remains open if the other role
 is still active. If no claim issue exists yet, explain the outcome in the relevant
 dispute issue and update the candidate record and notice table; no claim issue needs to be
-created just to close it. The replacement starts a new full 14-day period when published.
+created just to close it. The replacement starts a new full 14-day period when
+it is added to `candidates/` and its public notice begins.
 An unaffected role keeps its own review clock. If a challenge affects the validity
 of the underlying solution or proof, maintainers reassess the affected eligibility.
 
@@ -209,8 +217,17 @@ contributor's confirmation and delivery details cannot be reused.
 
 If a challenge is raised during a review period, that period cannot conclude
 before the challenge has been verified and resolved. An unsuccessful challenge
-does not restart the original clock. After 14 full days with no unresolved
-challenges, the relevant role can proceed to recipient confirmation and award.
+does not restart the original clock.
+
+Before concluding public review, maintainers check the current PR list for the
+same problem and contribution type (mathematical solution or Lean formalization),
+regardless of who submitted the PR. If a pending PR could affect correctness,
+contribution attribution or priority, wait until its review is complete before
+concluding public review. Unrelated changes, including routine documentation
+updates, do not hold up the process. Waiting does not itself restart the clock;
+an accepted replacement starts a new period under the publication rule above.
+After 14 full days, with no unresolved challenges or relevant pending PR reviews,
+the contribution can proceed to recipient confirmation and award.
 
 For identity or recipient-eligibility objections, use a
 [dispute issue](https://github.com/TheJustinSunPrize/awards/issues/new?template=dispute.yml)
@@ -229,7 +246,8 @@ enter the confirmed award list, even if the 14-day review has finished.
 Send any outstanding payment network/address and medal delivery address by email.
 Before announcement, maintainers check that the claim and written confirmation
 belong to the currently accepted contributor and role, the applicable full 14-day
-period has elapsed, and no unresolved challenge or eligibility objection remains.
+period has elapsed, and no unresolved challenge, eligibility objection or relevant
+pending PR review remains.
 An elapsed clock alone does not permit an award.
 
 Once the applicable review and confirmation requirements are complete, maintainers

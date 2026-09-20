@@ -21,7 +21,7 @@ formalization source may register an application, but public review and payment
 wait for formalization. Raise candidate or award challenges through the Formal
 dispute issue form and ordinary record corrections through the Correction issue
 form. Submit replacement proofs or catalog updates in a linked PR.
-See the [public notice table](../candidates/public-notice.md).
+See the [public notice table](../candidates/README.md#candidate-register).
 
 ## Disclaimer and corrections
 

@@ -4,22 +4,22 @@ Public records credit mathematical and formalization contributions using their p
 
 For solver and Lean credits in the problem bank, see the [attribution conventions](../problems/README.md#attribution-conventions). Each **Attribution basis** row links to the evidence supporting those credits.
 
-Recipient identities require confirmation before publication. Keep identity documents, private contact details, written agreements and private payment arrangements out of public issues and repository files. Public identity attestations and contribution descriptions must be authorized for publication.
+Keep identity documents, private contact details, written agreements and private payment arrangements out of public issues and repository files. Public identity attestations and contribution descriptions must be authorized for publication.
 
 A contribution credit or candidate record does not announce an award. Confirmed recipients appear in the relevant [award record](../awards/README.md).
 
 ## Claiming an award
 
-Apply after the relevant contribution PR has merged. Verification and merge start
-a separate 14-day public review for each role when an accepted formalization
-source is available. Claim and identity checks proceed alongside that review;
+Apply after the relevant contribution PR has merged. Each contribution type's
+14-day public review starts when its candidate is added to the public register
+in `candidates/` and public notice begins, provided an accepted formalization
+source is available. Use the recorded public-notice start, not a PR merge time. Claim and identity checks proceed alongside that review;
 they do not set its start time. Follow the [award process](award-process.md).
 
-Register the solver candidate after mathematical review passes, before verifying
-and registering the Lean contributor. Individual claims and review clocks do not
-permit the Lean candidate to be registered first. A prior solver record remains
-required even if the solver has not yet submitted a claim issue or has already
-moved from candidates into an award batch.
+Mathematical review remains required, but Lean verification and candidate
+registration do not depend on the solver having registered or submitted a claim.
+The two contribution types may be registered independently; no prior solver
+candidate or award record is required for a Lean claim.
 
 Use the [award claim form](../.github/ISSUE_TEMPLATE/claim-award.yml) only for your
 own contribution using your own GitHub account. Proxy applications and collection
@@ -46,19 +46,19 @@ through a linked correction or PR before claim approval.
 
 The follow-up email is public and is the correspondence address for the claim;
 no extra comment is needed to designate it. Use the GitHub account as the public
-applicant identity. Send real names, affiliations, private identity materials,
+applicant identity. Send private identity materials,
 payment network/address and medal delivery address only by email to
 **thejustinsunprize@hejustinsun.com**. Official email comes only from
-**@hejustinsun.com**; we never request private keys or seed phrases. Candidate
-records use maintainer-assigned placeholders until identity confirmation and
-consent to name publication.
+**@hejustinsun.com**; we never request private keys or seed phrases.
 
-When identity verification is required, email from the follow-up address and link
-the claim issue and merged PR using the [email template](award-process.md#email-template).
-A supplied contact email, form declaration or checkbox alone does not establish
-identity or contribution. Lean-only applicants need no separate identity-verification
-email when source attribution establishes their account-to-author connection.
-All recipients still require written confirmation before an award.
+Every applicant must send an identity-verification email from the follow-up
+address in their claim issue to **thejustinsunprize@hejustinsun.com**, linking the
+claim issue and merged PR using the [email template](award-process.md#email-template).
+This applies to mathematical-solution-only, Lean-only and both-role claims, even
+when source attribution already establishes the account-to-author connection.
+A supplied contact email, sent message, form declaration or checkbox alone does
+not establish identity or contribution. All recipients still require written
+confirmation before an award.
 
 ### Mathematical solver verification
 
@@ -124,6 +124,8 @@ Submitting the issue confirms control of the submitting GitHub account. Maintain
 must separately match that account to the formalization author identified in
 source records such as `sources.yaml` or the original repository's authorship
 credits. A catalog display credit based on repository ownership is insufficient.
+Lean applicants must also send the identity-verification email required above;
+source attribution supports the review but does not replace that step.
 If source attribution does not establish the account-to-author connection, use
 the independent identity-verification process described for mathematical solvers;
 the claim remains pending until that connection is verified. Posting the issue
@@ -147,7 +149,9 @@ claims before payment.
 
 ### Payment arrangements
 
-After the applicable 14-day public review has ended with no unresolved challenges,
+After the applicable 14-day public review has ended with no unresolved challenges
+or relevant pending PR reviews under the
+[review-completion rules](award-process.md#the-14-day-public-review),
 complete written recipient confirmation and identity checks by email. The record
 remains a candidate until confirmation is complete. Collect outstanding payment
 network/address and medal delivery address through the official email only.
@@ -161,11 +165,15 @@ recorded separately.
 
 ### Maintainer review record
 
-The process is: verify the submission; merge and publish the candidate when
-formalization is available; run a separate 14-day review for each role alongside
-self-application and identity checks; resolve challenges; obtain written recipient
+The process is: verify and accept the submission; merge the contribution PR;
+maintainers publish the candidate in `candidates/` when formalization is
+available; start each contribution type's 14-day review when its candidate is
+added to the public register and public notice begins, alongside
+self-application and identity checks; resolve challenges and relevant pending PR
+reviews for the same problem and contribution type; obtain written recipient
 confirmation; announce the award; deliver prize money and a medal. A successful
-priority challenge restarts the affected role's public review with the replacement.
+priority challenge restarts the affected contribution type's public review when
+the replacement candidate is added to `candidates/` for public notice.
 A solver awaiting formalization is registered without starting the review clock.
 Record mathematical and Lean review outcomes separately, including not applicable
 where appropriate. Retain the catalog revision and proof references used in the

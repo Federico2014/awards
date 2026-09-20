@@ -1,7 +1,8 @@
 # Public candidates
 
-See the [public notice table](public-notice.md) for the current candidates and
-their separate mathematical-solution and Lean-formalization review start times.
+The [candidate register below](#candidate-register) is the public notice table.
+Adding a candidate to this register for public notice starts that contribution
+type's 14-day public review; no second publication is required.
 
 - `verified-pending/`: formal candidates under verification, in public review, or awaiting written recipient confirmation. Consult each record's status and evidence; the pool name alone does not establish successful verification.
 - `observation/`: preliminary candidates, including accepted solver applications awaiting formalization. These applications are retained without starting public review.
@@ -10,26 +11,33 @@ Neither category is an award. Both use the award record layout, including
 `verification/`. A formal evidence reference requires `statement.yaml` even while
 review is pending.
 
-An accepted contribution enters **14-day public review at PR merge** when the
-problem's mathematical solution has passed review and its Lean proof has then
-passed verification. Maintainers publish the candidate
-and its review start time in the notice table as part of acceptance. A solver
-awaiting formalization is notified and enters public review when formalization
-becomes available. The claim issue and identity checks proceed alongside public
+After the participant PR merges, maintainers publish the candidate in the register
+below, once the mathematical solution has passed review and its Lean proof has
+passed verification. **The 14-day public review starts when the candidate is added
+to this register and public notice begins.** The recorded public-notice start is
+the basis for calculating the period, not a PR merge time. A solver awaiting
+formalization is notified once formalization becomes available and enters public
+review when that candidate is added to the register for public notice. The claim issue and identity checks proceed alongside public
 review; they do not determine its start time.
 
-Candidate registration is ordered as well: approve the mathematical solution and
-register the solver candidate first, then verify and register the Lean contributor.
-A solver candidate awaiting formalization may have empty Lean cells and no review
-start time. A Lean candidate cannot be registered without the prior solver record.
-If the solver has since received an award, retain a link to that award record.
+Mathematical review remains required, but the two contribution types can be
+registered independently. Lean verification and candidate publication do not
+require the solver to have applied or a solver candidate record to exist.
+Retain a solver awaiting formalization in observation records without a review
+start time; publish that candidate once formalization is available.
+Link related candidate or award records when available.
 
 Each role has its own record and clock. An accepted priority replacement replaces the
-affected candidate and starts a new 14-day period; an unaffected role keeps its
-clock. Challenges raised during a period must be resolved before it ends.
+affected candidate and starts a new 14-day period when the replacement is added
+to the register and its public notice begins; an unaffected role keeps its clock. Challenges raised during a period must be resolved before it ends.
 If a correctness challenge invalidates a contribution without a replacement,
 withdraw it from active public review and stop the affected award process. Routine
 record corrections do not restart an unchanged candidate's clock.
+Before concluding public review, maintainers check for pending PRs for the same
+problem and contribution type (mathematical solution or Lean formalization),
+regardless of submitter. If a PR could affect correctness, contribution attribution
+or priority, wait for its review to finish. Unrelated PRs do not block completion;
+waiting alone does not restart the clock.
 Records remain candidates until public review and written recipient confirmation
 are complete. See the [award process](../docs/award-process.md).
 
@@ -38,8 +46,7 @@ challenges, including result, priority, identity or eligibility objections. Subm
 replacement proofs or catalog updates through a linked PR using the
 [normal submission template](../.github/PULL_REQUEST_TEMPLATE.md).
 Private evidence goes only by email to
-**thejustinsunprize@hejustinsun.com**. Public candidate names require identity
-confirmation and consent; until then, use maintainer-assigned placeholders.
+**thejustinsunprize@hejustinsun.com**.
 
 The problem bank's **Eligible to claim** flags are screening markers. They do not
 create candidate records or announce awards. A solver may register an accepted
@@ -50,27 +57,29 @@ once across candidates and awards. See [record maintenance](../docs/records.md).
 
 ## Candidate register
 
-This register tracks contribution claims received through recipient issues.
-Problem IDs link to the problem bank for attribution and source references.
-Names reproduce the public contribution attribution, not a confirmed recipient
-identity. Recipient placeholders remain in use pending identity confirmation
-and consent.
+This register is the public notice of candidates. The listed contribution type's
+14-day public review starts when the candidate is added here and public notice
+begins. There is no separate intake-only table or later publication step.
+Submitting a claim issue alone does not publish a candidate or start the clock.
 
-Registration dates record when a claim was added to this register, using
-`YYYY-MM-DD`, separately for each contribution role. They are not proof completion,
-claim submission, acceptance, or public-review start dates. Empty cells mean that
-no claim for that role is included here, not that the problem lacks a solver or
-Lean formalizer. This register is not an exhaustive list of contributors.
+The two review-start columns record when each contribution type's public notice
+began, using UTC. Existing date-only entries retain their recorded publication
+dates; no time of day is inferred from a PR merge. Empty cells mean that no candidate for that role is
+published in this register. They do not mean the problem lacks a mathematical
+solution or Lean formalization. Problem IDs link to the problem bank for public
+contribution attribution and evidence. Publication is not an award or recipient
+identity confirmation; identity checks and written confirmation remain required.
 
-These entries record claim intake only. Acceptance and formal candidate
-registration still follow the solver-first process above. An issue or an email
-reply does not establish identity confirmation, mathematical review, or Lean
-verification. Adding an entry does not start public review, announce an award,
-or mark a problem `Claimed`. This register does not create structured candidate
-records; `data/candidates.json` contains only records maintained in the candidate
-pools. No structured candidate records are currently published in this directory.
+The existing entries retain their recorded public-notice date of **2026-09-19**.
+Completion requires the full 14-day period, resolution of challenges, completion
+of relevant pending PR reviews and the award requirements. Clarifying the
+recorded dates does not restart their clocks.
 
-| Problem ID | Solver registration date | Mathematical solver | Lean registration date | Lean formalizer |
+This Markdown register is the public notice even when no structured candidate
+records have been created. `data/candidates.json` indexes only the structured
+records in the candidate pools; an empty index does not mean the register is empty.
+
+| Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
 | [JSP-000305](../problems/catalog-0301-0400.md#JSP-000305) | | | 2026-09-19 | Wouter van Doorn |
 | [JSP-000371](../problems/catalog-0301-0400.md#JSP-000371) | | | 2026-09-19 | Wouter van Doorn |
@@ -78,3 +87,12 @@ pools. No structured candidate records are currently published in this directory
 | [JSP-000526](../problems/catalog-0501-0600.md#JSP-000526) | 2026-09-19 | Wouter van Doorn; Yanyang Li; Quanyu Tang | 2026-09-19 | Wouter van Doorn |
 | [JSP-000866](../problems/catalog-0801-0900.md#JSP-000866) | 2026-09-19 | Quanyu Tang | | |
 | [JSP-001001](../problems/catalog-1001-1022.md#JSP-001001) | 2026-09-19 | Yanyang Li | | |
+
+When a role is awarded, replace its active candidate cell with a labeled link to
+the award record and retain its completed review dates in that record. The other
+role keeps its own clock. Remove a problem row once neither role remains a
+candidate. If a contribution is invalidated without an accepted replacement,
+remove its active candidate and review dates and retain the history. If no valid
+formalization remains, retain the solver application without an active clock.
+Detailed identity checks, payment/delivery information and correspondence stay
+out of this public register.

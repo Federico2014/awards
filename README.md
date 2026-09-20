@@ -24,20 +24,23 @@ Award entries are confirmed and publicly announced decisions; candidates are tra
 ## Participate
 
 Submit solution and proof evidence using the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
-Before opening a PR that submits a Lean proof, run the repository's
-[`lean-verify` skill](skills/lean-verify/SKILL.md) on the exact proof commit and
-obtain a **Verification passed** result. Declare the completed self-check in the
-PR with the commit, date, conclusion and a short summary. Full report and log
-links are recommended; see the [pre-submission check](docs/verification.md#required-lean-pre-submission-check).
-Verification and merge start **14 days of public review for each contribution role**
-when an accepted formalization source is available. Open a claim-award issue and
-complete identity checks alongside the review. Solvers awaiting formalization may
-register an application; their review starts once formalization is available.
+For Lean proof submissions, we recommend checking the exact proof commit with the
+repository's [`lean-verify` skill](skills/lean-verify/SKILL.md) before opening a PR.
+Using this skill and sharing a self-check report are optional; other verification
+methods are welcome. See the [self-check guidance](docs/verification.md#recommended-lean-pre-submission-check).
+After the participant PR merges, maintainers publish candidates in `candidates/`.
+**Each contribution type's 14-day public review starts when its candidate is added
+to the public register and public notice begins**, provided an accepted
+formalization source is available. Use the recorded public-notice start, not a
+PR merge time, to calculate the period. Open a
+claim-award issue and complete identity checks alongside the review. Solvers
+awaiting formalization may register an application; their review starts when
+maintainers publish the candidate after formalization becomes available.
 Raise candidate or award challenges through the Formal dispute issue form and
 ordinary record corrections through the Correction issue form. Submit replacement
 proofs or catalog updates in a linked PR. Written recipient confirmation precedes announcement and delivery of prize
 money and a medal. Follow the [complete award process](docs/award-process.md) and
-[public notice table](candidates/public-notice.md).
+[public notice table](candidates/README.md#candidate-register).
 
 You can recommend a problem, claim an award for your own contribution, correct a record, or raise a dispute using the four [issue forms](.github/ISSUE_TEMPLATE/). Award claims must be submitted by the actual contributor. Read [CONTRIBUTING.md](CONTRIBUTING.md) for evidence requirements and handling steps, and follow the [Code of Conduct](CODE_OF_CONDUCT.md). Keep identity documents, private contact details and other private personal information out of public issues.
 

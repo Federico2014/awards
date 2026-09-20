@@ -21,7 +21,7 @@ candidates/observation/<entry-id>/
 
 The last file layout applies to all three entry locations. A stable ID occurs in exactly one location. `observation` and `verified-pending` are pool names, not status values. The `verified-pending` pool contains formal candidates under verification, in public review, or awaiting written recipient confirmation. The pool name alone does not establish successful verification; consult the record's status and evidence. An entry awaiting written recipient confirmation stays in candidates until the announcement requirements are met.
 
-The **Eligible to claim** flags **Yes** and **Pending verification** in the [problem bank](../problems/README.md) are screening markers, separate from these pools and lifecycle statuses. Neither creates a formal nomination or public candidate record. A problem enters the public candidate list only when its record is published under `candidates/`.
+The **Eligible to claim** flags **Yes** and **Pending verification** in the [problem bank](../problems/README.md) are screening markers, separate from these pools and lifecycle statuses. Neither creates a formal nomination or public candidate record. The [candidate register](../candidates/README.md#candidate-register) is the public notice list. Adding a candidate there for public notice starts review, including when its structured record has not yet been created.
 
 | Location | Status |
 | --- | --- |
@@ -40,33 +40,41 @@ and `jsp-000305-lean`, and reference the same problem. Record the role in
 `contribution_en` and the English citation. The same confirmed recipient profile
 may be referenced by both records; a claim issue may cover both roles.
 
-Mathematical solution review must pass and the solver candidate must be registered
-before Lean verification and Lean candidate registration. Create the solver
-record first, including while it awaits formalization. Each Lean record's citation
-links the prior solver candidate record (or its subsequent award record), the
-accepted mathematical result and review evidence. Separate contribution records
-support individual claim and award handling; they do not permit Lean-first
-candidate registration. Update links when the solver record moves into awards.
+Mathematical solution review must pass, but the solver's registration is not a
+prerequisite for Lean verification or Lean candidate registration. Each Lean
+record's citation identifies the mathematical result and review evidence.
+The two contribution types can be registered independently, including when the
+solver has not applied. Related candidate or award records may be linked when
+available; update those links when records move into awards. Retain an accepted
+solver application awaiting formalization without starting public review.
 
-An accepted role's 14-day public review starts at PR merge when an accepted
-formalization source exists. Publish the corresponding candidate record and
-[public notice table](../candidates/public-notice.md) entry at acceptance.
-A solver awaiting formalization has no public-review start; notify the solver and
-start that clock once formalization becomes available. Claims and identity checks
-proceed alongside public review, with placeholders before identity confirmation.
+After the participant PR merges, maintainers publish the candidate in the
+[candidate register](../candidates/README.md#candidate-register),
+provided an accepted formalization source exists. Each contribution type's 14-day
+public review starts when its candidate is added to the register and public notice
+begins. A solver awaiting formalization has no public-review start; notify the
+solver once formalization becomes available and start the clock when that
+candidate is added to the register for public notice. Claims and identity checks proceed alongside
+public review.
 
-Keep the public notice table and each contribution's `citation.md` consistent:
-identify the role, accepted submission PR, review start and scheduled end in UTC
-(14 full days apart). A successful replacement gets a new full period for the
-affected role. Do not restart an unaffected role. A challenge raised during the
-period must be resolved before review ends, and written recipient confirmation
+The candidate register is the public notice table; no second list or publication
+step is needed. Keep the register and each available contribution record's
+`citation.md` consistent:
+identify the contribution type, accepted submission PR, public-notice start and
+scheduled end in UTC (14 full days apart). The start is when the candidate was
+added to the public register and public notice began; do not substitute a PR's
+opening or merge time. If a historical entry records only a publication date,
+retain that precision rather than inventing a time of day. A successful
+replacement gets a new full period for the affected contribution type when the
+replacement is added to `candidates/` and its public notice begins. Do not
+restart an unaffected role. A challenge raised during the period must be resolved
+before review ends, and written recipient confirmation
 is required before announcement. Explain a displaced claim in its issue without
 publishing private verification or correspondence.
 
 For a priority replacement before announcement, update the affected contribution
-record, proof references, recipient and review dates together. Use a new
-maintainer-assigned recipient placeholder for an unconfirmed replacement person;
-do not reuse the displaced person's identity, confirmation or payment instructions.
+record, proof references, recipient and review dates together. Do not reuse the displaced person's identity, confirmation or payment instructions
+for the replacement contributor.
 An existing confirmed profile still needs confirmation for the replacement claim
 and contribution. Link the replacement PR and claim when available. If the formal
 statement changes, follow the statement-versioning rules below.
@@ -79,9 +87,16 @@ not establish current eligibility. If formalization is no longer available,
 retain the solver's application without an active clock. Routine corrections do
 not restart public review for an unchanged accepted contribution.
 
+Before concluding public review, check the current PR list for the same problem
+and contribution type (mathematical solution or Lean formalization), regardless
+of submitter. Wait for any pending review that could affect correctness,
+contribution attribution or priority. Unrelated PRs do not block completion, and
+waiting alone does not restart the 14-day clock. Record the relevant PRs and
+review outcomes in the contribution's citation or maintainer review record.
+
 Before moving a record into awards, check the current contributor's claim and
 written confirmation, the full applicable 14-day period, resolution of all relevant
-challenges and objections, and the accepted proof evidence. CI does not establish
+challenges, objections and pending PR reviews, and the accepted proof evidence. CI does not establish
 these facts. A previously announced award follows the dispute/revocation rules;
 it must not be overwritten with a replacement candidate or moved back into candidates.
 
@@ -94,8 +109,9 @@ including a solver award supported by someone else's formalization.
 
 The existing schemas support separate IDs for the same problem; no new lifecycle
 status or structured field is needed. Start times and substantive challenge
-outcomes require maintainer review; CI does not time the 14-day period, resolve
-priority or automatically publish candidates. See the [award process](award-process.md).
+outcomes require maintainer review; CI does not time the 14-day period, check
+pending PRs, resolve priority or automatically publish candidates.
+See the [award process](award-process.md).
 
 ## Source files
 
@@ -103,7 +119,7 @@ priority or automatically publish candidates. See the [award process](award-proc
 | --- | --- |
 | `award.yaml` | Problem, published decision, confirmed recipient contributions, evidence references, conflicts, lifecycle and revocation. |
 | `citation.md` | English decision rationale, or a clearly marked candidate review narrative. |
-| `recipients.md` | English attribution with placeholders before confirmation. |
+| `recipients.md` | English contribution attribution and supporting evidence. |
 | `verification/record.yaml` | Pinned source, toolchain and library, axiom audit, statement comparison, independent checkers, environment, isolation, attribution and external artifact pointers. May be `null` while review is pending; confirmed records require completed evidence. |
 | `verification/statement.yaml` | Versioned formal statement, original problem source, definition reviews, pinned library and public review signatures. |
 
@@ -114,7 +130,7 @@ The [award schema](../data/schema/award.schema.json), [verification schema](../d
 ## Publication boundaries
 
 - `decision` is `null` for candidates. Announced awards record only the published `level` (1–4) and an HTTPS `announcement` link. This is a record of a decision, not an instruction to calculate a grade.
-- Each recipient has an `id`, `affiliation`, `contribution_en`, and `confirmation`. Describe the evidenced contribution without recording private agreements or payment arrangements. Unconfirmed identities use placeholders; confirmed identities require a matching public profile.
+- Each recipient has an `id`, `affiliation`, `contribution_en`, and `confirmation`. Describe the evidenced contribution without recording private agreements or payment arrangements. Confirmed recipient IDs require a matching public profile.
 - Public `confirmation` and profile `publication_consent` links point to authorized attestations. Private signed documents, emails, addresses, payment details, and internal assessment materials never enter repository files or commits.
 - Assessment calculations, dimension values, adjustments, and payment allocations are outside this public record format. Unknown structured fields are rejected. Reviewers must also inspect free text for private material.
 - A formal evidence reference requires a statement even in candidates. Completed evidence is required for `pending-recipient-confirmation` and announced awards; failed or incomplete evidence may remain under review.

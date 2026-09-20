@@ -20,16 +20,18 @@ Verification evidence supports review. A successful build or repository check do
 - **Verified-pending:** candidates under verification, in public review, or awaiting written recipient confirmation. The pool name alone does not establish successful verification; consult the record's status and evidence.
 - **Announced award:** a publicly announced decision with completed verification evidence and confirmed recipients, stored in `awards/`. Disputed, paid, and revoked records retain their history.
 
-Candidates use the same record layout as awards, with no announced decision until an award is published. Unconfirmed recipient identities use placeholders. The [record guide](records.md) describes the public fields and validation requirements.
+Candidates use the same record layout as awards, with no announced decision until an award is published. The [record guide](records.md) describes the public fields and validation requirements.
 
-The [problem bank](../problems/README.md) is a separate catalog. Its **Eligible to claim** flag is **Yes** for records marked **Solved** with a **Yes** Lean proof status; **Pending verification** marks an item for possible eligibility review. Neither flag creates a public candidate record, a formal nomination, or an award. Empty generated lists mean no records have been published here.
+The [problem bank](../problems/README.md) is a separate catalog. Its **Eligible to claim** flag is **Yes** for records marked **Solved** with a **Yes** Lean proof status; **Pending verification** marks an item for possible eligibility review. Neither flag creates a public candidate record, a formal nomination, or an award. Empty generated lists mean no structured records are indexed; candidates may still be published in the candidate register.
 
 Follow the [award process](award-process.md). Accepted contributions enter a
-separate 14-day public review for each role at PR merge when formalization is
-available. Solver applications awaiting formalization are retained without starting
+separate 14-day public review for each contribution type when its candidate is
+added to the public register in `candidates/` and public notice begins, provided
+formalization is available. The period is calculated from the recorded
+public-notice start, not a PR merge time. Solver applications awaiting formalization are retained without starting
 their review. Claims and identity checks proceed alongside public review; written
 recipient confirmation precedes announcement and prize-money and medal delivery.
-See the [public notice table](../candidates/public-notice.md).
+See the [public notice table](../candidates/README.md#candidate-register).
 
 ## Public roles
 

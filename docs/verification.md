@@ -2,35 +2,31 @@
 
 Public verification records connect the original mathematical problem, formal statement, pinned proof source, reproduction evidence, and review conclusions. A formal statement alone is not a verified proof, and proof checking must also address whether the statement represents the intended problem.
 
-Review the mathematical solution and register its solver candidate first. Only
-then may Lean verification and Lean candidate registration proceed. A Lean
-submission identifies the accepted mathematical solution, review evidence and
-prior solver candidate record (or its subsequent award record). If a PR supplies
-both contributions, maintain this order. Separate records and claims do not remove
-the prerequisite of an existing solver registration.
+Review the mathematical solution before accepting its Lean formalization.
+A Lean submission identifies the mathematical solution and review evidence, or
+supplies the solution evidence for review in the same PR. Lean verification and
+candidate registration do not require a prior solver candidate or award record.
+The solver need not have registered or submitted a claim. Review combined
+submissions by contribution type without imposing a contributor-registration order.
 
 Repository CI validates record structure and references. It does not run proof repositories, establish mathematical truth, decide awards, or authorize payments. A source link or successful build alone is not a completed verification record.
 
 See the [record guide](records.md) for public evidence fields. Publish only evidence authorized for public release.
 
-## Required Lean pre-submission check
+## Recommended Lean pre-submission check
 
-Before opening a PR that submits a Lean proof, the contributor must run the
-repository's [`lean-verify` skill](../skills/lean-verify/SKILL.md) on the exact
-proof commit and obtain an overall **Verification passed (`验证通过`)** result.
-This applies to initial submissions, replacement proofs and combined solver/Lean
-submissions. Solver-only submissions and attribution-only corrections that
-introduce no proof version do not require this check.
-Mathematical solvers submitting only a solution, publication or solver information
-need no Lean repository, self-check declaration or Lean verification report.
-For combined submissions, this requirement applies only to the Lean proof.
+For Lean proof submissions, we recommend using the repository's
+[`lean-verify` skill](../skills/lean-verify/SKILL.md) to check the exact proof commit
+before opening a PR. The skill is optional, including for initial proofs,
+replacement proofs and combined solver/Lean submissions. Contributors may use
+other verification methods and are not required to provide a self-check declaration
+or report. Mathematical solvers submitting only a solution, publication or solver
+information need no Lean repository or self-check.
 
-This is a contributor pre-submission self-check. Its declaration, report and logs
-are submitter-provided evidence, not independent certification. Maintainers must
-independently check statement correspondence and reproduce verification before
-acceptance, following mathematical review and solver candidate registration as
-described above. Passing this check does not approve attribution, priority, a
-merge or an award.
+Any declaration, report or logs supplied by the contributor are supporting evidence.
+Maintainers independently check statement correspondence and reproduce verification
+before acceptance, following mathematical review as described above. A self-check
+does not approve attribution, priority, a merge or an award.
 
 ### Run the skill before a PR exists
 
@@ -68,33 +64,34 @@ levels actually completed and any limitations. Preserve the full report and
 underlying evidence locally for follow-up review. Publishing links to those
 materials is recommended, not a prerequisite for opening the PR.
 
-### Attach the result to the PR
+### Optionally attach the result to the PR
 
-Confirm the completed self-check in the PR checklist and complete the template's
-**Pre-submission Lean verification** section with these required details:
+If you choose to share a self-check, use the template's optional
+**Pre-submission Lean verification** section. Useful details include:
 
-- The exact proof repository and commit, matching the proof submission.
-- The verification date and overall **Verification passed** conclusion.
-- A short result summary for every submitted problem and proof version, including
-  statement correspondence, full coverage, actual Lean checks, verification
-  levels, trust dependencies and any limitations.
+- The verification tool or method and version, if available.
+- The exact proof repository and commit checked; identify any difference from the
+  version submitted for review.
+- The verification date and actual conclusion, including incomplete or failed checks.
+- A short summary of statement correspondence, coverage, Lean checks, trust
+  dependencies and limitations for each problem and proof version.
 
-Recommended supporting material is optional: identify the awards repository
-commit containing the skill used, and link the full report, target manifest,
-build/axiom logs and any checker evidence. A short report may instead be pasted
-directly into the PR body. A bare local filesystem path is not a public link.
+You may identify the awards repository commit containing the skill used, and link
+the full report, target manifest, build/axiom logs and checker evidence. A short
+report may instead be pasted into the PR body. A bare local filesystem path is not
+a public link. All of these self-check materials are optional.
 
 To share longer evidence, first verify proof commit **A**, then save the report
 and logs under `verification/` in your own proof repository in a later commit
 **B**. Link the files at **B** and state clearly that they describe proof commit
 **A**. Adding evidence does not require rechecking **A** if it remains the selected
-proof version; selecting **B** or another proof commit does require a new check.
+proof version. Before presenting a report as verification of **B** or another
+selected commit, check that version; an older report cannot certify a newer commit.
 
-All submitted problems and proof versions must pass. Conditional pass, partial
-coverage, failed or incomplete verification does not meet this pre-submission
-requirement. Resolve the outstanding items and rerun the full workflow before
-submitting. Rerun verification whenever the selected proof commit changes; an
-older report cannot certify a newer commit.
+The requirement to submit a complete proof still applies. Report any known gaps
+or limitations accurately; an optional self-check does not relax acceptance criteria.
+Resolve proof defects before requesting acceptance. Only describe a self-check as
+passed when the checks actually support that conclusion.
 
 The audit helper's exit code 0 means only that its listed mechanical checks
 succeeded with the observed standard axioms. It does not establish original
