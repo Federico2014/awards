@@ -20,6 +20,12 @@ identity materials only by email; do not post them on GitHub.
 
 ## Step 1: Submit your contribution for verification
 
+Before opening a PR, we recommend [checking for existing submissions](../CONTRIBUTING.md#before-opening-a-pr)
+for the same problem and contribution type, including open, merged and closed PRs.
+Consider linking related submissions and explaining how your contribution differs.
+If you find a problem with an existing submission, sharing specific details and
+checkable evidence can help reviewers assess it.
+
 Choose a problem from the [problem bank](../problems/README.md),
 [fork this repository](https://github.com/TheJustinSunPrize/awards/fork), update
 the relevant catalog entry in your fork, and open a PR. Complete the automatically
@@ -108,12 +114,18 @@ for pull requests or mentions as well.
 
 ### Open a claim-award issue
 
-After the relevant PR is merged, open a
+After your contribution PR in **TheJustinSunPrize/awards** has merged into **main**, open a
 [claim-award issue](https://github.com/TheJustinSunPrize/awards/issues/new?template=claim-award.yml)
 and complete the JSP number in its `[Award claim] JSP-` title. Include the
 problem-bank link and your merged PR. Apply only for yourself using your own
 GitHub account; proxy applications and collection for others are not accepted.
 Choose mathematical solution, Lean formalization, or both.
+
+A pending PR or a proof repository URL does not satisfy the merged-PR requirement.
+Maintainers check the linked PR's merge status before accepting the application.
+For an early claim, explain that the requirement is not yet met and defer
+acceptance until the contribution PR merges. The applicant should then update
+the existing issue rather than open a duplicate.
 
 Fill **Original Lean proof repository** according to your role:
 
@@ -128,7 +140,7 @@ For Lean or both-role claims, the repository remains a review requirement;
 maintainers request a missing URL before approving the claim.
 
 **Eligible to claim: Yes** remains the catalog's screening flag for a solved
-problem with a Lean proof. A solver whose complete solution has been accepted may
+problem with a Lean proof. A solver whose complete solution PR has merged may
 register an application while formalization is missing, even though that flag is
 not Yes. This does not start public review or permit payment.
 

@@ -5,10 +5,12 @@ body:
   - type: markdown
     attributes:
       value: |
+        **Your contribution PR in TheJustinSunPrize/awards must be merged into main before you open an award claim. A pending PR or a proof repository URL does not satisfy this requirement.**
+
         **Only the contributor may submit this claim. Do not apply or collect an award on someone else's behalf.**
         Your submitting GitHub account is the applicant account. Select both roles if you are claiming both contributions. Update an existing claim instead of submitting a duplicate.
 
-        Apply after the relevant solution/proof PR has merged. Mathematical-solution-only applicants may leave the Lean repository blank; maintainers use the recorded source if one exists. A solver whose complete solution is accepted may also register a claim while formalization is missing. That application is retained without starting public review or permitting payment. Submit new proofs through the normal PR template. Raise candidate or award challenges, including priority objections, through the Formal dispute issue form and link any proposed replacement PR.
+        Mathematical-solution-only applicants may leave the Lean repository blank; maintainers use the recorded source if one exists. A solver whose complete solution PR has merged may also register a claim while formalization is missing. That application is retained without starting public review or permitting payment. Submit new proofs through the normal PR template. Raise candidate or award challenges, including priority objections, through the Formal dispute issue form and link any proposed replacement PR.
 
         When an accepted formalization source is available, each contribution type's 14-day public review starts when its candidate is added to the public register in candidates/ and public notice begins. The recorded public-notice start, not a PR merge time, determines the period. Claims and identity checks proceed alongside that review. A successful priority challenge replaces the affected candidate; that contribution type's new 14-day period starts when the replacement is added to candidates/ and its public notice begins. Before concluding public review, maintainers check pending PRs for the same problem and contribution type (mathematical solution or Lean formalization), regardless of submitter, and wait for reviews that could affect correctness, contribution attribution or priority. Final awards require the full review period, resolution of challenges and relevant pending PR reviews, and written recipient confirmation. See the [award process](https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process.md).
 
@@ -29,7 +31,7 @@ body:
     id: submission_pr
     attributes:
       label: Merged submission PR
-      description: Link the merged PR recording the contribution you are claiming. Include both PRs if your two roles were accepted separately.
+      description: Link the PR in TheJustinSunPrize/awards that records your claimed contribution and has merged into main. A pending PR or a proof repository URL is not accepted here. Include both merged PRs if your two roles were accepted separately.
       placeholder: https://github.com/TheJustinSunPrize/awards/pull/123
     validations:
       required: true
@@ -82,7 +84,7 @@ body:
     attributes:
       label: Applicant declarations
       options:
-        - label: The relevant contribution PR has merged. If I am a solver awaiting formalization, I understand that my application is retained without starting public review or permitting payment.
+        - label: My contribution PR in TheJustinSunPrize/awards has merged into main. If I am a solver awaiting formalization, I understand that my application is retained without starting public review or permitting payment.
           required: true
         - label: I am applying for my own contribution using my own GitHub account, not applying or collecting on behalf of another person.
           required: true

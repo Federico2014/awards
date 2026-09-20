@@ -28,6 +28,32 @@ disputes in their issue threads. Forms do not establish award entitlement.
 - Review the complete diff and commit history for private material. Keep identity documents, private contacts, payment/delivery details and internal assessment materials out of the repository. Use the [official email](docs/award-process.md#before-you-start) for private information.
 - Retain third-party attribution and licenses; submit only material you are entitled to contribute. See [LICENSE](LICENSE) and [LICENSE-CONTENT](LICENSE-CONTENT).
 
+## Before opening a PR
+
+We recommend checking whether someone has already submitted the same contribution
+before opening a PR. You can search [all PRs](https://github.com/TheJustinSunPrize/awards/pulls?q=is%3Apr)
+(open, merged and closed) by JSP problem ID, problem name and proof/publication
+reference, and check the current catalog entry and candidate record. Compare
+mathematical-solution information and Lean-formalization information separately:
+a solver submission does not by itself duplicate a Lean contribution for the same
+problem.
+
+If you find related submissions, consider linking them and explaining how your
+contribution differs. When the same contribution is already submitted or recorded,
+we encourage reviewing the existing submission before opening another PR that
+repeats the same information. This can help avoid duplicate work for contributors
+and reviewers.
+
+If you find a problem with an existing submission, it is helpful to identify the
+affected PR and exact publication or proof commit, describe the error, and share
+checkable evidence (such as a statement mismatch, missing case or reproducible
+verification failure). You can comment on the existing PR or use the
+correction/dispute route above, with a linked replacement PR when needed. Evidence-backed priority
+or attribution corrections remain subject to the
+[challenge process](docs/award-process.md#the-14-day-public-review).
+An earlier PR opening time alone does not establish priority. For changes to your
+own pending submission, we recommend updating the existing PR.
+
 ## External solver and Lean submissions
 
 **Only complete solutions to the original problem are accepted, whether
