@@ -30,7 +30,7 @@ The existing entries retain their recorded public-notice date of **2026-09-19**.
 | [JSP-000381](../problems/catalog-0301-0400.md#JSP-000381) | | | 2026-09-19 | Wouter van Doorn |
 | [JSP-000526](../problems/catalog-0501-0600.md#JSP-000526) | 2026-09-19 | Wouter van Doorn; Yanyang Li; Quanyu Tang | 2026-09-19 | Wouter van Doorn |
 | [JSP-000866](../problems/catalog-0801-0900.md#JSP-000866) | 2026-09-19 | Quanyu Tang | | |
-| [JSP-001001](../problems/catalog-1001-1022.md#JSP-001001) | 2026-09-19 | Yanyang Li | | |
+| [JSP-001001](../problems/catalog-1001-1022.md#JSP-001001) | 2026-09-19 | Yanyang Li; Quanyu Tang | | |
 
 When a role is awarded, replace its active candidate cell with a labeled link to
 the award record and retain its completed review dates in that record. The other
