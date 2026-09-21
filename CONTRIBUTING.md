@@ -11,14 +11,15 @@ review, challenges and delivery.
 | --- | --- |
 | Submit a complete solution, Lean proof reference or supported catalog update | [PR template](.github/PULL_REQUEST_TEMPLATE.md) and the submission requirements below. |
 | Recommend a problem | [Recommendation form](.github/ISSUE_TEMPLATE/recommend-problem.yml). |
-| Claim an award for your own contribution | [Claim form](.github/ISSUE_TEMPLATE/claim-award.yml), after the contribution PR merges. Follow the [application and identity steps](docs/award-process.md#step-2-apply-and-participate-in-public-review). |
+| Claim an award for your own contribution | [Claim form](.github/ISSUE_TEMPLATE/claim-award.yml), after the contribution PR merges or under the recorded-solver exception. Follow the [application and identity steps](docs/award-process.md#step-2-apply-and-participate-in-public-review). |
 | Correct a record | [Correction form](.github/ISSUE_TEMPLATE/correction.yml), with the current text, proposed change and sources. |
 | Challenge a candidate or announced award | [Dispute form](.github/ISSUE_TEMPLATE/dispute.yml), with the disputed claim and public evidence. Submit replacement proofs in a linked PR. |
+| Share feedback, suggestions or questions | [Feedback form](.github/ISSUE_TEMPLATE/feedback.yml). |
 | General conversation | [Discussions](docs/discussions-notice.md). |
 
 Update existing PRs and issues for the same contribution instead of creating
-duplicates. Maintainers respond to recommendations, claims, corrections and
-disputes in their issue threads. Forms do not establish award entitlement.
+duplicates. Maintainers respond to recommendations, claims, corrections,
+disputes and feedback in their issue threads. Forms do not establish award entitlement.
 
 ## Pull requests
 
