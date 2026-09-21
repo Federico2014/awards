@@ -152,7 +152,9 @@ maintainers request a missing URL before approving the claim.
 
 Both awards require an accepted mathematical solution and a verified complete
 Lean proof. The catalog's shared **Eligible to claim** flag is **Yes** only when
-both **Mathematical solution** and **Lean proof** are **Yes**. While eligibility
+both **Mathematical solution** and **Lean proof** in the index are **Yes**
+(the detail table retains **Current status: Solved**). The two claim-status
+columns are maintained only in the index. While eligibility
 is **No** or **Pending verification**, both **Solver claim status** and **Lean
 claim status** are **Unavailable**. Once eligible, each role is **Unclaimed**
 until registered in `candidates/`, then **Claimed**. The role remains **Claimed**

@@ -22,9 +22,12 @@ names, accepted PRs, proof references and public-review dates consistent with th
 [award process](award-process.md). Record public challenge outcomes in the relevant
 PR or issue and update the candidate register accordingly.
 
-Keep **Eligible to claim**, **Solver claim status** and **Lean claim status**
-synchronized in the problem index and detail tables. Eligibility requires both
-**Mathematical solution** and **Lean proof** to be **Yes**. When eligibility is
+Detail tables retain **Current status: Open/Solved**. Display these as
+**Mathematical solution: No/Yes** in the index and preserve proof evidence qualifications.
+Keep **Eligible to claim** synchronized between the index and detail tables.
+Maintain **Solver claim status** and **Lean claim status** only in the index.
+Eligibility requires both **Mathematical solution** and **Lean proof** in the
+index to be **Yes**. When eligibility is
 **No** or **Pending verification**, both claim statuses are **Unavailable**.
 When eligibility is **Yes**, mark each role **Claimed** if it is registered in
 `candidates/` or has a confirmed award record in `awards/`; otherwise mark it

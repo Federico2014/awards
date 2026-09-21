@@ -37,8 +37,8 @@ The existing entries retain their recorded public-notice date of **2026-09-19**.
 
 When a role is awarded, replace its active candidate cell with a labeled link to
 the award record and retain its completed review dates in that record. The other
-role keeps its own clock. Keep the awarded role's claim status **Claimed** in both
-the problem index and detail table, including after its candidate entry is removed.
+role keeps its own clock. Keep the awarded role's claim status **Claimed** in
+the problem index, including after its candidate entry is removed.
 Remove a problem row once neither role remains a
 candidate. If a contribution is invalidated without an accepted replacement,
 remove its active candidate and review dates and retain the history. If no valid
