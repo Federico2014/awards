@@ -27,7 +27,7 @@ JSP identifiers are catalog references. They do not establish original authorshi
 
 ## Coverage and award status
 
-The catalog covers areas including number theory, combinatorics, graph theory, analysis, geometry, and algebra. Detail tables retain **Current status** with **Open** or **Solved**, displayed in the index as **Mathematical solution: No** or **Yes**. Partial results and incomplete Lean formalizations are not recorded; problems without a complete solution remain **Open**. Solved entries retain complete-solution evidence and contributor credits, with mathematical solver credits included in the **Current status** field.
+The catalog covers areas including number theory, combinatorics, graph theory, analysis, geometry, and algebra. The index and detail tables use **Current status** with **Open** or **Solved**. Partial results and incomplete Lean formalizations are not recorded; problems without a complete solution remain **Open**. Solved entries retain complete-solution evidence and contributor credits, with mathematical solver credits included in the **Current status** field.
 
 The catalog includes all seven Millennium Prize Problems (JSP-000001 through JSP-000007): the Riemann hypothesis, P versus NP, the Birch–Swinnerton-Dyer conjecture, the Hodge conjecture, Navier–Stokes existence and smoothness, Yang–Mills existence and mass gap, and the Poincaré conjecture.
 
