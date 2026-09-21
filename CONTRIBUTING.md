@@ -65,9 +65,11 @@ standing in for missing proof steps is incomplete.
 
 Fork this repository and update the relevant existing
 `problems/catalog-XXXX-XXXX.md` file using the PR template. External submissions
-may change **Current status** (including **Proof contributors:**), **Lean proof**,
-**Attribution basis**, and **Publication details**. Use **Open** or **Solved** as
-the status. Maintainers reconcile index and eligibility fields after review.
+may change **Mathematical solution** (including **Proof contributors:**), **Lean proof**,
+**Attribution basis**, and **Publication details**. Use **Yes** or **No** for
+solution and proof availability. Maintainers reconcile the index, shared
+eligibility and each role's claim status with the candidate register and confirmed
+award records after review.
 Use an issue for other corrections or requests.
 
 Provide evidence for the contribution you are submitting:

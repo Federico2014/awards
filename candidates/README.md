@@ -1,15 +1,18 @@
 # Public candidates
 
 The [register below](#candidate-register) is the public notice table, maintained
-by administrators after the participant PR merges. Each contribution type's
+by administrators after any required participant PR merges. Each contribution type's
 14-day review starts when its candidate is added for public notice, once the
 mathematical solution and Lean proof have passed review and verification.
 
 Follow the [award process](../docs/award-process.md#the-14-day-public-review) for
 publication, challenges, replacements and review completion. Solver applications
 awaiting formalization remain in their claim issue or submission PR without an
-active review clock. The problem bank's eligibility flags do not publish candidates
-or announce awards.
+active review clock. Both claim statuses remain **Unavailable** unless the
+problem bank's shared **Eligible to claim** flag is **Yes**, requiring both a
+mathematical solution and a Lean proof. Once eligible, mark each role **Unclaimed**
+until its candidate is published here, then **Claimed**. Opening a claim issue
+alone does not mark a role **Claimed**. These statuses do not announce awards.
 
 ## Candidate register
 
@@ -34,7 +37,9 @@ The existing entries retain their recorded public-notice date of **2026-09-19**.
 
 When a role is awarded, replace its active candidate cell with a labeled link to
 the award record and retain its completed review dates in that record. The other
-role keeps its own clock. Remove a problem row once neither role remains a
+role keeps its own clock. Keep the awarded role's claim status **Claimed** in both
+the problem index and detail table, including after its candidate entry is removed.
+Remove a problem row once neither role remains a
 candidate. If a contribution is invalidated without an accepted replacement,
 remove its active candidate and review dates and retain the history. If no valid
 formalization remains, retain the solver application without an active clock.

@@ -5,7 +5,7 @@ description: "Independently verify Lean mathematical proofs in awards PRs, Erdő
 
 # Independent Lean proof verification
 
-Verify a complete formal proof of a specified mathematical problem at a specified source commit. Assess source traceability, correspondence to the original problem, reproducibility, and coverage separately. A successful build, an author's claim, a catalog's `Solved/Yes` status, or PR CI cannot replace these conclusions.
+Verify a complete formal proof of a specified mathematical problem at a specified source commit. Assess source traceability, correspondence to the original problem, reproducibility, and coverage separately. A successful build, an author's claim, a catalog's solution/proof availability flags, or PR CI cannot replace these conclusions.
 
 Write reports in English by default, unless the user requests another language. Preserve Lean identifiers, original problem statements, and raw logs. Verification includes necessary dependency downloads, isolated environment setup, and local audit files. It does not include modifying the original proof, upgrading its toolchain, posting GitHub comments, merging PRs, or changing catalog status.
 

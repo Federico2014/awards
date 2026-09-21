@@ -27,13 +27,13 @@ JSP identifiers are catalog references. They do not establish original authorshi
 
 ## Coverage and award status
 
-The catalog covers areas including number theory, combinatorics, graph theory, analysis, geometry, and algebra. **Current status** uses only **Open** or **Solved** as its status. Partial results and incomplete Lean formalizations are not recorded; problems without a complete solution remain **Open**. Solved entries retain complete-solution evidence and contributor credits, with mathematical solver credits included in the **Current status** field.
+The catalog covers areas including number theory, combinatorics, graph theory, analysis, geometry, and algebra. **Mathematical solution** uses **Yes** or **No**. Partial results and incomplete Lean formalizations are not recorded; problems without a complete solution remain **No**. Entries marked **Yes** retain complete-solution evidence and contributor credits, with mathematical solver credits included in the **Mathematical solution** field.
 
 The catalog includes all seven Millennium Prize Problems (JSP-000001 through JSP-000007): the Riemann hypothesis, P versus NP, the Birch–Swinnerton-Dyer conjecture, the Hodge conjecture, Navier–Stokes existence and smoothness, Yang–Mills existence and mass gap, and the Poincaré conjecture.
 
 Records can include human contributions and AI-assisted work where supported by public evidence. AI involvement is recorded as part of the contribution history; it does not define the source of the problem bank.
 
-Inclusion in the catalog is separate from eligibility to claim a reward. Each entry has its own eligibility field, explained in the [reading conventions](../problems/README.md#reading-conventions). Formal candidates and announced awards have separate records and review requirements.
+Inclusion in the catalog is separate from award approval. Each entry has a shared **Eligible to claim** field requiring both a mathematical solution and a Lean proof, plus separate **Solver claim status** and **Lean claim status** fields for candidate registration. See the [reading conventions](../problems/README.md#reading-conventions). Formal candidates and announced awards have separate records and review requirements.
 
 ## Tracing a particular problem
 

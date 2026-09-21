@@ -150,12 +150,19 @@ The form accepts a blank repository field so solver-only applicants can submit.
 For Lean or both-role claims, the repository remains a review requirement;
 maintainers request a missing URL before approving the claim.
 
-**Eligible to claim: Yes** remains the catalog's screening flag for a solved
-problem with a Lean proof. A solver whose complete solution PR has merged, or who
-meets the recorded-solver exception, may register an application while
-formalization is missing, even though that flag is not Yes. This does not start
-public review or permit payment. Once a complete Lean formalization has been
-verified and accepted, the solver's claim can proceed through public review,
+Both awards require an accepted mathematical solution and a verified complete
+Lean proof. The catalog's shared **Eligible to claim** flag is **Yes** only when
+both **Mathematical solution** and **Lean proof** are **Yes**. While eligibility
+is **No** or **Pending verification**, both **Solver claim status** and **Lean
+claim status** are **Unavailable**. Once eligible, each role is **Unclaimed**
+until registered in `candidates/`, then **Claimed**. The role remains **Claimed**
+when it moves to a confirmed award record in `awards/`, even after its candidate
+entry is removed. A claim issue alone does not change the status to **Claimed**.
+A solver whose complete solution PR has merged, or who meets the
+recorded-solver exception, may register an application while formalization is
+missing. Both claim statuses remain **Unavailable**; the application does not
+start public review or permit payment. Once a complete Lean formalization has
+been verified and accepted, the solver's claim can proceed through public review,
 identity verification and recipient confirmation under the same award process.
 
 The **Follow-up contact email** in the issue is your public correspondence address;
