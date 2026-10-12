@@ -29,8 +29,9 @@ category shares, not a reward for every upload or every person whose materials
 pass a technical check. The team confirms the applicable formally announced
 reward and any joint-author allocation; the catalog supplies no reward estimate.
 
-The [problem index](../problems/README.md#mathdb-pilot-claim-status-columns) and
-pilot page show independent Solution, Lean and Exposition registration states:
+The [problem index](../problems/README.md#mathdb-pilot-claim-status-columns) shows
+independent Solution (under Solver) and Lean registration states; the
+[pilot page](../problems/mathdb-pilot.md#pilot-register) also shows Exposition:
 blank when no record is published, otherwise `Candidate` or `Awarded`. They summarize the public registers,
 not technical acceptance, committee selection, pending claim issues or payment.
 Exposition is not gated by a Solved/Lean flag; its own review and committee

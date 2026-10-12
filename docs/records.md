@@ -19,8 +19,9 @@ identity checks and award confirmation.
 
 The eligibility/claim-status conventions below apply to legacy records. For
 [MathDB pilot problems](../problems/mathdb-pilot.md), index/detail eligibility
-links to the pilot process; the Solver, Lean and Exposition claim-status cells
-are blank when no public record exists, or show `Candidate` or `Awarded` independently.
+links to the pilot process. The index shows Solver and Lean claim status; the
+pilot page also shows Exposition. These cells are blank when no public record
+exists, or show `Candidate` or `Awarded` independently.
 A shared Solved/Lean flag does not determine all three categories. Maintain category-specific claim, candidate and award
 outcomes through the [new process](award-process-mathdb.md), including Exposition
 and Solution public review before Lean payment evidence is available. Do not
@@ -84,9 +85,9 @@ Public registration is derived separately for Solution, Lean and Exposition from
 the MathDB tables in `candidates/README.md` and `awards/README.md`. Use exactly those
 category labels and the recorded rule version in each row. After publishing or
 moving a category record, rebuild the index and pilot page in the same PR. This
-updates only that category; it does not infer committee approval, eligibility,
-claim-issue state or payment from mathematical status. Non-pilot Exposition cells
-remain `Not applicable`. Retained award records may have subsequent corrections
+updates only that category; Exposition appears only on the pilot page. It does
+not infer committee approval, eligibility, claim-issue state or payment from
+mathematical status. Retained award records may have subsequent corrections
 or revocation; their detailed record determines the current outcome.
 
 Run `python3 scripts/mathdb_pilot.py build` after manifest changes, then

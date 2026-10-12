@@ -17,8 +17,9 @@ BEGIN = "<!-- BEGIN MathDB pilot metadata -->"
 END = "<!-- END MathDB pilot metadata -->"
 ELIGIBILITY = "[See MathDB pilot](mathdb-pilot.md#pilot-register)"
 CATEGORIES = ("Solution", "Lean", "Exposition")
+INDEX_CATEGORIES = ("Solution", "Lean")
 INDEX_COLUMNS = ("No.", "Problem", "Current status", "Lean proof", "Eligible to claim",
-                 "Solver claim status", "Lean claim status", "Exposition claim status")
+                 "Solver claim status", "Lean claim status")
 
 
 class InvalidPilot(ValueError):
@@ -263,7 +264,7 @@ def verify_catalog_index(root, value, states, check_states=True):
     expected_header = "| " + " | ".join(INDEX_COLUMNS) + " |"
     headers = re.findall(r"^\| No\. \|.*$", index, re.M)
     require(headers and all(header == expected_header for header in headers),
-            "Index headers must display all three separate category columns")
+            "Index headers must display separate Solver and Lean claim-status columns")
     index_ids = re.findall(r"^\| (JSP-\d{6}) \|", index, re.M)
     require(index_ids == sorted(ids), "Problem index/catalog numbering mismatch")
     for row in re.findall(r"^\| JSP-\d{6} \|.*$", index, re.M):
@@ -277,10 +278,10 @@ def verify_catalog_index(root, value, states, check_states=True):
                 f"Pilot uses a legacy shared eligibility flag: {p['jsp']}")
         row = next(line for line in index.splitlines() if line.startswith(f"| {p['jsp']} |"))
         cells = [c.strip() for c in row.split('|')[1:-1]]
-        require(len(cells) == 8 and cells[4] == ELIGIBILITY,
-                f"Pilot index needs three category columns and the qualification route: {p['jsp']}")
+        require(len(cells) == len(INDEX_COLUMNS) and cells[4] == ELIGIBILITY,
+                f"Pilot index needs Solver/Lean columns and the qualification route: {p['jsp']}")
         if check_states:
-            require(cells[5:] == [states[p["jsp"]][c] for c in CATEGORIES],
+            require(cells[5:] == [states[p["jsp"]][c] for c in INDEX_CATEGORIES],
                     f"Pilot category status drift: {p['jsp']}; run build")
         require(cells[1] == f"[{p['title']}]({catalog_link(p)})", "Index title/link drift")
         status = re.search(r"^\| Current status \| (Open|Solved)(?:<br>[^\n]*)? \|$", block, re.M)
@@ -297,7 +298,7 @@ def synchronize(root=ROOT, write=False):
         match = re.match(r"^\| (JSP-\d{6}) \|", line)
         if match and match[1] in states:
             cells = [c.strip() for c in line.split("|")[1:-1]]
-            cells[5:] = [states[match[1]][c] for c in CATEGORIES]
+            cells[5:] = [states[match[1]][c] for c in INDEX_CATEGORIES]
             index_lines[i] = "| " + " | ".join(cells) + " |"
     catalogs = {}
     for p in value["problems"]:

@@ -130,8 +130,8 @@ class PilotTests(unittest.TestCase):
             pilot.synchronize(root)
             index = root / "problems/README.md"
             index.write_text(index.read_text().replace(
-                f"| {pilot.ELIGIBILITY} |  |  |  |",
-                f"| {pilot.ELIGIBILITY} | Candidate |  |  |", 1))
+                f"| {pilot.ELIGIBILITY} |  |  |",
+                f"| {pilot.ELIGIBILITY} | Candidate |  |", 1))
             with self.assertRaises(pilot.InvalidPilot):
                 pilot.synchronize(root)
 
@@ -139,6 +139,7 @@ class PilotTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             self.copy_fixture(root)
+            original_index = (root / "problems/README.md").read_text()
             row = self.register_row(root, "candidates", "Exposition")
             states = pilot.claim_states(root, self.manifest)
             self.assertEqual(states["JSP-000001"], {
@@ -148,8 +149,8 @@ class PilotTests(unittest.TestCase):
                 pilot.synchronize(root)
             pilot.synchronize(root, write=True)
             pilot.synchronize(root)
-            self.assertIn(f"| {pilot.ELIGIBILITY} |  |  | Candidate |",
-                          (root / "problems/README.md").read_text())
+            self.assertEqual(original_index, (root / "problems/README.md").read_text())
+            self.assertIn(" |  |  | Candidate |", (root / "problems/mathdb-pilot.md").read_text())
             candidates = root / "candidates/README.md"
             candidates.write_text(candidates.read_text().replace(row, "", 1))
             self.register_row(root, "awards", "Exposition")
@@ -157,6 +158,8 @@ class PilotTests(unittest.TestCase):
             pilot.synchronize(root)
             self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
                 "Solution": "", "Lean": "", "Exposition": "Awarded"})
+            self.assertEqual(original_index, (root / "problems/README.md").read_text())
+            self.assertIn(" |  |  | Awarded |", (root / "problems/mathdb-pilot.md").read_text())
 
     def test_solution_and_lean_records_do_not_claim_exposition(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -196,14 +199,14 @@ class PilotTests(unittest.TestCase):
             self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
                 "Solution": "Awarded", "Lean": "", "Exposition": ""})
 
-    def test_missing_header_separator_cannot_hide_exposition_column(self):
+    def test_missing_header_separator_cannot_merge_solver_and_lean_columns(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             self.copy_fixture(root)
             index = root / "problems/README.md"
             index.write_text(index.read_text().replace(
-                "| Lean claim status | Exposition claim status |",
-                "| Lean claim status Exposition claim status |", 1))
+                "| Solver claim status | Lean claim status |",
+                "| Solver claim status Lean claim status |", 1))
             with self.assertRaises(pilot.InvalidPilot):
                 pilot.synchronize(root)
 
