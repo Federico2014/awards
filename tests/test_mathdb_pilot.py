@@ -130,8 +130,8 @@ class PilotTests(unittest.TestCase):
             pilot.synchronize(root)
             index = root / "problems/README.md"
             index.write_text(index.read_text().replace(
-                "| See MathDB pilot |  |  |  |",
-                "| See MathDB pilot | Candidate |  |  |", 1))
+                f"| {pilot.ELIGIBILITY} |  |  |  |",
+                f"| {pilot.ELIGIBILITY} | Candidate |  |  |", 1))
             with self.assertRaises(pilot.InvalidPilot):
                 pilot.synchronize(root)
 
@@ -148,7 +148,7 @@ class PilotTests(unittest.TestCase):
                 pilot.synchronize(root)
             pilot.synchronize(root, write=True)
             pilot.synchronize(root)
-            self.assertIn("| See MathDB pilot |  |  | Candidate |",
+            self.assertIn(f"| {pilot.ELIGIBILITY} |  |  | Candidate |",
                           (root / "problems/README.md").read_text())
             candidates = root / "candidates/README.md"
             candidates.write_text(candidates.read_text().replace(row, "", 1))

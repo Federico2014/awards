@@ -15,7 +15,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 BEGIN = "<!-- BEGIN MathDB pilot metadata -->"
 END = "<!-- END MathDB pilot metadata -->"
-ELIGIBILITY = "See MathDB pilot"
+ELIGIBILITY = "[See MathDB pilot](mathdb-pilot.md#pilot-register)"
 CATEGORIES = ("Solution", "Lean", "Exposition")
 INDEX_COLUMNS = ("No.", "Problem", "Current status", "Lean proof", "Eligible to claim",
                  "Solver claim status", "Lean claim status", "Exposition claim status")
