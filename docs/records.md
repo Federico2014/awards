@@ -17,6 +17,14 @@ identity checks and award confirmation.
 
 ## Maintaining the records
 
+The eligibility/claim-status conventions below apply to legacy records. For
+[MathDB pilot problems](../problems/mathdb-pilot.md), index/detail eligibility and
+role cells link to the pilot process; a shared Solved/Lean flag does not determine
+all three categories. Maintain category-specific claim, candidate and award
+outcomes through the [new process](award-process-mathdb.md), including Exposition
+and Solution public review before Lean payment evidence is available. Do not
+infer qualification from problem status or assign a level or estimated reward.
+
 Identify contributions by JSP problem ID and contribution type. Keep contributor
 names, accepted PRs, proof references and public-review dates consistent with the
 [award process](award-process.md). Record public challenge outcomes in the relevant
@@ -43,7 +51,7 @@ to record the check for relevant pending PRs and its outcome. Record candidate
 start and end dates in UTC; retain date-only precision for historical entries.
 
 For an announced award, record the problem, contribution type, recipients,
-published level, announcement link, completed review dates and public evidence
+announcement link, completed review dates and public evidence
 in English Markdown under `awards/`. Update the register for that contribution;
 the other contribution type keeps its own review period. The optional
 [attribution template](templates/recipients.md) helps record contributors and
@@ -60,3 +68,29 @@ of this repository.
 Keep private identity documents, correspondence, payment and delivery details,
 and internal assessment materials out of repository files and commits. Reviewers
 check mathematical content, attribution and award eligibility.
+
+## MathDB pilot maintenance
+
+`problems/mathdb-pilot.json` is the source for approved scope, JSP/MathDB mappings,
+mapping evidence and rollout metadata. Keep mathematical statements and proof
+attribution in the existing catalog volumes. The generated pilot Markdown and
+catalog workflow rows display that same mapping; do not maintain a separate manual
+list or add problem levels/reward estimates. Preserve existing JSP anchors and
+legacy records. The added problems extend the last volume through JSP-001050;
+its original filename is retained so existing external links keep working.
+
+Run `python3 scripts/mathdb_pilot.py build` after manifest changes, then
+`python3 scripts/mathdb_pilot.py check` and
+`python3 -m unittest discover -s tests -v`. The checker validates pilot membership,
+catalog/index correspondence, generated rows, safe canonical MathDB URLs, mapping
+evidence, duplicates and rollout metadata. It does not certify mathematics,
+qualification, priority, identity, committee decisions, live agent integration or
+payment. Current upstream uses Markdown registers and has no old JSON award
+generator to modify; the pilot check supplements this structure.
+
+The [candidate](../candidates/README.md#mathdb-pilot-candidates) and
+[award](../awards/README.md#mathdb-pilot-awards) pilot tables stay in the existing
+README registers, with one category/claimant record and preserved public-review
+history. No hypothetical candidates, awarded recipients or payments are created
+when preparing a cohort. The official agent follows [its contract](../agent-scope.md)
+and the [claim/update templates](templates/mathdb-claim-reward.md).
