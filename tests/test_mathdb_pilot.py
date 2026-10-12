@@ -22,6 +22,20 @@ class PilotTests(unittest.TestCase):
     def modified(self):
         return copy.deepcopy(self.manifest)
 
+    def copy_fixture(self, root):
+        for location in ("problems", "candidates", "awards"):
+            shutil.copytree(ROOT / location, root / location)
+
+    def register_row(self, root, location, category, jsp="JSP-000001", claimant="Test contributor"):
+        count = 10 if location == "candidates" else 9
+        values = [f"[{jsp}](../problems/catalog-0001-0100.md#{jsp})",
+                  category, claimant, "mathdb-v1"] + ["test evidence"]*(count-4)
+        row = "| " + " | ".join(values) + " |\n"
+        separator = "| " + " | ".join(["---"]*count) + " |\n"
+        path = root / location / "README.md"
+        path.write_text(path.read_text().replace(separator, separator+row, 1))
+        return row
+
     def test_initial_cohort_and_deduplication(self):
         problems = self.manifest["problems"]
         # Preserve the initial selection while permitting future approved expansion.
@@ -106,7 +120,7 @@ class PilotTests(unittest.TestCase):
     def test_check_detects_generated_and_index_drift(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            shutil.copytree(ROOT / "problems", root / "problems")
+            self.copy_fixture(root)
             pilot.synchronize(root)
             page = root / "problems/mathdb-pilot.md"
             page.write_text(page.read_text() + "Changed mapping\n")
@@ -116,8 +130,80 @@ class PilotTests(unittest.TestCase):
             pilot.synchronize(root)
             index = root / "problems/README.md"
             index.write_text(index.read_text().replace(
-                "| See MathDB pilot | See MathDB pilot | See MathDB pilot |",
-                "| No | Unavailable | Unavailable |", 1))
+                "| See MathDB pilot | Not registered | Not registered | Not registered |",
+                "| See MathDB pilot | Candidate | Not registered | Not registered |", 1))
+            with self.assertRaises(pilot.InvalidPilot):
+                pilot.synchronize(root)
+
+    def test_exposition_has_its_own_registration_and_award_state(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.copy_fixture(root)
+            row = self.register_row(root, "candidates", "Exposition")
+            states = pilot.claim_states(root, self.manifest)
+            self.assertEqual(states["JSP-000001"], {
+                "Solution": "Not registered", "Lean": "Not registered", "Exposition": "Candidate"})
+            # An open problem with no Lean may have an independently reviewed exposition.
+            with self.assertRaises(pilot.InvalidPilot):
+                pilot.synchronize(root)
+            pilot.synchronize(root, write=True)
+            pilot.synchronize(root)
+            self.assertIn("| See MathDB pilot | Not registered | Not registered | Candidate |",
+                          (root / "problems/README.md").read_text())
+            candidates = root / "candidates/README.md"
+            candidates.write_text(candidates.read_text().replace(row, "", 1))
+            self.register_row(root, "awards", "Exposition")
+            pilot.synchronize(root, write=True)
+            pilot.synchronize(root)
+            self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
+                "Solution": "Not registered", "Lean": "Not registered", "Exposition": "Awarded"})
+
+    def test_solution_and_lean_records_do_not_claim_exposition(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.copy_fixture(root)
+            self.register_row(root, "candidates", "Solution")
+            self.register_row(root, "awards", "Lean")
+            self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
+                "Solution": "Candidate", "Lean": "Awarded", "Exposition": "Not registered"})
+            pilot.synchronize(root, write=True)
+            pilot.synchronize(root)
+
+    def test_out_of_scope_or_unknown_category_cannot_create_status(self):
+        for category, jsp in (("Exposition", "JSP-000011"), ("Both", "JSP-000001")):
+            with tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                self.copy_fixture(root)
+                self.register_row(root, "candidates", category, jsp)
+                with self.assertRaises(pilot.InvalidPilot):
+                    pilot.claim_states(root, self.manifest)
+
+    def test_active_candidate_and_award_for_same_claimant_category_are_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.copy_fixture(root)
+            self.register_row(root, "candidates", "Exposition")
+            self.register_row(root, "awards", "Exposition")
+            with self.assertRaises(pilot.InvalidPilot):
+                pilot.claim_states(root, self.manifest)
+
+    def test_coauthors_can_have_separate_public_registration_states(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.copy_fixture(root)
+            self.register_row(root, "candidates", "Solution", claimant="Pending coauthor")
+            self.register_row(root, "awards", "Solution", claimant="Confirmed coauthor")
+            self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
+                "Solution": "Awarded", "Lean": "Not registered", "Exposition": "Not registered"})
+
+    def test_missing_header_separator_cannot_hide_exposition_column(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.copy_fixture(root)
+            index = root / "problems/README.md"
+            index.write_text(index.read_text().replace(
+                "| Lean claim status | Exposition claim status |",
+                "| Lean claim status Exposition claim status |", 1))
             with self.assertRaises(pilot.InvalidPilot):
                 pilot.synchronize(root)
 

@@ -71,3 +71,8 @@ decisions; preserve unchanged notice dates during migration. A substantive
 recipient/version replacement restarts only the affected category after review.
 When awarded, retain completed dates and links in the award register and remove
 the active candidate row; do not duplicate active candidate and award records.
+
+Use category `Solution`, `Lean` or `Exposition`. After updating these rows, run
+`python3 scripts/mathdb_pilot.py build` and commit the generated index/pilot page.
+Only the corresponding category's public-registration state changes; opening an
+agent claim or passing technical/content review alone does not create a row here.

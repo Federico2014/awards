@@ -55,3 +55,9 @@ Distinguish `Announced / awaiting payment` from `Paid`; the latter requires the
 team's confirmed payment result, without publishing private payment details.
 Closing an issue, elapsed notice or an agent notification is not payment evidence.
 The team retains any later correction/revocation and its evidence in the history.
+
+Use category `Solution`, `Lean` or `Exposition`. After updating these rows and the
+candidate table, run `python3 scripts/mathdb_pilot.py build` and commit the generated
+index/pilot page. The category's `Awarded` registration state reports this announced
+record; the detailed record controls any later correction/revocation and whether
+payment has been confirmed.

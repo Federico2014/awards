@@ -18,9 +18,10 @@ identity checks and award confirmation.
 ## Maintaining the records
 
 The eligibility/claim-status conventions below apply to legacy records. For
-[MathDB pilot problems](../problems/mathdb-pilot.md), index/detail eligibility and
-role cells link to the pilot process; a shared Solved/Lean flag does not determine
-all three categories. Maintain category-specific claim, candidate and award
+[MathDB pilot problems](../problems/mathdb-pilot.md), index/detail eligibility
+links to the pilot process; the Solver, Lean and Exposition claim-status cells
+independently show `Not registered`, `Candidate` or `Awarded` from public records.
+A shared Solved/Lean flag does not determine all three categories. Maintain category-specific claim, candidate and award
 outcomes through the [new process](award-process-mathdb.md), including Exposition
 and Solution public review before Lean payment evidence is available. Do not
 infer qualification from problem status or assign a level or estimated reward.
@@ -78,6 +79,15 @@ catalog workflow rows display that same mapping; do not maintain a separate manu
 list or add problem levels/reward estimates. Preserve existing JSP anchors and
 legacy records. The added problems extend the last volume through JSP-001050;
 its original filename is retained so existing external links keep working.
+
+Public registration is derived separately for Solution, Lean and Exposition from
+the MathDB tables in `candidates/README.md` and `awards/README.md`. Use exactly those
+category labels and the recorded rule version in each row. After publishing or
+moving a category record, rebuild the index and pilot page in the same PR. This
+updates only that category; it does not infer committee approval, eligibility,
+claim-issue state or payment from mathematical status. Non-pilot Exposition cells
+remain `Not applicable`. Retained award records may have subsequent corrections
+or revocation; their detailed record determines the current outcome.
 
 Run `python3 scripts/mathdb_pilot.py build` after manifest changes, then
 `python3 scripts/mathdb_pilot.py check` and

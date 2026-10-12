@@ -16,6 +16,9 @@ ROOT = Path(__file__).resolve().parents[1]
 BEGIN = "<!-- BEGIN MathDB pilot metadata -->"
 END = "<!-- END MathDB pilot metadata -->"
 ELIGIBILITY = "See MathDB pilot"
+CATEGORIES = ("Solution", "Lean", "Exposition")
+INDEX_COLUMNS = ("No.", "Problem", "Current status", "Lean proof", "Eligible to claim",
+                 "Solver claim status", "Lean claim status", "Exposition claim status")
 
 
 class InvalidPilot(ValueError):
@@ -154,7 +157,48 @@ def metadata(p):
     ])
 
 
-def render(value):
+def claim_states(root, value):
+    """Aggregate public registration independently of mathematical eligibility."""
+    states = {p["jsp"]: {category: "Not registered" for category in CATEGORIES}
+              for p in value["problems"]}
+    records = {}
+    for location, section, status in (
+            ("candidates", "MathDB pilot candidates", "Candidate"),
+            ("awards", "MathDB pilot awards", "Awarded")):
+        path = root / location / "README.md"
+        require(path.is_file() and not path.is_symlink() and
+                path.resolve().is_relative_to(root.resolve()), "Missing/unsafe public register")
+        content = path.read_text()
+        marker = f"### {section}\n"
+        require(content.count(marker) == 1, "Missing/duplicate MathDB register section")
+        content = content.split(marker, 1)[1]
+        content = re.split(r"(?m)^#{1,3} ", content, maxsplit=1)[0]
+        for line in content.splitlines():
+            if not line.startswith("| "):
+                continue
+            cells = [cell.strip() for cell in line.split("|")[1:-1]]
+            require(cells, "Empty public register row")
+            if cells[0] == "Problem ID" or all(cell == "---" for cell in cells):
+                continue
+            require(len(cells) == (10 if location == "candidates" else 9),
+                    "Incorrect public register columns")
+            identifier = re.fullmatch(r"\[(JSP-\d{6})\]\([^\s]+\)", cells[0])
+            require(identifier and identifier[1] in states, "Register contains an out-of-scope JSP")
+            jsp, category = identifier[1], cells[1]
+            require(category in CATEGORIES, "Unknown pilot contribution category")
+            require(cells[3] == value["rules_version"], "Public register rules-version mismatch")
+            record_key = (jsp, category, cells[2])
+            require(records.get(record_key) in {None, status},
+                    "The same claimant/category cannot be both active candidate and awarded")
+            records[record_key] = status
+            # The problem-level cell records an announced award's existence;
+            # coauthors' individual pending conditions remain in the registers.
+            if states[jsp][category] != "Awarded":
+                states[jsp][category] = status
+    return states
+
+
+def render(value, states):
     problems = value["problems"]
     checked = sum(p["mathdb"]["status"] == "confirmed" for p in problems)
     lines = ["# MathDB cooperation pilot", "",
@@ -167,6 +211,11 @@ def render(value):
         "The repository records neither problem levels nor estimated rewards.",
         "Solution, Lean and Exposition have separate review and qualification records;",
         "the legacy shared eligibility flag does not control pilot applications.", "",
+        "The three claim-status columns show public registration independently:",
+        "**Not registered** means no candidate or award is published for that category,",
+        "**Candidate** means it appears in the public candidate register, and",
+        "**Awarded** means an announced award is recorded. None of these values is",
+        "technical/committee approval, a claim-issue state or proof of payment.", "",
         f"**Mapping review:** {checked} statement matches checked; {len(problems)-checked} require scope confirmation.",
         "Confirmed means the linked public statement was compared with the selected",
         "problem; it does not accept a proof or determine a reward. Candidate links",
@@ -179,12 +228,13 @@ def render(value):
         "remain on the legacy process until a reviewed scope update and migration",
         "announcement. Preserve original contribution dates and unchanged notice clocks.", "",
         "## Pilot register", "",
-        "| JSP | Problem | MathDB page | Mapping |",
-        "| --- | --- | --- | --- |"]
+        "| JSP | Problem | MathDB page | Mapping | Solution claim status | Lean claim status | Exposition claim status |",
+        "| --- | --- | --- | --- | --- | --- | --- |"]
     for p in problems:
         lines.append(f"| {p['jsp']} | [{p['title']}]({catalog_link(p)}) | {mapping_link(p['mathdb'])} | "
                      + ("Statement match checked" if p["mathdb"]["status"] == "confirmed"
-                        else "Scope confirmation pending") + " |")
+                        else "Scope confirmation pending") + " | "
+                     + " | ".join(states[p["jsp"]][c] for c in CATEGORIES) + " |")
     lines += ["", "## Scope notes", ""]
     for p in problems:
         if p["mathdb"]["status"] == "pending":
@@ -198,11 +248,12 @@ def render(value):
         "Maintain [mathdb-pilot.json](mathdb-pilot.json), run",
         "`python3 scripts/mathdb_pilot.py build`, then `python3 scripts/mathdb_pilot.py check`",
         "and the tests described in [record maintenance](../docs/records.md#mathdb-pilot-maintenance).",
-        "The pilot page and catalog metadata are generated from the same source.", ""]
+        "The pilot page and catalog metadata use the same mapping source. Registration",
+        "statuses are generated from the existing candidate/award README registers.", ""]
     return "\n".join(lines)
 
 
-def verify_catalog_index(root, value):
+def verify_catalog_index(root, value, states, check_states=True):
     headings = []
     for path in sorted((root / "problems").glob("catalog-*.md")):
         headings += re.findall(r"^## (JSP-\d{6}) · (.+)$", path.read_text(), re.M)
@@ -211,8 +262,14 @@ def verify_catalog_index(root, value):
     require(sorted(ids) == [f"JSP-{i:06d}" for i in range(1, len(ids)+1)],
             "Catalog numbering is not consecutive")
     index = (root / "problems/README.md").read_text()
+    expected_header = "| " + " | ".join(INDEX_COLUMNS) + " |"
+    headers = re.findall(r"^\| No\. \|.*$", index, re.M)
+    require(headers and all(header == expected_header for header in headers),
+            "Index headers must display all three separate category columns")
     index_ids = re.findall(r"^\| (JSP-\d{6}) \|", index, re.M)
     require(index_ids == sorted(ids), "Problem index/catalog numbering mismatch")
+    for row in re.findall(r"^\| JSP-\d{6} \|.*$", index, re.M):
+        require(len(row.split("|")[1:-1]) == len(INDEX_COLUMNS), "Index row/column mismatch")
     for p in value["problems"]:
         text = (root / p["catalog"]).read_text()
         start = text.index(f"## {p['jsp']} · ")
@@ -222,8 +279,11 @@ def verify_catalog_index(root, value):
                 f"Pilot uses a legacy shared eligibility flag: {p['jsp']}")
         row = next(line for line in index.splitlines() if line.startswith(f"| {p['jsp']} |"))
         cells = [c.strip() for c in row.split('|')[1:-1]]
-        require(len(cells) == 7 and cells[4:] == [ELIGIBILITY]*3,
-                f"Pilot index must route qualification by category: {p['jsp']}")
+        require(len(cells) == 8 and cells[4] == ELIGIBILITY,
+                f"Pilot index needs three category columns and the qualification route: {p['jsp']}")
+        if check_states:
+            require(cells[5:] == [states[p["jsp"]][c] for c in CATEGORIES],
+                    f"Pilot category status drift: {p['jsp']}; run build")
         require(cells[1] == f"[{p['title']}]({catalog_link(p)})", "Index title/link drift")
         status = re.search(r"^\| Current status \| (Open|Solved)(?:<br>[^\n]*)? \|$", block, re.M)
         require(status is not None and cells[2] == status[1], "Index/detail status drift")
@@ -231,7 +291,16 @@ def verify_catalog_index(root, value):
 
 def synchronize(root=ROOT, write=False):
     value = load_manifest(root)
-    verify_catalog_index(root, value)
+    states = claim_states(root, value)
+    verify_catalog_index(root, value, states, check_states=not write)
+    index_path = root / "problems/README.md"
+    index_lines = index_path.read_text().splitlines()
+    for i, line in enumerate(index_lines):
+        match = re.match(r"^\| (JSP-\d{6}) \|", line)
+        if match and match[1] in states:
+            cells = [c.strip() for c in line.split("|")[1:-1]]
+            cells[5:] = [states[match[1]][c] for c in CATEGORIES]
+            index_lines[i] = "| " + " | ".join(cells) + " |"
     catalogs = {}
     for p in value["problems"]:
         path = root / p["catalog"]
@@ -252,7 +321,8 @@ def synchronize(root=ROOT, write=False):
                  + block[table.end():].lstrip("\n"))
         catalogs[path] = text[:start] + block + text[end:]
     catalogs = {path: text.rstrip()+"\n" for path, text in catalogs.items()}
-    outputs = {**catalogs, root / "problems/mathdb-pilot.md": render(value)}
+    outputs = {**catalogs, root / "problems/mathdb-pilot.md": render(value, states),
+               index_path: "\n".join(index_lines)+"\n"}
     for path, expected in outputs.items():
         if write:
             path.write_text(expected)

@@ -4,12 +4,16 @@ on:
   push:
     paths:
       - 'problems/**'
+      - 'candidates/README.md'
+      - 'awards/README.md'
       - 'scripts/mathdb_pilot.py'
       - 'tests/**'
       - '.github/workflows/mathdb-pilot.yml'
   pull_request:
     paths:
       - 'problems/**'
+      - 'candidates/README.md'
+      - 'awards/README.md'
       - 'scripts/mathdb_pilot.py'
       - 'tests/**'
       - '.github/workflows/mathdb-pilot.yml'
