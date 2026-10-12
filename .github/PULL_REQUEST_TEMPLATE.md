@@ -3,25 +3,23 @@
 - [ ] Mathematical solver information
 - [ ] Lean proof or formalization author information
 
-Select both when applicable. Remove sections that do not apply.
-
-To report a problem with a recorded result, proof, attribution or priority, use
-the [Correction issue form](https://github.com/TheJustinSunPrize/awards/issues/new?template=correction.yml).
-For challenges to a public candidate or announced award, including priority,
-identity or eligibility objections, use the
-[Formal dispute issue form](https://github.com/TheJustinSunPrize/awards/issues/new?template=dispute.yml).
-Use this PR template when submitting a solution or proof reference or making a
-supported catalog update, and link any related issue below.
-See the [submission requirements](https://github.com/TheJustinSunPrize/awards/blob/main/CONTRIBUTING.md#external-solver-and-lean-submissions).
-
-Verified contributions enter a separate 14-day public review for each role at
-merge, provided the problem has an accepted formalization source. Solver-only
-submissions without formalization are retained without starting public review.
-Claims and identity checks can proceed alongside public review. See the
+Select both when applicable and remove sections that do not apply. Submit only
+complete solutions and proof references, following the
+[submission requirements](https://github.com/TheJustinSunPrize/awards/blob/main/CONTRIBUTING.md#external-solver-and-lean-submissions).
+For claims, public review and challenges, see the
 [award process](https://github.com/TheJustinSunPrize/awards/blob/main/docs/award-process.md).
 
-**Only complete solutions to the original problem are accepted. Do not submit
-partial mathematical results or incomplete Lean formalizations.**
+The complete mathematical solution and its proof or publication evidence may be
+provided before the Lean formalization or together with it in this PR. The
+mathematical solver and Lean formalization author may be different people.
+**A Lean submission without the mathematical solution and its supporting evidence
+is invalid and will not be accepted.** Link the earlier solution or provide it
+and its evidence below.
+
+We recommend checking open, merged and closed PRs for the same problem and
+contribution type before submitting. Linking related PRs and explaining how your
+contribution differs can help avoid duplicate work. See the
+[pre-submission suggestions](https://github.com/TheJustinSunPrize/awards/blob/main/CONTRIBUTING.md#before-opening-a-pr).
 
 ## Problem
 
@@ -29,97 +27,84 @@ partial mathematical results or incomplete Lean formalizations.**
 - Original problem source and exact location (page, section or problem number): REPLACE_WITH_LINK_AND_LOCATION
 - Current entry and proposed change: REPLACE_WITH_DETAILS
 - Related issue, if any: REPLACE_WITH_LINK_OR_NONE
+- Related PRs and how this contribution differs, including any issue found in an existing submission and supporting evidence (optional): REPLACE_WITH_DETAILS_OR_REMOVE
+- For solver/publication updates: public proof or publication, relevant theorem/pages, version or date: REPLACE_WITH_LINK_AND_DETAILS
 
-For mathematical solver or publication updates, also provide:
-
-- Public mathematical proof or publication: REPLACE_WITH_HTTPS_LINK
-- Relevant pages, theorem, version or date: REPLACE_WITH_DETAILS
+Solver-only submissions complete Problem and Attribution and remove the Lean-only
+sections. No Lean repository or self-check is required for those submissions.
 
 ## Formal statement
 
-Required for Lean contributions; otherwise remove this section.
+For Lean contributions only. Repeat the theorem details for each problem.
 
-- Challenge file or equivalent statement location (link pinned to a full commit SHA): REPLACE_WITH_LINK
+- Complete mathematical solution (provided earlier or in this PR): public proof or publication, relevant theorem/pages, version or date: REPLACE_WITH_LINK_AND_DETAILS
+- Mathematical review reference or current review status: REPLACE_WITH_REFERENCE_OR_STATUS
+- Formal statement location, pinned to a full commit SHA: REPLACE_WITH_LINK
 - Fully qualified target theorem name: REPLACE_WITH_THEOREM_NAME
-- Statement origin (maintainer-approved reference with link, or submitter-proposed statement requiring review): REPLACE_WITH_DETAILS
-- Correspondence to the original problem, including definitions, assumptions, quantifiers, conclusion and all required cases: REPLACE_WITH_EXPLANATION
-
-`Challenge.lean` is an optional filename convention. The statement and proof may
-be in the same file or separate files. Identify their exact locations either way.
-If a maintainer-approved formal statement exists, identify its fixed version and
-explain any differences. Otherwise, reviewers must assess the proposed statement
-against the original problem before accepting the proof.
+- Statement origin (maintainer-approved reference and version, or proposed statement requiring review): REPLACE_WITH_DETAILS
+- Correspondence to the original problem: definitions, assumptions, quantifiers, conclusion and all required cases; explain any differences from an approved statement: REPLACE_WITH_EXPLANATION
 
 ## Proof submission
 
-**Do not submit Lean source code here; provide the public repository URL, branch and full commit SHA instead.**
-
-Required for Lean contributions; otherwise remove this section.
-Use the full 40-character commit SHA of the proof version selected for
-review. Add an object for each additional proof repository.
-
-Use your own original proof repository. The GitHub account submitting this PR
-must own the repository; do not register another person's proof, a mirror or a
-copy on their behalf. The selected commit is the verification target and the time
-anchor for priority comparison, independent of when this PR is opened.
+For Lean contributions only. Use the original repository containing your
+contribution, owned by your submitting account or an organization. For an
+organization repository, supply verifiable contribution evidence under Attribution.
+**Link the proof; do not commit Lean source here.**
+Add an object for each additional repository/version.
 
 ```json
 [
   {
     "repository": "https://github.com/OWNER/REPOSITORY",
     "branch": "REPLACE_WITH_BRANCH",
-    "commit": "REPLACE_WITH_FULL_COMMIT_SHA"
+    "commit": "REPLACE_WITH_FULL_40_CHARACTER_COMMIT_SHA"
   }
 ]
 ```
 
-- Submission file or equivalent proof entry (path at the commit above): REPLACE_WITH_PATH
-- Fully qualified theorem name providing the complete proof: REPLACE_WITH_THEOREM_NAME
-- Connection to the formal statement above (same declaration, or verification entry such as `Solution.lean`): REPLACE_WITH_DETAILS
+- Proof file at the selected commit and fully qualified theorem name: REPLACE_WITH_PATH_AND_THEOREM
+- How the proof establishes the formal statement above, including any separate verification entry: REPLACE_WITH_DETAILS
 
-`Submission.lean` and `Solution.lean` are optional filename conventions. Existing
-project layouts are accepted if the statement, complete proof and verification
-entry are clearly identified. Explain how the proof establishes the stated target
-without missing cases, proof steps or additional unproved assumptions.
+The statement and proof may share a file. `Challenge.lean`, `Submission.lean`
+and `Solution.lean` are optional naming conventions; existing layouts are accepted.
 
 ## Reproduction
 
-Required for Lean contributions; otherwise remove this section.
+For Lean contributions only.
 
 - Exact Lean version and `lean-toolchain` path: REPLACE_WITH_VERSION_AND_PATH
-- Pinned dependency versions (including mathlib, if used) and dependency manifest path: REPLACE_WITH_DETAILS
-- Build instructions (link at the selected commit): REPLACE_WITH_LINK
-- Commands to build and check the target proof from a clean checkout, including any setup steps: REPLACE_WITH_COMMANDS
-- Command and output for the target theorem's axiom audit (for example, `#print axioms Fully.Qualified.theoremName`): REPLACE_WITH_COMMAND_AND_OUTPUT
-- Statement-to-proof verification command or entry, if separate from the build command: REPLACE_WITH_COMMAND_OR_EXPLANATION
+- Pinned dependencies (including mathlib, if used) and manifest path: REPLACE_WITH_DETAILS
+- Build instructions pinned to the selected commit: REPLACE_WITH_LINK
+- Commands for setup, clean build and checking each target theorem; include a separate statement-to-proof check if needed: REPLACE_WITH_COMMANDS
+- Axiom audit command and output for each target (for example, `#print axioms Fully.Qualified.theoremName`): REPLACE_WITH_COMMAND_AND_OUTPUT
 
-A successful build alone is insufficient. Review must check both correspondence
-to the original problem and the final theorem's transitive axiom dependencies.
-A designated challenge template may contain `sorry` or `admit` as an unfilled
-target; the submitted proof must not depend on that placeholder (`sorryAx`) or
-on unproved assumptions added to replace missing proof steps. Report all axiom
-dependencies for review; standard Lean axioms are not automatically disqualifying.
+Report all axiom dependencies. Standard Lean axioms are not automatically
+disqualifying. An unfilled challenge template may contain `sorry` or `admit`, but
+the submitted proof must not depend on those placeholders or added unproved assumptions.
+
+## Pre-submission Lean verification (optional)
+
+We recommend the [`lean-verify` skill](https://github.com/TheJustinSunPrize/awards/blob/main/skills/lean-verify/SKILL.md)
+for Lean proofs. You may use another method or omit this section. Reports and logs
+are optional; see the [self-check guidance](https://github.com/TheJustinSunPrize/awards/blob/main/docs/verification.md#recommended-lean-pre-submission-check).
+
+- Method/tool and version, if available: REPLACE_WITH_METHOD
+- Checked repository and full commit SHA; identify any difference from the submitted version: REPLACE_WITH_VERSION
+- Verification date, actual conclusion and limitations: REPLACE_WITH_DETAILS
+- Summary of statement correspondence, coverage, Lean checks and trust dependencies: REPLACE_WITH_SUMMARY
+- Report in this PR or external report/log/evidence links, if available: REPLACE_WITH_REPORT_OR_LINKS
 
 ## Attribution
 
 - Mathematical solver(s) and contribution, if applicable: REPLACE_WITH_NAMES_AND_CONTRIBUTIONS
 - Lean formalization author(s) and contribution, if applicable: REPLACE_WITH_NAMES_AND_CONTRIBUTIONS
 - Independent verifier(s), if any: REPLACE_WITH_NAMES_AND_ROLES_OR_NONE
-- Public authorship evidence (paper author list, author/project announcement, or another public attribution source): REPLACE_WITH_LINKS_AND_EXPLANATION
-
-Distinguish the mathematical solver, Lean formalization author and independent
-verifier. A repository owner or PR submitter is not automatically the solver.
-Explain any mismatch between paper authors, repository accounts and proposed
-credits. Do not include private identity documents or contact/payment information.
+- Public authorship evidence; for an organization repository, link verifiable evidence connecting your account to the claimed proof files/theorems (such as merged PRs, attributable changes or project authorship records). Explain mismatches between authors, accounts and proposed credits: REPLACE_WITH_LINKS_AND_EXPLANATION
 
 ## Submission checklist
 
-- [ ] I changed only solver attribution, Lean proof information or supporting sources in the relevant catalog.
-- [ ] I supplied the evidence required for the type of change above.
-- [ ] Any solution submitted for acceptance fully solves the original problem. Any submitted Lean proof is complete at the specified commit and does not depend on `sorry`, `admit` or added unproved assumptions, including placeholders in challenge files.
-- [ ] For a Lean contribution, I identified the formal statement and proof entry, explained their correspondence to the original problem, and supplied reproduction commands and the target theorem's axiom audit.
-- [ ] This PR contains no proof source files, archives, binaries or vendored dependencies.
-- [ ] Any Lean reference identifies a commit contained in the named branch and the exact version for review.
-- [ ] For a Lean submission, I am the contributor using my own GitHub account and original proof repository, not registering someone else's proof or a mirror on their behalf.
-
-For unrelated corrections, use an issue.
+- [ ] I changed only the relevant catalog's solver attribution, Lean proof information or supporting sources and supplied the applicable evidence.
+- [ ] The submitted result fully solves the original problem. Any submitted Lean proof is complete at the specified commit, with no `sorry`, `admit` or added unproved assumptions replacing proof steps.
+- [ ] For Lean: I have linked the complete mathematical solution and its proof or publication evidence provided earlier, or supplied them in this PR, and identified the mathematical solver and Lean formalization author separately.
+- [ ] For Lean: I am claiming my own contribution in the original personal or organization repository, with verifiable contribution evidence for an organization repository; the selected commit is in the named branch, and I supplied statement correspondence, reproduction commands and axiom audit results.
+- [ ] This PR contains no Lean source files, archives, binaries, vendored dependencies or private identity/contact/payment information.
