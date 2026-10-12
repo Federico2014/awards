@@ -7,8 +7,9 @@ This catalog contains **1,050 mathematical problems**.
 **New MathDB cooperation pilot:** [49 selected problems](mathdb-pilot.md) use
 [mathdb-v1](../docs/award-process-mathdb.md), including 28 newly added entries.
 We recommend that process for participating problems and will expand it gradually.
-Each pilot entry has a confirmed or explicitly provisional MathDB link and a
-workflow marker. Pending scope mappings cannot authorize automatic claims.
+Each pilot entry records its workflow and either a confirmed/provisional MathDB
+link or a missing matching page. Unresolved mappings or page statements cannot
+authorize automatic claims; related references remain in the pilot scope notes.
 The catalog records no problem levels or estimated rewards.
 
 For pilot rows, [See MathDB pilot](mathdb-pilot.md#pilot-register) routes qualification to the category-specific

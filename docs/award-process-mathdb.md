@@ -57,6 +57,14 @@ dimension, hypotheses and conclusion. Report a missing or incorrect mapping usin
 the [correction form](../.github/ISSUE_TEMPLATE/correction.yml); resolve it before
 automatic handoff.
 
+`Scope pending` marks a formulation or page-statement issue; `Matching page pending`
+means a full corresponding page has not been located. Neither is a reward-candidate
+status. The [scope notes](../problems/mathdb-pilot.md#scope-notes) record related and
+alternative pages for review. They do not change the approved formulation by
+themselves. In particular, resolve the conflicting P=NP/P!=NP page statements
+before automatic handoff, and do not substitute a non-effective Vojta bound for
+the selected effective-Mordell problem.
+
 Submit the relevant materials through MathDB's available submission entry point:
 
 - **Solution:** proof or publication, fixed version, theorem/pages, authors and

@@ -28,6 +28,7 @@ This claim was handed off by the configured official MathDB agent.
 - JSP and catalog entry: <JSP and URL>
 - MathDB problem ID and confirmed canonical URL: <ID and URL>
 - Exact covered statement: <scope and correspondence evidence>
+- Page-statement consistency: <confirmed formulation; conflicting statements resolved, not inferred from a tag>
 - Approved pilot record and activation evidence: <links and rules version>
 
 ## Category: <Solution / Lean / Exposition>

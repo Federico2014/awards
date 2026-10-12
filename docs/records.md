@@ -81,6 +81,13 @@ list or add problem levels/reward estimates. Preserve existing JSP anchors and
 legacy records. The added problems extend the last volume through JSP-001050;
 its original filename is retained so existing external links keep working.
 
+Use `confirmed` only after statement correspondence is checked. Keep `pending`
+for an unresolved formulation or contradictory page statement; both block automatic
+handoff. If no complete matching page is located, leave the mapping ID, URL, title
+and check date null and its evidence list empty. Keep any related page in the note
+as a reference, not as the approved mapping. `Scope pending` and `Matching page
+pending` describe this mapping review, independently of `Candidate` claim status.
+
 Public registration is derived separately for Solution, Lean and Exposition from
 the MathDB tables in `candidates/README.md` and `awards/README.md`. Use exactly those
 category labels and the recorded rule version in each row. After publishing or

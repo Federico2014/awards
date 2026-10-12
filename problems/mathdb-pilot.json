@@ -20,15 +20,15 @@
       "workflow": "mathdb-v1",
       "scope": "If a proposed solution can be verified in polynomial time, can a solution also always be found in polynomial time?",
       "mathdb": {
-        "status": "confirmed",
+        "status": "pending",
         "id": 315853,
         "url": "https://mathdb.com/p/315853/p-versus-np-problem",
         "title": "P versus NP problem",
-        "checked_at": "2026-10-12",
+        "checked_at": "2026-10-13",
         "evidence": [
           "https://mathdb.com/p/315853/p-versus-np-problem"
         ],
-        "note": "Public page statement checked against the selected problem and catalog scope; this mapping is not technical acceptance or a reward decision."
+        "note": "The linked page identifies P versus NP, but its main statement asserts P=NP and an alleged equivalent formulation asserts P!=NP. These are not equivalent. MathDB must correct the statement to the question whether P equals NP, and the team must confirm correspondence before the agent automatically judges a full solution or hands off a claim. An open-problem tag alone does not establish acceptance of both directions."
       }
     },
     {
@@ -222,11 +222,12 @@
         "id": 397030,
         "url": "https://mathdb.com/p/397030/strominger-yau-zaslow-syz-mirror-symmetry-conjecture",
         "title": "Strominger–Yau–Zaslow (SYZ) mirror symmetry conjecture",
-        "checked_at": "2026-10-12",
+        "checked_at": "2026-10-13",
         "evidence": [
-          "https://mathdb.com/p/397030/strominger-yau-zaslow-syz-mirror-symmetry-conjecture"
+          "https://mathdb.com/p/397030/strominger-yau-zaslow-syz-mirror-symmetry-conjecture",
+          "https://mathdb.com/p/374550/kontsevich-s-homological-mirror-symmetry-conjecture"
         ],
-        "note": "Only a mirror-symmetry family name is given in the selection. The located SYZ statement is a candidate, not a confirmed replacement for homological or other formulations; agree the intended statement with MathDB."
+        "note": "The selection names the mirror-symmetry family without fixing a formulation. The current SYZ page is provisional. Alternative for review: [MathDB #374550 — Kontsevich homological mirror symmetry](https://mathdb.com/p/374550/kontsevich-s-homological-mirror-symmetry-conjecture), formulated as an equivalence of Fukaya and derived coherent-sheaf categories. SYZ and homological mirror symmetry are different formulations; the team and MathDB must confirm the intended version before replacing the approved mapping or qualifying a claim."
       }
     },
     {
@@ -326,17 +327,18 @@
       ],
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb-v1",
-      "scope": "Must every sequence of flips starting from a pair in the specified minimal-model-program setting terminate in every dimension? The selected klt-pair statement is recorded for scope review; broader pair classes are not silently identified with it.",
+      "scope": "Prove that every sequence of flips projective over a fixed variety S, starting from a klt pair (X,B) with real-divisor boundary B, terminates in every dimension. This is the standard all-dimensional klt formulation; the usual characteristic-zero lc termination problem reduces to the klt case.",
       "mathdb": {
-        "status": "pending",
+        "status": "confirmed",
         "id": 394012,
         "url": "https://mathdb.com/p/394012/termination-conjecture-for-flips-of-klt-pairs",
         "title": "Termination conjecture for flips of klt pairs",
-        "checked_at": "2026-10-12",
+        "checked_at": "2026-10-13",
         "evidence": [
-          "https://mathdb.com/p/394012/termination-conjecture-for-flips-of-klt-pairs"
+          "https://mathdb.com/p/394012/termination-conjecture-for-flips-of-klt-pairs",
+          "https://www.math.kyoto-u.ac.jp/~fujino/MMP21-s.pdf"
         ],
-        "note": "The standard candidate is termination for klt pairs with real boundary over a fixed base. Confirm the pair classes and coefficient/base hypotheses intended by the general MMP selection."
+        "note": "The page is the standard klt-pair termination conjecture with real boundary over a fixed base. Fujino, Introduction to the log minimal model program for log canonical pairs, Conjecture 3.15 and the following discussion (page 76), explains the reduction of ordinary lc termination to all-dimensional klt termination. Preserve the characteristic-zero, pair, coefficient and base hypotheses; this is not a claim about generalized pairs or other characteristics."
       }
     },
     {
@@ -481,17 +483,17 @@
       ],
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb-v1",
-      "scope": "Are rational points on every smooth projective variety of general type over a number field contained in a proper Zariski-closed subset? The approved statement must specify the weak non-density form or any required stronger exceptional-locus form.",
+      "scope": "For every smooth projective variety X of general type and positive dimension over a number field k, prove that X(k) is not Zariski dense in X. This record uses the non-density form of Bombieri-Lang; it does not add the stronger exceptional-locus form.",
       "mathdb": {
         "status": "confirmed",
-        "id": 316090,
-        "url": "https://mathdb.com/p/316090/bombieri-lang-conjecture",
-        "title": "Bombieri–Lang conjecture",
-        "checked_at": "2026-10-12",
+        "id": 395886,
+        "url": "https://mathdb.com/p/395886/bombieri-lang-conjecture-on-zariski-density",
+        "title": "Bombieri–Lang conjecture on Zariski density",
+        "checked_at": "2026-10-13",
         "evidence": [
-          "https://mathdb.com/p/316090/bombieri-lang-conjecture"
+          "https://mathdb.com/p/395886/bombieri-lang-conjecture-on-zariski-density"
         ],
-        "note": "One record for identical source titles on lines 30 and 50. The page states general-type non-density and a refined form; qualification identifies the approved form."
+        "note": "One record for identical source titles on lines 30 and 50. MathDB #395886 states the selected general-type non-density form directly. The former #316090 also includes that form, but bundles it with the surface case and a stronger refined form; the replacement removes that qualification ambiguity. A bibliography detection year is not the original conjecture date."
       }
     },
     {
@@ -745,17 +747,18 @@
       ],
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb-v1",
-      "scope": "Establish the predicted automorphic realization of elliptic curves over arbitrary number fields. The located MathDB statement imposes End_K(E)=Z and a specific cohomological realization; confirmation of that scope is required before adopting it for the selection. It is broader than the rational-field modularity theorem JSP-000036.",
+      "scope": "For every number field K and elliptic curve E/K with End_K(E)=Z, prove the cohomological automorphic realization specified in Thorne Conjecture 2.6. The remaining case, with complex multiplication already defined over K, is described by class field theory. End_K(E)=Z is not the same as being geometrically non-CM. This problem is broader than rational-field modularity JSP-000036.",
       "mathdb": {
-        "status": "pending",
+        "status": "confirmed",
         "id": 405788,
         "url": "https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z",
         "title": "Modularity of Elliptic Curves over Number Fields (End_K(E)=Z)",
-        "checked_at": "2026-10-12",
+        "checked_at": "2026-10-13",
         "evidence": [
-          "https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z"
+          "https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z",
+          "https://www.dpmms.cam.ac.uk/~jat58/EMS.pdf"
         ],
-        "note": "The MathDB statement explicitly restricts End_K(E)=Z and uses Thorne Conjecture 2.6. Confirm this restriction against the selection; it must not be silently replaced by geometrically non-CM."
+        "note": "The statement matches Thorne Conjecture 2.6. Thorne explains after Conjecture 2.5 that curves with complex multiplication defined over K have abelian Galois representations described by class field theory. The End_K(E)=Z restriction is therefore the standard remaining modularity scope, not an arbitrary narrowing. Preserve it exactly; geometrically CM curves may still satisfy End_K(E)=Z."
       }
     },
     {
@@ -789,17 +792,18 @@
       ],
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb-v1",
-      "scope": "Establish Fourier restriction or extension estimates in the conjectured optimal exponent range for the specified curved hypersurfaces. The selected sphere statement is a candidate formulation; confirm whether the original selection intends that scope or the full smooth-curved-hypersurface problem.",
+      "scope": "Establish Fourier restriction or extension estimates in the conjectured optimal exponent range for the specified curved hypersurfaces. The selection does not fix the surface class or dimension. Confirm whether it intends the sphere version in dimensions at least three or a more general curved-hypersurface problem before qualification.",
       "mathdb": {
         "status": "pending",
         "id": 403776,
         "url": "https://mathdb.com/p/403776/general-fourier-restriction-estimates-for-smooth-hypersurfac",
         "title": "General Fourier restriction estimates for smooth hypersurfaces",
-        "checked_at": "2026-10-12",
+        "checked_at": "2026-10-13",
         "evidence": [
-          "https://mathdb.com/p/403776/general-fourier-restriction-estimates-for-smooth-hypersurfac"
+          "https://mathdb.com/p/403776/general-fourier-restriction-estimates-for-smooth-hypersurfac",
+          "https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere"
         ],
-        "note": "The candidate is general Fourier restriction for smooth hypersurfaces. Confirm the intended surface class, dimension, curvature assumptions and full exponent range."
+        "note": "The current page asks for the full range of estimates on general smooth hypersurfaces and remains provisional. Alternative for review: [MathDB #403784 — Fourier restriction conjecture for the sphere](https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere), which specifies the sphere, dimensions d>=3 and an exponent range. It is a concrete candidate, not an automatic replacement for the broader selected problem. Confirm the intended surface class, dimensions, curvature assumptions and full exponent range with the team and MathDB."
       }
     },
     {
@@ -943,17 +947,19 @@
       ],
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb-v1",
-      "scope": "Is every rational Hodge class on a smooth projective variety over a characteristic-zero field an absolute Hodge class under every embedding into the complex numbers? An abelian-variety theorem or a statement only about isomorphic Hodge structures does not settle the general conjecture.",
+      "scope": "On every smooth projective variety over an algebraically closed characteristic-zero field of finite transcendence degree over Q, prove that Hodge classes are absolute Hodge: their paired etale and de Rham realizations correspond to a rational Hodge class under every embedding into C. Use the full absolute-Hodge formulation, not only the dR-absolute variant; the abelian-variety theorem does not settle the general conjecture.",
       "mathdb": {
-        "status": "pending",
-        "id": 352426,
-        "url": "https://mathdb.com/p/352426/the-deligne-absolute-hodge-cycle-conjecture",
-        "title": "The Deligne absolute Hodge cycle conjecture",
-        "checked_at": "2026-10-12",
+        "status": "confirmed",
+        "id": 370916,
+        "url": "https://mathdb.com/p/370916/the-absolute-hodge-conjecture-for-hodge-classes",
+        "title": "The absolute Hodge conjecture for Hodge classes",
+        "checked_at": "2026-10-13",
         "evidence": [
-          "https://mathdb.com/p/352426/the-deligne-absolute-hodge-cycle-conjecture"
+          "https://mathdb.com/p/370916/the-absolute-hodge-conjecture-for-hodge-classes",
+          "https://arxiv.org/html/2510.10403v1",
+          "https://arxiv.org/html/2111.00216"
         ],
-        "note": "The candidate uses dR-absolute Hodge cycles of variations and generic Mumford-Tate groups. Confirm correspondence to the selected full absolute-Hodge formulation."
+        "note": "MathDB #370916 gives the full absolute-Hodge statement, including both etale and de Rham realizations, following Conjecture 5.4.2 of Alice Lin, arXiv:2510.10403. The former #352426 uses the dR-absolute variant; its source, Tobias Kreutz, arXiv:2111.00216, Section 2.1, describes that notion as slightly weaker. The replacement matches the selected general conjecture. The paper date is not the original conjecture date."
       }
     },
     {
@@ -1009,17 +1015,15 @@
       ],
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb-v1",
-      "scope": "Give the stated effective uniform bounds on heights of rational points on curves of genus at least two over number fields, with explicit dependence on curve and field invariants. Fix the height normalization and quantitative bounds; qualitative finiteness alone is insufficient.",
+      "scope": "Give effectively computable bounds on heights of rational points on smooth projective curves of genus at least two over number fields, with the stated dependence on curve and field invariants. Fix the height normalization, effectivity and any required uniformity; existence of an unspecified constant or qualitative finiteness alone is insufficient.",
       "mathdb": {
         "status": "pending",
-        "id": 393610,
-        "url": "https://mathdb.com/p/393610/effective-mordell-vojta-height-conjecture-for-curves",
-        "title": "Effective Mordell / Vojta height conjecture for curves",
-        "checked_at": "2026-10-12",
-        "evidence": [
-          "https://mathdb.com/p/393610/effective-mordell-vojta-height-conjecture-for-curves"
-        ],
-        "note": "The candidate uses a Vojta-style height/discriminant inequality but does not specify an effective algorithm for its constant. Confirm the required effectivity and uniformity; qualitative finiteness or a non-effective bound is insufficient."
+        "id": null,
+        "url": null,
+        "title": null,
+        "checked_at": null,
+        "evidence": [],
+        "note": "A full matching page has not been located in the current search; this is not a claim that none exists anywhere on MathDB. Related reference only: [MathDB #393610 — Effective Mordell / Vojta height conjecture for curves](https://mathdb.com/p/393610/effective-mordell-vojta-height-conjecture-for-curves). Its stated height/discriminant inequality neither requires its constant to be effectively computable nor explicitly imposes genus at least two, so it is not the approved effective-Mordell mapping. MathDB and the team must supply or identify a full matching statement, or explicitly revise the selection, before automatic handoff."
       }
     },
     {

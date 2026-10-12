@@ -12,6 +12,7 @@ claimant replies, team decisions, old versions and public-review history.
 - Affected category and material version: <details>
 - Previous conclusion/version: <record>
 - Current trusted conclusion/version and evidence: <record>
+- JSP/MathDB correspondence and page-statement consistency: <current confirmed formulation; unresolved mapping or statement correction puts affected handoffs on hold>
 - Date/priority or committee checks for a new category: <passed evidence; otherwise do not add a formal claim category>
 - Other affected claims/categories: <links; include Solution payment if complete Lean evidence is lost>
 - Consequence: <continue review / awaiting evidence / affected category on hold / team decision>

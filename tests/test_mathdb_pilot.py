@@ -113,9 +113,26 @@ class PilotTests(unittest.TestCase):
         value = self.modified()
         value["problems"][0]["mathdb"]["status"] = "pending"
         metadata = pilot.metadata(value["problems"][0])
-        self.assertIn("Candidate [MathDB", metadata)
-        self.assertIn("Scope confirmation pending", metadata)
+        self.assertIn("Scope pending — [MathDB", metadata)
+        self.assertIn("Scope / page-statement confirmation pending", metadata)
+        self.assertNotIn("Candidate [MathDB", metadata)
         self.assertNotIn("Statement match checked", metadata)
+
+    def test_unlocated_mapping_keeps_related_page_out_of_approved_link(self):
+        value = self.modified()
+        p = value["problems"][0]
+        m = p["mathdb"]
+        related_url = m["url"]
+        m.update(status="pending", id=None, url=None, title=None, checked_at=None,
+                 evidence=[], note=f"Related reference only: {related_url}")
+        pilot.validate_manifest(value, ROOT)
+        self.assertEqual(pilot.mapping_link(m), "Matching page pending")
+        self.assertIn(related_url, pilot.metadata(p))
+        for field, replacement in (("url", related_url), ("evidence", [related_url])):
+            invalid = copy.deepcopy(value)
+            invalid["problems"][0]["mathdb"][field] = replacement
+            with self.assertRaises(pilot.InvalidPilot):
+                pilot.validate_manifest(invalid, ROOT)
 
     def test_check_detects_generated_and_index_drift(self):
         with tempfile.TemporaryDirectory() as directory:
