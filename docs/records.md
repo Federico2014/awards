@@ -20,7 +20,7 @@ identity checks and award confirmation.
 The eligibility/claim-status conventions below apply to legacy records. For
 [MathDB pilot problems](../problems/mathdb-pilot.md), index/detail eligibility
 links to the pilot process; the Solver, Lean and Exposition claim-status cells
-independently show `Not registered`, `Candidate` or `Awarded` from public records.
+are blank when no public record exists, or show `Candidate` or `Awarded` independently.
 A shared Solved/Lean flag does not determine all three categories. Maintain category-specific claim, candidate and award
 outcomes through the [new process](award-process-mathdb.md), including Exposition
 and Solution public review before Lean payment evidence is available. Do not

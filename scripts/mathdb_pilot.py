@@ -159,7 +159,7 @@ def metadata(p):
 
 def claim_states(root, value):
     """Aggregate public registration independently of mathematical eligibility."""
-    states = {p["jsp"]: {category: "Not registered" for category in CATEGORIES}
+    states = {p["jsp"]: {category: "" for category in CATEGORIES}
               for p in value["problems"]}
     records = {}
     for location, section, status in (
@@ -212,7 +212,7 @@ def render(value, states):
         "Solution, Lean and Exposition have separate review and qualification records;",
         "the legacy shared eligibility flag does not control pilot applications.", "",
         "The three claim-status columns show public registration independently:",
-        "**Not registered** means no candidate or award is published for that category,",
+        "An **empty cell** means no candidate or award is published for that category,",
         "**Candidate** means it appears in the public candidate register, and",
         "**Awarded** means an announced award is recorded. None of these values is",
         "technical/committee approval, a claim-issue state or proof of payment.", "",
@@ -228,12 +228,10 @@ def render(value, states):
         "remain on the legacy process until a reviewed scope update and migration",
         "announcement. Preserve original contribution dates and unchanged notice clocks.", "",
         "## Pilot register", "",
-        "| JSP | Problem | MathDB page | Mapping | Solution claim status | Lean claim status | Exposition claim status |",
-        "| --- | --- | --- | --- | --- | --- | --- |"]
+        "| JSP | Problem | MathDB page | Solution claim status | Lean claim status | Exposition claim status |",
+        "| --- | --- | --- | --- | --- | --- |"]
     for p in problems:
         lines.append(f"| {p['jsp']} | [{p['title']}]({catalog_link(p)}) | {mapping_link(p['mathdb'])} | "
-                     + ("Statement match checked" if p["mathdb"]["status"] == "confirmed"
-                        else "Scope confirmation pending") + " | "
                      + " | ".join(states[p["jsp"]][c] for c in CATEGORIES) + " |")
     lines += ["", "## Scope notes", ""]
     for p in problems:

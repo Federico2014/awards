@@ -8,10 +8,10 @@ legacy process until their migration is announced. We recommend the new process
 for participating problems and intend to extend it to the remaining problem bank.
 Adding a MathDB link alone does not migrate a problem.
 
-This repository change prepares the pilot. The agent must also check the published
-activation record and configured official account before sending formal claims.
-The [machine-readable register](../problems/mathdb-pilot.json) records that rollout
-state; an unresolved problem mapping prevents automatic handoff for that problem.
+This repository change prepares the pilot. Formal automatic claims begin after
+activation is announced and the official MathDB account is configured. The
+[pilot page](../problems/mathdb-pilot.md) records rollout and any unresolved scope;
+resolve those questions before automatic handoff for the affected problem.
 
 This version follows the [MathDB cooperation process, updated October 8, 2026](https://docs.google.com/document/d/12S_ofD1aj5vqoh7tSiedUjnnIcCflKpvifaOQ9fIuUM/edit).
 Problem levels and estimated rewards are not recorded in this repository.
@@ -31,7 +31,7 @@ reward and any joint-author allocation; the catalog supplies no reward estimate.
 
 The [problem index](../problems/README.md#mathdb-pilot-claim-status-columns) and
 pilot page show independent Solution, Lean and Exposition registration states:
-`Not registered`, `Candidate` or `Awarded`. They summarize the public registers,
+blank when no record is published, otherwise `Candidate` or `Awarded`. They summarize the public registers,
 not technical acceptance, committee selection, pending claim issues or payment.
 Exposition is not gated by a Solved/Lean flag; its own review and committee
 selection remain required.

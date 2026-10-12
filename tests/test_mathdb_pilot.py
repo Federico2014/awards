@@ -130,8 +130,8 @@ class PilotTests(unittest.TestCase):
             pilot.synchronize(root)
             index = root / "problems/README.md"
             index.write_text(index.read_text().replace(
-                "| See MathDB pilot | Not registered | Not registered | Not registered |",
-                "| See MathDB pilot | Candidate | Not registered | Not registered |", 1))
+                "| See MathDB pilot |  |  |  |",
+                "| See MathDB pilot | Candidate |  |  |", 1))
             with self.assertRaises(pilot.InvalidPilot):
                 pilot.synchronize(root)
 
@@ -142,13 +142,13 @@ class PilotTests(unittest.TestCase):
             row = self.register_row(root, "candidates", "Exposition")
             states = pilot.claim_states(root, self.manifest)
             self.assertEqual(states["JSP-000001"], {
-                "Solution": "Not registered", "Lean": "Not registered", "Exposition": "Candidate"})
+                "Solution": "", "Lean": "", "Exposition": "Candidate"})
             # An open problem with no Lean may have an independently reviewed exposition.
             with self.assertRaises(pilot.InvalidPilot):
                 pilot.synchronize(root)
             pilot.synchronize(root, write=True)
             pilot.synchronize(root)
-            self.assertIn("| See MathDB pilot | Not registered | Not registered | Candidate |",
+            self.assertIn("| See MathDB pilot |  |  | Candidate |",
                           (root / "problems/README.md").read_text())
             candidates = root / "candidates/README.md"
             candidates.write_text(candidates.read_text().replace(row, "", 1))
@@ -156,7 +156,7 @@ class PilotTests(unittest.TestCase):
             pilot.synchronize(root, write=True)
             pilot.synchronize(root)
             self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
-                "Solution": "Not registered", "Lean": "Not registered", "Exposition": "Awarded"})
+                "Solution": "", "Lean": "", "Exposition": "Awarded"})
 
     def test_solution_and_lean_records_do_not_claim_exposition(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -165,7 +165,7 @@ class PilotTests(unittest.TestCase):
             self.register_row(root, "candidates", "Solution")
             self.register_row(root, "awards", "Lean")
             self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
-                "Solution": "Candidate", "Lean": "Awarded", "Exposition": "Not registered"})
+                "Solution": "Candidate", "Lean": "Awarded", "Exposition": ""})
             pilot.synchronize(root, write=True)
             pilot.synchronize(root)
 
@@ -194,7 +194,7 @@ class PilotTests(unittest.TestCase):
             self.register_row(root, "candidates", "Solution", claimant="Pending coauthor")
             self.register_row(root, "awards", "Solution", claimant="Confirmed coauthor")
             self.assertEqual(pilot.claim_states(root, self.manifest)["JSP-000001"], {
-                "Solution": "Awarded", "Lean": "Not registered", "Exposition": "Not registered"})
+                "Solution": "Awarded", "Lean": "", "Exposition": ""})
 
     def test_missing_header_separator_cannot_hide_exposition_column(self):
         with tempfile.TemporaryDirectory() as directory:
