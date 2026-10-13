@@ -2,7 +2,6 @@
   "schema_version": 1,
   "rules_version": "mathdb-v1",
   "selection_name": "MathDB–Sun Collaboration Problem Selection",
-  "source_process": "https://docs.google.com/document/d/12S_ofD1aj5vqoh7tSiedUjnnIcCflKpvifaOQ9fIuUM/edit",
   "rollout": {
     "status": "prepared",
     "effective_at": null,

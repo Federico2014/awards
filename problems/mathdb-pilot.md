@@ -96,7 +96,6 @@ announcement. Preserve original contribution dates and unchanged notice clocks.
 
 ## Sources and maintenance
 
-Process source: [MathDB cooperation process](https://docs.google.com/document/d/12S_ofD1aj5vqoh7tSiedUjnnIcCflKpvifaOQ9fIuUM/edit).
 Selection provenance: *MathDB–Sun Collaboration Problem Selection*; the
 manifest retains original titles and source line numbers after deduplication.
 MathDB page links are the mapping evidence; recent bibliography detection dates

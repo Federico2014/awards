@@ -59,12 +59,11 @@ def load_manifest(root=ROOT):
 def validate_manifest(value, root=ROOT):
     require(isinstance(value, dict), "Pilot must be an object")
     require(set(value) == {"schema_version", "rules_version", "selection_name",
-                           "source_process", "rollout", "problems"},
+                           "rollout", "problems"},
             "Unknown or missing pilot fields; do not include levels or estimates")
     require(value["schema_version"] == 1 and value["rules_version"] == "mathdb-v1",
             "Unsupported schema/rules version")
     plain(value["selection_name"], "selection name")
-    https_link(value["source_process"], "process source")
     rollout = value["rollout"]
     require(isinstance(rollout, dict) and set(rollout) ==
             {"status", "effective_at", "activation_evidence"}, "Invalid rollout fields")
@@ -244,7 +243,6 @@ def render(value, states):
         if p["mathdb"]["status"] == "pending":
             lines.append(f"- **{p['jsp']} — {p['title']}:** {p['mathdb']['note']}")
     lines += ["", "## Sources and maintenance", "",
-        f"Process source: [MathDB cooperation process]({value['source_process']}).",
         "Selection provenance: *MathDB–Sun Collaboration Problem Selection*; the",
         "manifest retains original titles and source line numbers after deduplication.",
         "MathDB page links are the mapping evidence; recent bibliography detection dates",
