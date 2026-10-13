@@ -57,13 +57,19 @@ dimension, hypotheses and conclusion. Report a missing or incorrect mapping usin
 the [correction form](../.github/ISSUE_TEMPLATE/correction.yml); resolve it before
 automatic handoff.
 
-`Scope pending` marks a formulation or page-statement issue; `Matching page pending`
-means a full corresponding page has not been located. Neither is a reward-candidate
-status. The [scope notes](../problems/mathdb-pilot.md#scope-notes) record related and
-alternative pages for review. They do not change the approved formulation by
+Links display no status prefix. The [scope notes](../problems/mathdb-pilot.md#scope-notes)
+and catalog metadata record unresolved formulations and page-statement issues;
+`Matching page pending` means a full corresponding page has not been located.
+These are independent of reward-candidate status. The notes also record related
+and alternative pages for review. They do not change the approved formulation by
 themselves. In particular, resolve the conflicting P=NP/P!=NP page statements
 before automatic handoff, and do not substitute a non-effective Vojta bound for
-the selected effective-Mordell problem.
+the selected effective-Mordell problem. JSP-001050 links to the algorithmic form
+at [MathDB #332964](https://mathdb.com/p/332964/algorithmic-mordell-conjecture):
+compute all points on any genus-at-least-two curve over a number field or finite
+extension. This supplies an effective height bound for each input but does not
+prescribe linear or polynomial uniform dependence; a stronger quantitative
+formulation requires an explicit scope decision.
 
 Submit the relevant materials through MathDB's available submission entry point:
 

@@ -35,9 +35,12 @@ For JSP-000002, the linked page currently states P=NP and also lists P!=NP as an
 equivalent formulation. Require MathDB's corrected question and the team's
 confirmed correspondence before automatic handoff; an open-problem tag does not
 establish which conclusions the claim system accepts. Related or alternative
-pages in scope notes are not confirmed mappings. For JSP-001050, require a full
-effective-Mordell statement for genus at least two with an effectively computable
-bound; existence of an unspecified constant alone does not satisfy that scope.
+pages in scope notes are not confirmed mappings. For JSP-001050, MathDB #332964
+records the algorithmic effective-Mordell form for all genus-at-least-two curves
+over number fields and finite extensions. Require full algorithmic coverage;
+existence of an unspecified constant alone does not satisfy that scope. Do not
+infer a prescribed linear or polynomial uniform height bound from algorithmic
+effectivity; such a stronger formulation requires an explicit scope decision.
 
 ## Accepted-event evidence
 

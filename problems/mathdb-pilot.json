@@ -1015,15 +1015,18 @@
       ],
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb-v1",
-      "scope": "Give effectively computable bounds on heights of rational points on smooth projective curves of genus at least two over number fields, with the stated dependence on curve and field invariants. Fix the height normalization, effectivity and any required uniformity; existence of an unspecified constant or qualitative finiteness alone is insufficient.",
+      "scope": "Construct an algorithm that, given a number field K, a smooth projective geometrically connected curve X/K of genus at least two and a finite number-field extension L/K, computes the complete finite set X(L). This algorithmic effective-Mordell form supplies an effectively computable height bound for each input curve and field; qualitative finiteness alone is insufficient. A prescribed linear or polynomial uniform height bound is a stronger formulation and requires an explicit scope decision.",
       "mathdb": {
-        "status": "pending",
-        "id": null,
-        "url": null,
-        "title": null,
-        "checked_at": null,
-        "evidence": [],
-        "note": "A full matching page has not been located in the current search; this is not a claim that none exists anywhere on MathDB. Related reference only: [MathDB #393610 — Effective Mordell / Vojta height conjecture for curves](https://mathdb.com/p/393610/effective-mordell-vojta-height-conjecture-for-curves). Its stated height/discriminant inequality neither requires its constant to be effectively computable nor explicitly imposes genus at least two, so it is not the approved effective-Mordell mapping. MathDB and the team must supply or identify a full matching statement, or explicitly revise the selection, before automatic handoff."
+        "status": "confirmed",
+        "id": 332964,
+        "url": "https://mathdb.com/p/332964/algorithmic-mordell-conjecture",
+        "title": "Algorithmic Mordell conjecture",
+        "checked_at": "2026-10-13",
+        "evidence": [
+          "https://mathdb.com/p/332964/algorithmic-mordell-conjecture",
+          "https://arxiv.org/html/1604.05043"
+        ],
+        "note": "The full MathDB search located #332964, which states Algorithmic Mordell for all smooth projective geometrically connected curves of genus at least two over number fields, including finite extensions. It matches Conjecture 6.1 of Ariyan Javanpeykar, arXiv:1604.05043, and the basic algorithmic effective-Mordell form selected here. The discussion after that conjecture explains that computing all points supplies an effectively computable height bound but does not imply prescribed linear or polynomial dependence on the field discriminant or curve height. Stronger quantitative reference: [MathDB #318788 — Strong Mordell for families](https://mathdb.com/p/318788/strong-mordell-conjecture-for-families-of-curves); that family-uniform bound is not automatically included in this record. Former related page #393610 only asserts existence of a Vojta-type constant and is not this approved mapping. The 2016 source date is not asserted as the original conjecture date."
       }
     },
     {

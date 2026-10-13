@@ -138,8 +138,7 @@ def catalog_link(p):
 def mapping_link(m):
     if not m["url"]:
         return "Matching page pending"
-    prefix = "Scope pending — " if m["status"] == "pending" else ""
-    return f"{prefix}[MathDB #{m['id']}]({m['url']})"
+    return f"[MathDB #{m['id']}]({m['url']})"
 
 
 def metadata(p):
@@ -221,11 +220,12 @@ def render(value, states):
         "technical/committee approval, a claim-issue state or proof of payment.", "",
         f"**Mapping review:** {checked} statement matches checked; {len(problems)-checked} unresolved mappings or page statements.",
         "Confirmed means the linked public statement was compared with the selected",
-        "problem; it does not accept a proof or determine a reward. **Scope pending**",
-        "marks an unresolved formulation or page-statement correction, not a reward",
-        "candidate. **Matching page pending** means no full matching page has been",
-        "located. Neither status authorizes automatic handoff; related or alternative",
-        "pages in the scope notes are references, not approved replacements.", "",
+        "problem; it does not accept a proof or determine a reward. Links are shown",
+        "without a status prefix; unresolved formulations and page-statement corrections",
+        "are recorded in the scope notes and catalog metadata. **Matching page pending**",
+        "means no full matching page has been located. Unresolved records do not",
+        "authorize automatic handoff; related or alternative pages in the scope notes",
+        "are references, not approved replacements.", "",
         f"**Rollout:** `{value['rollout']['status']}`. " +
         ("Production activation and its UTC effective time must be published and the official MathDB actor/sender configured before automatic claims or success notifications."
          if value["rollout"]["status"] == "prepared" else

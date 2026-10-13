@@ -113,7 +113,8 @@ class PilotTests(unittest.TestCase):
         value = self.modified()
         value["problems"][0]["mathdb"]["status"] = "pending"
         metadata = pilot.metadata(value["problems"][0])
-        self.assertIn("Scope pending — [MathDB", metadata)
+        self.assertIn("| MathDB problem | [MathDB", metadata)
+        self.assertNotIn("Scope pending —", metadata)
         self.assertIn("Scope / page-statement confirmation pending", metadata)
         self.assertNotIn("Candidate [MathDB", metadata)
         self.assertNotIn("Statement match checked", metadata)

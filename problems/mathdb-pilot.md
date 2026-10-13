@@ -19,13 +19,14 @@ An **empty cell** means no candidate or award is published for that category,
 **Awarded** means an announced award is recorded. None of these values is
 technical/committee approval, a claim-issue state or proof of payment.
 
-**Mapping review:** 45 statement matches checked; 4 unresolved mappings or page statements.
+**Mapping review:** 46 statement matches checked; 3 unresolved mappings or page statements.
 Confirmed means the linked public statement was compared with the selected
-problem; it does not accept a proof or determine a reward. **Scope pending**
-marks an unresolved formulation or page-statement correction, not a reward
-candidate. **Matching page pending** means no full matching page has been
-located. Neither status authorizes automatic handoff; related or alternative
-pages in the scope notes are references, not approved replacements.
+problem; it does not accept a proof or determine a reward. Links are shown
+without a status prefix; unresolved formulations and page-statement corrections
+are recorded in the scope notes and catalog metadata. **Matching page pending**
+means no full matching page has been located. Unresolved records do not
+authorize automatic handoff; related or alternative pages in the scope notes
+are references, not approved replacements.
 
 **Rollout:** `prepared`. Production activation and its UTC effective time must be published and the official MathDB actor/sender configured before automatic claims or success notifications.
 
@@ -37,7 +38,7 @@ announcement. Preserve original contribution dates and unchanged notice clocks.
 
 | JSP | Problem | MathDB page | Solution claim status | Lean claim status | Exposition claim status |
 | --- | --- | --- | --- | --- | --- |
-| JSP-000002 | [P versus NP problem](catalog-0001-0100.md#JSP-000002) | Scope pending — [MathDB #315853](https://mathdb.com/p/315853/p-versus-np-problem) |  |  |  |
+| JSP-000002 | [P versus NP problem](catalog-0001-0100.md#JSP-000002) | [MathDB #315853](https://mathdb.com/p/315853/p-versus-np-problem) |  |  |  |
 | JSP-000001 | [Riemann hypothesis](catalog-0001-0100.md#JSP-000001) | [MathDB #315854](https://mathdb.com/p/315854/riemann-hypothesis) |  |  |  |
 | JSP-000006 | [Yang–Mills existence and mass gap](catalog-0001-0100.md#JSP-000006) | [MathDB #315855](https://mathdb.com/p/315855/yang-mills-existence-and-mass-gap) |  |  |  |
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | [MathDB #315851](https://mathdb.com/p/315851/hodge-conjecture) |  |  |  |
@@ -46,7 +47,7 @@ announcement. Preserve original contribution dates and unchanged notice clocks.
 | JSP-001023 | [Global Langlands functoriality conjecture](catalog-1001-1022.md#JSP-001023) | [MathDB #405775](https://mathdb.com/p/405775/global-langlands-functoriality-conjecture) |  |  |  |
 | JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | [MathDB #316096](https://mathdb.com/p/316096/abc-conjecture) |  |  |  |
 | JSP-000021 | [Schanuel conjecture](catalog-0001-0100.md#JSP-000021) | [MathDB #316100](https://mathdb.com/p/316100/schanuel-s-conjecture) |  |  |  |
-| JSP-001024 | [Mirror symmetry conjecture](catalog-1001-1022.md#JSP-001024) | Scope pending — [MathDB #397030](https://mathdb.com/p/397030/strominger-yau-zaslow-syz-mirror-symmetry-conjecture) |  |  |  |
+| JSP-001024 | [Mirror symmetry conjecture](catalog-1001-1022.md#JSP-001024) | [MathDB #397030](https://mathdb.com/p/397030/strominger-yau-zaslow-syz-mirror-symmetry-conjecture) |  |  |  |
 | JSP-001025 | [Existence of one-way functions](catalog-1001-1022.md#JSP-001025) | [MathDB #405776](https://mathdb.com/p/405776/existence-of-one-way-functions) |  |  |  |
 | JSP-000015 | [Kakeya dimension conjecture (general dimension)](catalog-0001-0100.md#JSP-000015) | [MathDB #315983](https://mathdb.com/p/315983/kakeya-conjecture) |  |  |  |
 | JSP-001026 | [Grothendieck's standard conjectures](catalog-1001-1022.md#JSP-001026) | [MathDB #315943](https://mathdb.com/p/315943/standard-conjectures) |  |  |  |
@@ -72,7 +73,7 @@ announcement. Preserve original contribution dates and unchanged notice clocks.
 | JSP-001038 | [Spacetime Penrose inequality](catalog-1001-1022.md#JSP-001038) | [MathDB #405787](https://mathdb.com/p/405787/prove-the-penrose-inequality-or-present-a-counterexample) |  |  |  |
 | JSP-001039 | [Modularity of elliptic curves over number fields](catalog-1001-1022.md#JSP-001039) | [MathDB #405788](https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z) |  |  |  |
 | JSP-001040 | [Fontaine–Mazur conjecture on geometric Galois representations](catalog-1001-1022.md#JSP-001040) | [MathDB #389372](https://mathdb.com/p/389372/fontaine-mazur-geometric-galois-representation-conjecture) |  |  |  |
-| JSP-001041 | [Fourier restriction conjecture](catalog-1001-1022.md#JSP-001041) | Scope pending — [MathDB #403776](https://mathdb.com/p/403776/general-fourier-restriction-estimates-for-smooth-hypersurfac) |  |  |  |
+| JSP-001041 | [Fourier restriction conjecture](catalog-1001-1022.md#JSP-001041) | [MathDB #403776](https://mathdb.com/p/403776/general-fourier-restriction-estimates-for-smooth-hypersurfac) |  |  |  |
 | JSP-001042 | [Grothendieck period conjecture](catalog-1001-1022.md#JSP-001042) | [MathDB #356355](https://mathdb.com/p/356355/grothendieck-s-period-conjecture-for-motivic-galois-groups) |  |  |  |
 | JSP-001043 | [Existence of one-way permutations](catalog-1001-1022.md#JSP-001043) | [MathDB #405793](https://mathdb.com/p/405793/existence-of-one-way-permutations) |  |  |  |
 | JSP-001044 | [Finiteness of Tate–Shafarevich groups for elliptic curves](catalog-1001-1022.md#JSP-001044) | [MathDB #355259](https://mathdb.com/p/355259/shafarevich-tate-finiteness-conjecture-for-elliptic-curves) |  |  |  |
@@ -82,7 +83,7 @@ announcement. Preserve original contribution dates and unchanged notice clocks.
 | JSP-001048 | [Deligne's absolute Hodge conjecture](catalog-1001-1022.md#JSP-001048) | [MathDB #370916](https://mathdb.com/p/370916/the-absolute-hodge-conjecture-for-hodge-classes) |  |  |  |
 | JSP-000030 | [Elliott–Halberstam conjecture](catalog-0001-0100.md#JSP-000030) | [MathDB #316120](https://mathdb.com/p/316120/elliott-halberstam-conjecture) |  |  |  |
 | JSP-001049 | [Mumford–Tate conjecture for abelian varieties over number fields](catalog-1001-1022.md#JSP-001049) | [MathDB #332879](https://mathdb.com/p/332879/the-mumford-tate-conjecture-for-abelian-varieties) |  |  |  |
-| JSP-001050 | [Effective Mordell conjecture for curves of genus at least two](catalog-1001-1022.md#JSP-001050) | Matching page pending |  |  |  |
+| JSP-001050 | [Effective Mordell conjecture for curves of genus at least two](catalog-1001-1022.md#JSP-001050) | [MathDB #332964](https://mathdb.com/p/332964/algorithmic-mordell-conjecture) |  |  |  |
 | JSP-000016 | [Littlewood conjecture](catalog-0001-0100.md#JSP-000016) | [MathDB #316099](https://mathdb.com/p/316099/littlewood-conjecture) |  |  |  |
 | JSP-000024 | [Invariant subspace problem for Hilbert spaces](catalog-0001-0100.md#JSP-000024) | [MathDB #315900](https://mathdb.com/p/315900/invariant-subspace-problem) |  |  |  |
 | JSP-000025 | [Lehmer–Mahler measure problem](catalog-0001-0100.md#JSP-000025) | [MathDB #315901](https://mathdb.com/p/315901/lehmer-s-conjecture) |  |  |  |
@@ -92,7 +93,6 @@ announcement. Preserve original contribution dates and unchanged notice clocks.
 - **JSP-000002 — P versus NP problem:** The linked page identifies P versus NP, but its main statement asserts P=NP and an alleged equivalent formulation asserts P!=NP. These are not equivalent. MathDB must correct the statement to the question whether P equals NP, and the team must confirm correspondence before the agent automatically judges a full solution or hands off a claim. An open-problem tag alone does not establish acceptance of both directions.
 - **JSP-001024 — Mirror symmetry conjecture:** The selection names the mirror-symmetry family without fixing a formulation. The current SYZ page is provisional. Alternative for review: [MathDB #374550 — Kontsevich homological mirror symmetry](https://mathdb.com/p/374550/kontsevich-s-homological-mirror-symmetry-conjecture), formulated as an equivalence of Fukaya and derived coherent-sheaf categories. SYZ and homological mirror symmetry are different formulations; the team and MathDB must confirm the intended version before replacing the approved mapping or qualifying a claim.
 - **JSP-001041 — Fourier restriction conjecture:** The current page asks for the full range of estimates on general smooth hypersurfaces and remains provisional. Alternative for review: [MathDB #403784 — Fourier restriction conjecture for the sphere](https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere), which specifies the sphere, dimensions d>=3 and an exponent range. It is a concrete candidate, not an automatic replacement for the broader selected problem. Confirm the intended surface class, dimensions, curvature assumptions and full exponent range with the team and MathDB.
-- **JSP-001050 — Effective Mordell conjecture for curves of genus at least two:** A full matching page has not been located in the current search; this is not a claim that none exists anywhere on MathDB. Related reference only: [MathDB #393610 — Effective Mordell / Vojta height conjecture for curves](https://mathdb.com/p/393610/effective-mordell-vojta-height-conjecture-for-curves). Its stated height/discriminant inequality neither requires its constant to be effectively computable nor explicitly imposes genus at least two, so it is not the approved effective-Mordell mapping. MathDB and the team must supply or identify a full matching statement, or explicitly revise the selection, before automatic handoff.
 
 ## Sources and maintenance
 
