@@ -1,5 +1,5 @@
 name: Claim Reward (MathDB)
-description: Claim a reward for a MathDB problem.
+description: Claim a reward for a MathDB pilot problem.
 title: "[Claim Reward] JSP-XXXXXX — categories"
 body:
   - type: markdown
