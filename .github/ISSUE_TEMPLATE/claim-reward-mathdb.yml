@@ -1,5 +1,5 @@
 name: Claim Reward (MathDB)
-description: Official agent handoff for an approved MathDB pilot problem; the contributor remains the claimant.
+description: Claim a reward for a MathDB problem.
 title: "[Claim Reward] JSP-XXXXXX — categories"
 body:
   - type: markdown
