@@ -22,8 +22,8 @@ Reviewed versions and conclusions: <category records and UTC times>
 Qualification evidence: <Solution/Lean original date after 2026-01-01 and earliest
 valid contribution evidence; or Exposition committee first-satisfactory decision>
 Created/updated claim: <issue URL>
-Solution complete-Lean payment condition, if applicable: <verified / explicitly
-adopted external evidence / awaiting valid evidence>
+Solution/Exposition complete-Lean announcement and payment condition, if applicable:
+<verified / explicitly adopted external evidence / awaiting valid evidence>
 
 Please review the issue and reply personally to the prize mailbox, linking it,
 confirming your own contribution and intent to claim, and disclosing coauthors
@@ -48,7 +48,8 @@ Use the same claim thread and Cc/Reply-To. State the JSP/claim URL, affected
 category and versions, new evidence/withdrawal, UTC date, consequence, required
 personal action and next responsible party. No success notification for a category
 with missing qualification evidence. A withdrawal notice must explain holds on
-related Solution payments when complete Lean evidence is affected.
+related Solution and Exposition announcements and payments when complete Lean
+evidence is affected.
 
 ## Personal response
 

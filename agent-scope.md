@@ -72,7 +72,8 @@ Keep three independent states:
   attribution, contact permission and a usable private notification address.
 - **Solution:** require complete mathematical review, original public time after
   2026-01-01 and earliest-valid-contributor evidence. Complete Lean evidence may
-  still be missing: permit claim/public review, mark payment condition pending.
+  still be missing: permit claim/public review, mark announcement and payment
+  pending.
 - **Lean:** require the corresponding mathematical solution, original repository,
   branch, full SHA, files/theorems, dependencies, construction/completeness and
   axiom audit evidence, original public time after 2026-01-01 and earliest-valid-
@@ -86,9 +87,12 @@ Keep three independent states:
 - **Exposition:** require content review and the committee's first-satisfactory-
   contributor decision, selected version, decision time and evidence. Do not infer
   selection from upload order or apply the Solution/Lean cutoff automatically.
+  Permit claim/public review before complete Lean verification; keep announcement
+  and payment pending until verification of the original problem is confirmed.
 - **External Lean adoption:** identify original repository, exact version, original
   scope, completeness, external report and MathDB's explicit adoption conclusion.
-  No mandatory universal rebuild. Adoption supports Solution's payment condition;
+  No mandatory universal rebuild. Adoption supports the complete-Lean condition
+  for both Solution and Exposition announcements and payments;
   it does not by itself give the formalizer a Lean reward claim.
 
 Pause only deficient categories unless problem mapping or actual claimant is
@@ -166,7 +170,7 @@ the person or receives payment.
 | Missing address or bounce | Show contact failure, request correction through MathDB's existing channel, notify the internal owner. Do not invent an address. |
 | MathDB state write fails | Retry the state save using persisted issue/mail results; do not repeat completed external actions. |
 | New category passes | Update the existing claim; send the new category's evidence and instructions. |
-| Review/adoption/selection withdrawn or scope reduced | Update the original claim, name affected versions/categories and notify contributors and team. Loss of Lean evidence also affects Solution payment for that problem. |
+| Review/adoption/selection withdrawn or scope reduced | Update the original claim, name affected versions/categories and notify contributors and team. Loss of Lean evidence also holds Solution and Exposition announcements and payments for that problem. |
 | Competition or attribution dispute | Link evidence and refer to the team; do not select a winner. |
 | Public review ends or issue closes | Synchronize only a documented team outcome; never infer payment. |
 
@@ -183,7 +187,10 @@ Follow each category in the [candidate register](candidates/README.md#mathdb-pil
 and [award register](awards/README.md#mathdb-pilot-awards). Only the team publishes
 public-review start/end, announcements and verified payment status. Do not start
 the 14-day clock at the event, issue or email. Identity checks can run in parallel;
-announcement requires personal identity and written confirmation.
+announcement requires personal identity and written confirmation. Solution and
+Exposition announcements and payments also require current complete Lean
+verification or explicit external-verification adoption for the original problem.
+Neither a Solution claim nor a Lean formalizer's award is a prerequisite.
 
 For migrated applications retain old PRs, exact versions, earliest public history,
 claim outcomes and notice dates. Record the team transition decision and rules
@@ -194,11 +201,13 @@ announced/paid awards. Requests outside the approved register stay on legacy rul
 
 Before enabling production events, exercise these cases with the MathDB team:
 out-of-scope/unresolved mapping; incomplete date/priority evidence; valid Solution
-without Lean payment evidence; Lean with a different solver; exposition awaiting
-selection; external Lean awaiting/adopted verification; later category on the same
+or Exposition awaiting complete Lean evidence; Lean with a different solver;
+exposition awaiting selection; external Lean awaiting/adopted verification;
+later category on the same
 claim; duplicate/concurrent events; GitHub/mail timeouts; mail failure/bounce;
 claimant without GitHub; uploader different from author; revoked Lean affecting
-Solution; competing/joint claims; and preservation of existing notice dates.
+Solution and Exposition; competing/joint claims; and preservation of existing
+notice dates.
 
 Confirm the activation announcement, official actor and sender, trusted event and
 review-query interfaces, committee and re-review contacts, notification retry

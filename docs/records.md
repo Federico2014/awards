@@ -24,7 +24,8 @@ pilot page also shows Exposition. These cells are blank when no public record
 exists, or show `Candidate` or `Awarded` independently.
 A shared Solved/Lean flag does not determine all three categories. Maintain category-specific claim, candidate and award
 outcomes through the [new process](award-process-mathdb.md), including Exposition
-and Solution public review before Lean payment evidence is available. Do not
+and Solution public review before complete Lean verification is available. Both
+categories require that verification before announcement and payment. Do not
 infer qualification from problem status or assign a level or estimated reward.
 
 Identify contributions by JSP problem ID and contribution type. Keep contributor
