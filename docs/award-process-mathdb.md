@@ -2,6 +2,16 @@
 
 [Home](../README.md) · [Pilot problems](../problems/mathdb-pilot.md) · [Legacy process](award-process.md)
 
+[MathDB](https://mathdb.com/) is a partner of The Justin Sun Prize and a community
+platform for mathematical definitions, theorems, conjectures and open problems.
+It brings together research updates, discussions and explanatory materials;
+see [About MathDB](https://mathdb.com/about).
+
+In this pilot, MathDB's role is to review mathematical solutions and expositions,
+verify Lean formalizations and submit reviewed contribution materials through
+this process. The prize team determines final qualification, award decisions
+and payment.
+
 Rules version: **mathdb**. This is the new process for the 50 problems in the
 [pilot register](../problems/mathdb-pilot.md). Other problems continue under the
 legacy process until their migration is announced. We recommend the new process
