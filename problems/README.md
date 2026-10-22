@@ -15,7 +15,8 @@ The catalog records no problem levels or estimated rewards.
 For pilot rows, [See MathDB pilot](mathdb-pilot.md#pilot-register) routes qualification to the category-specific
 process. **Solver claim status** and **Lean claim status** independently report
 public candidate/award registration, as defined below. The pilot page also tracks
-Exposition independently. Solution public review need not wait for complete Lean payment evidence.
+Exposition independently. Solution and Exposition public review may precede complete
+Lean verification, which is required before either category is announced or paid.
 The shared eligibility and two-role conventions below apply to legacy rows.
 Preserve original dates, attribution and unchanged public-review clocks when
 migrating historical applications under a recorded team decision.
@@ -88,9 +89,10 @@ including Exposition. Each category uses independent public-registration states:
 The pilot page and these index cells are generated from the category-specific
 [candidate](../candidates/README.md#mathdb-pilot-candidates) and
 [award](../awards/README.md#mathdb-pilot-awards) tables. A published Exposition
-record changes only Exposition on the pilot page, regardless of whether the original problem is
-solved or has Lean proof. It still requires the committee's selection and all
-applicable personal/team checks. An agent issue alone does not publish a candidate.
+record changes only Exposition on the pilot page. Candidate publication may
+precede complete Lean verification; an award announcement requires that verification,
+the committee's selection and all applicable personal/team checks. Catalog flags
+alone do not establish these conditions. An agent issue alone does not publish a candidate.
 
 For non-pilot problems, the existing Solver and Lean statuses keep the legacy
 meaning below. The retained legacy process has no Exposition category; migration

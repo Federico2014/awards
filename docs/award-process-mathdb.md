@@ -2,6 +2,16 @@
 
 [Home](../README.md) · [Pilot problems](../problems/mathdb-pilot.md) · [Legacy process](award-process.md)
 
+[MathDB](https://mathdb.com/) is a partner of The Justin Sun Prize and a community
+platform for mathematical definitions, theorems, conjectures and open problems.
+It brings together research updates, discussions and explanatory materials;
+see [About MathDB](https://mathdb.com/about).
+
+In this pilot, MathDB's role is to review mathematical solutions and expositions,
+verify Lean formalizations and submit reviewed contribution materials through
+this process. The prize team determines final qualification, award decisions
+and payment.
+
 Rules version: **mathdb**. This is the new process for the 50 problems in the
 [pilot register](../problems/mathdb-pilot.md). Other problems continue under the
 legacy process until their migration is announced. We recommend the new process
@@ -28,13 +38,19 @@ category shares, not a reward for every upload or every person whose materials
 pass a technical check. The team confirms the applicable formally announced
 reward and any joint-author allocation; the catalog supplies no reward estimate.
 
+**Solution and Exposition awards are both gated by verification of a complete
+Lean formalization of the original problem.** Each category keeps its own review,
+attribution and reward share. The Lean formalizer need not claim or receive an
+award first, and a Solution claim or award is not a prerequisite for Lean or
+Exposition.
+
 The [problem index](../problems/README.md#mathdb-pilot-claim-status-columns) shows
 independent Solution (under Solver) and Lean registration states; the
 [pilot page](../problems/mathdb-pilot.md#pilot-register) also shows Exposition:
 blank when no record is published, otherwise `Candidate` or `Awarded`. They summarize the public registers,
 not technical acceptance, committee selection, pending claim issues or payment.
-Exposition is not gated by a Solved/Lean flag; its own review and committee
-selection remain required.
+Exposition also requires its own content review and committee selection. Catalog
+Solved/Lean flags alone do not establish the required Lean verification.
 
 Solution and Lean each require their own complete original result to have become
 public **after 2026-01-01**, and the claimant to be the earliest valid contributor
@@ -46,8 +62,9 @@ team for clarification; the agent must not infer qualification.
 
 The cutoff is not automatically applied to Exposition. Content approval or the
 earliest upload cannot replace the committee's decision, date and selected version.
-Expositions may explain an open problem, but must distinguish proved statements
-from unresolved claims and identify citations and original contributions.
+Expositions may be submitted for an open problem, but must distinguish proved
+statements from unresolved claims and identify citations and original
+contributions. Announcement and payment wait for complete Lean verification.
 
 ## 1. Select the problem and submit to MathDB
 
@@ -163,9 +180,10 @@ explicit UTC start and scheduled end, separated by 14 full days, and the rule
 version. Public review starts at the category's actual candidate publication,
 not at submission, verification, issue creation, email or a historical PR merge.
 
-**An accepted Solution may be claimed and publicly reviewed before complete Lean
-evidence is available.** After its review ends it remains waiting for that payment
-condition. Complete Lean evidence can come from MathDB verification or explicit
+**Accepted Solution and Exposition contributions may be claimed and publicly
+reviewed before complete Lean evidence is available.** After public review, both
+remain pending until the Lean condition is met; neither may be announced or paid
+before then. Complete Lean evidence can come from MathDB verification or explicit
 adoption of external records, and the formalizer need not claim or receive an
 award first. Lean and Exposition do not wait for a solver to register a claim.
 
@@ -185,8 +203,10 @@ restart its clock. An unsuccessful objection preserves the original start.
 
 After public review, the team checks current technical/committee conclusions,
 original date and priority, resolved objections and related pending submissions,
-identity, personal confirmations and the applicable payment conditions. Solution
-payment additionally requires valid complete Lean evidence for that problem.
+identity, personal confirmations and the applicable award and payment conditions.
+Before either announcing or paying a Solution or Exposition award, the team must
+confirm current verification of a complete Lean formalization for that problem,
+including any explicitly adopted external verification record.
 
 Publish the confirmed category in the
 [award register](../awards/README.md#mathdb-pilot-awards), retain its completed
@@ -197,7 +217,8 @@ the latter. Closing an issue or reaching the review end is not payment evidence.
 
 If verification, external adoption or a committee decision is withdrawn or its
 scope reduced, the agent updates affected claims and notifies the contributors
-and team. Loss of complete Lean evidence also holds related Solution payments.
+and team. Loss of complete Lean evidence also holds related Solution and
+Exposition announcements and payments.
 The team handles corrections or revocation of previously announced or paid awards
 and preserves their history.
 

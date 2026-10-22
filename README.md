@@ -22,6 +22,9 @@ Award entries are confirmed and publicly announced decisions; candidates are tra
 
 ## Participate
 
+[MathDB](https://mathdb.com/), our partner for this pilot, is a community platform
+for sharing mathematical knowledge, problems and research developments.
+
 **We recommend the [new MathDB process](docs/award-process-mathdb.md) for the
 [50 pilot problems](problems/mathdb-pilot.md).** Submit Solution, Lean or Exposition
 materials through the confirmed MathDB link in the selected entry. After technical

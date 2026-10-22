@@ -72,7 +72,7 @@ For **Exposition**:
 - Applicable formally announced reward basis: <official reference or pending team determination>
 - Claimed category shares: Solution 50%; Lean 30%; Exposition 20%, as applicable.
 - Joint-author allocation: <pending team determination or applicable confirmed record>
-- Solution complete-Lean payment condition: <MathDB verification / explicit external adoption / awaiting evidence / not applicable>
+- Solution/Exposition complete-Lean announcement and payment condition: <MathDB verification / explicit external adoption / awaiting evidence / not applicable to a Lean-only claim>
 - External adoption, if used: <original repository, exact version, completeness/scope, external report, MathDB adoption conclusion>
 - Team qualification/priority/attribution review: Pending
 - Fourteen-day category public review and objections: Pending team publication

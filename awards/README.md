@@ -44,8 +44,9 @@ Problem links provide the recorded contribution attribution and proof evidence.
 
 Publish a category only after the team's qualification, identity and personal
 written confirmations, 14-day public review, resolved material objections and
-applicable payment conditions are complete. Solution also requires current
-complete Lean verification or MathDB's explicit adoption of external evidence.
+applicable payment conditions are complete. Both Solution and Exposition require
+current complete Lean verification of the original problem or MathDB's explicit
+adoption of external evidence before announcement and payment.
 The formalizer's own award is not a prerequisite. Retain fixed versions, evidence,
 claim and candidate-history links; the register records no levels or estimates.
 

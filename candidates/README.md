@@ -2,9 +2,9 @@
 
 For [MathDB pilot problems](../problems/mathdb-pilot.md), use the
 [new category-specific process](../docs/award-process-mathdb.md#4-public-review-for-each-category)
-and the [pilot rows below](#mathdb-pilot-candidates). Solution may enter public
-review before complete Lean payment evidence exists; the agent claim does not
-itself publish a candidate. The legacy prerequisites in the following paragraphs
+and the [pilot rows below](#mathdb-pilot-candidates). Solution and Exposition may
+enter public review before complete Lean verification exists; the agent claim
+does not itself publish a candidate. The legacy prerequisites in the following paragraphs
 apply only to legacy records. Existing review dates and records are retained.
 
 The [register below](#candidate-register) is the public notice table, maintained
@@ -56,8 +56,9 @@ Administrators add one row per accepted category and actual claimant. Use
 claim issue, fixed material and technical/committee evidence, and explicit UTC
 start/end 14 full days apart. Category shares and formal reward decisions are
 explained in the claim; this register contains no levels or estimates. Track
-Solution's complete Lean verification/adoption as a payment condition, separately
-from public review. Exposition follows its committee decision. Identity may be
+complete Lean verification/adoption for both Solution and Exposition as a
+prerequisite for announcement and payment, separately from public review.
+Exposition also requires its committee decision. Identity may be
 pending during notice but is required before announcement.
 
 No MathDB pilot candidates have been published yet.
