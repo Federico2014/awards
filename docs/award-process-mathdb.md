@@ -122,7 +122,7 @@ contributors, their roles and the material versions. Submission, contribution
 attribution and recipient confirmation are reviewed separately by the prize team.
 
 In the title, `categories` lists the selected contribution roles, for example
-`Solution, Lean`. The form's checkboxes mean mathematical solution author,
+`Solution, Lean, Exposition`. The form's checkboxes mean mathematical solution author,
 Lean formalization author and exposition author; any combination is allowed.
 Every selected role needs its corresponding materials. A role already published
 for this JSP in the candidate or award register cannot be added through a new
