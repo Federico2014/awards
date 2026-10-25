@@ -80,10 +80,10 @@ These are independent of reward-candidate status. The catalog notes also record 
 and alternative pages for review. They do not change the approved formulation by
 themselves. JSP-000002 asks whether P equals NP; a complete proof of either
 equality or separation resolves that question. JSP-001024 (metric SYZ) and
-JSP-001073 (Hodge-theoretic mirror symmetry) are separate problems with separate
-qualification records. JSP-001041 selects the sphere restriction statement in
+JSP-001072 (Hodge-theoretic mirror symmetry) are separate problems with separate
+qualification records. JSP-001040 selects the sphere restriction statement in
 dimensions n>=3 and its full exponent range. Do not substitute a non-effective
-Vojta bound for the selected effective-Mordell problem. JSP-001050 links to the
+Vojta bound for the selected effective-Mordell problem. JSP-001049 links to the
 algorithmic form at [MathDB #332964](https://mathdb.com/p/332964/algorithmic-mordell-conjecture):
 compute all points on any genus-at-least-two curve over a number field or finite
 extension. This supplies an effective height bound for each input but does not

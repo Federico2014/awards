@@ -38,12 +38,11 @@ class PilotTests(unittest.TestCase):
 
     def test_approved_cohort_and_deduplication(self):
         problems = self.manifest["problems"]
-        # The approved 50-problem cohort replaces smooth 4D Poincaré with 3D Poincaré.
+        # The approved cohort includes 3D Poincaré and the renumbered catalog entries.
         existing = {f"JSP-{i:06d}" for i in
                             (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15,
                              16, 21, 24, 25, 28, 29, 30, 37)}
-        new = ({f"JSP-{i:06d}" for i in range(1023, 1051)}
-               - {"JSP-001029"}) | {"JSP-001073"}
+        new = {f"JSP-{i:06d}" for i in range(1023, 1050)} | {"JSP-001072"}
         self.assertEqual(len(problems), 50)
         self.assertEqual(existing | new, {p["jsp"] for p in problems})
         bombieri = [p for p in problems if "Bombieri" in p["title"]]

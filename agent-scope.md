@@ -37,11 +37,11 @@ MathDB's configuration responsibility.
 Unresolved records include contradictory page statements, not only missing scope.
 For JSP-000002, the corrected question accepts a complete proof of either P=NP
 or P!=NP. JSP-001024 covers the metric SYZ statement at MathDB #397030;
-JSP-001073 separately covers the Hodge-theoretic mirror-symmetry statement at
+JSP-001072 separately covers the Hodge-theoretic mirror-symmetry statement at
 MathDB #408863. Do not transfer acceptance between these two scopes.
-JSP-001041 covers the sphere restriction conjecture at MathDB #403784 in all
+JSP-001040 covers the sphere restriction conjecture at MathDB #403784 in all
 dimensions n>=3 and the full stated exponent range. Related or alternative
-pages in catalog notes are not confirmed mappings. For JSP-001050, MathDB #332964
+pages in catalog notes are not confirmed mappings. For JSP-001049, MathDB #332964
 records the algorithmic effective-Mordell form for all genus-at-least-two curves
 over number fields and finite extensions. Require full algorithmic coverage;
 existence of an unspecified constant alone does not satisfy that scope. Do not
