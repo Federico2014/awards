@@ -37,9 +37,11 @@ Keep **Current status: Open/Solved** consistent between the index and detail
 tables, and preserve proof evidence qualifications.
 Keep **Eligible to claim** synchronized between the index and detail tables.
 Maintain **Solver claim status** and **Lean claim status** only in the index.
-Eligibility requires **Current status** to be **Solved** and **Lean proof**
-to be **Yes**. When eligibility is
-**No** or **Pending verification**, both claim statuses are **Unavailable**.
+Use only **Yes** and **No** for legacy eligibility; do not introduce additional
+eligibility states. Record **Yes** for a **Solved** result with a complete Lean
+proof recorded or reported in the catalog. Keep evidence qualifications in the
+proof fields and review notes. When eligibility is **No**, both claim statuses
+are **Unavailable**.
 When eligibility is **Yes**, mark each role **Claimed** if it is registered in
 `candidates/` or has a confirmed award record in `awards/`; otherwise mark it
 **Unclaimed**. Update the shared eligibility and
@@ -79,11 +81,14 @@ mapping evidence and rollout metadata. Keep mathematical statements and proof
 attribution in the existing catalog volumes. The generated pilot Markdown and
 catalog workflow rows display that same mapping; do not maintain a separate manual
 list or add problem levels/reward estimates. Preserve existing JSP anchors and
-legacy records. The MathDB pilot additions extended the last volume through JSP-001050.
+legacy records unless an explicit catalog renumbering is approved. The MathDB
+pilot additions extended the last volume through JSP-001049.
 The [2026-10-13 OpenAI source review](../problems/openai-source-review-2026-10-13.md)
-extends that volume through JSP-001072. The mirror-symmetry scope update retains
-JSP-001024 for metric SYZ and adds JSP-001073 for Hodge-theoretic mirror symmetry.
-The volume's original filename is retained so existing external links keep working.
+extends that volume through JSP-001071. The mirror-symmetry scope update retains
+JSP-001024 for metric SYZ and adds JSP-001072 for Hodge-theoretic mirror symmetry.
+The smooth four-dimensional Poincaré conjecture was removed from the catalog;
+all subsequent JSP numbers and internal references were shifted down by one.
+The ranges above use the current numbering. The volume's original filename is retained.
 
 Store public identifiers, catalog titles, mathematical scope and public evidence
 in the register. Keep names, original wording and line numbers of internal working

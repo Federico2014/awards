@@ -116,6 +116,24 @@
       }
     },
     {
+      "jsp": "JSP-000007",
+      "title": "Poincaré conjecture",
+      "catalog": "problems/catalog-0001-0100.md",
+      "workflow": "mathdb",
+      "scope": "Every closed, connected, simply connected topological three-manifold is homeomorphic to the three-sphere. This is the three-dimensional conjecture proved by Perelman.",
+      "mathdb": {
+        "status": "confirmed",
+        "id": 316224,
+        "url": "https://mathdb.com/p/316224/poincare-conjecture",
+        "title": "Poincaré conjecture",
+        "checked_at": "2026-10-25",
+        "evidence": [
+          "https://mathdb.com/p/316224/poincare-conjecture"
+        ],
+        "note": "Public page statement checked against the solved three-dimensional conjecture and catalog scope on 2026-10-25. Added to the 50-problem pilot in place of the smooth four-dimensional conjecture, which has been removed from the catalog. This mapping is not proof acceptance or a reward decision."
+      }
+    },
+    {
       "jsp": "JSP-001023",
       "title": "Global Langlands functoriality conjecture",
       "catalog": "problems/catalog-1001-1022.md",
@@ -184,11 +202,11 @@
         "evidence": [
           "https://mathdb.com/p/397030/strominger-yau-zaslow-conjecture"
         ],
-        "note": "Following the mirror-symmetry split, this existing JSP retains MathDB #397030 and selects its metric SYZ statement. Hodge-theoretic mirror symmetry is a separate problem, [JSP-001073](catalog-1001-1022.md#JSP-001073). Statement correspondence checked on 2026-10-21; acceptance does not transfer between the two problems."
+        "note": "Following the mirror-symmetry split, this existing JSP retains MathDB #397030 and selects its metric SYZ statement. Hodge-theoretic mirror symmetry is a separate problem, [JSP-001072](catalog-1001-1022.md#JSP-001072). Statement correspondence checked on 2026-10-21; acceptance does not transfer between the two problems."
       }
     },
     {
-      "jsp": "JSP-001073",
+      "jsp": "JSP-001072",
       "title": "Mirror symmetry conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -388,24 +406,6 @@
     },
     {
       "jsp": "JSP-001029",
-      "title": "Smooth four-dimensional Poincaré conjecture",
-      "catalog": "problems/catalog-1001-1022.md",
-      "workflow": "mathdb",
-      "scope": "Is every smooth closed four-manifold homotopy equivalent to the four-sphere diffeomorphic to the standard four-sphere? This is distinct from the topological three-dimensional Poincaré conjecture JSP-000007.",
-      "mathdb": {
-        "status": "confirmed",
-        "id": 402982,
-        "url": "https://mathdb.com/p/402982/smooth-four-dimensional-poincare-conjecture",
-        "title": "Smooth four-dimensional Poincaré conjecture",
-        "checked_at": "2026-10-12",
-        "evidence": [
-          "https://mathdb.com/p/402982/smooth-four-dimensional-poincare-conjecture"
-        ],
-        "note": "Public page statement checked against the selected problem and catalog scope; this mapping is not technical acceptance or a reward decision."
-      }
-    },
-    {
-      "jsp": "JSP-001030",
       "title": "Bombieri–Lang conjecture for varieties of general type",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -423,7 +423,7 @@
       }
     },
     {
-      "jsp": "JSP-001031",
+      "jsp": "JSP-001030",
       "title": "Novikov conjecture on higher signatures",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -441,7 +441,7 @@
       }
     },
     {
-      "jsp": "JSP-001032",
+      "jsp": "JSP-001031",
       "title": "Farrell–Jones conjecture in algebraic K- and L-theory",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -513,7 +513,7 @@
       }
     },
     {
-      "jsp": "JSP-001033",
+      "jsp": "JSP-001032",
       "title": "Grothendieck's generalized Hodge conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -531,7 +531,7 @@
       }
     },
     {
-      "jsp": "JSP-001034",
+      "jsp": "JSP-001033",
       "title": "Matrix-multiplication exponent equals two",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -549,7 +549,7 @@
       }
     },
     {
-      "jsp": "JSP-001035",
+      "jsp": "JSP-001034",
       "title": "Generalized Ramanujan conjecture for GL_n",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -567,7 +567,7 @@
       }
     },
     {
-      "jsp": "JSP-001036",
+      "jsp": "JSP-001035",
       "title": "Extended states in the Anderson model in dimension at least three",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -585,7 +585,7 @@
       }
     },
     {
-      "jsp": "JSP-001037",
+      "jsp": "JSP-001036",
       "title": "Extension of Kronecker's theorem to arbitrary number fields (Hilbert's twelfth problem)",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -603,7 +603,7 @@
       }
     },
     {
-      "jsp": "JSP-001038",
+      "jsp": "JSP-001037",
       "title": "Spacetime Penrose inequality",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -621,7 +621,7 @@
       }
     },
     {
-      "jsp": "JSP-001039",
+      "jsp": "JSP-001038",
       "title": "Modularity of elliptic curves over number fields",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -640,7 +640,7 @@
       }
     },
     {
-      "jsp": "JSP-001040",
+      "jsp": "JSP-001039",
       "title": "Fontaine–Mazur conjecture on geometric Galois representations",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -658,7 +658,7 @@
       }
     },
     {
-      "jsp": "JSP-001041",
+      "jsp": "JSP-001040",
       "title": "Fourier restriction conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -676,7 +676,7 @@
       }
     },
     {
-      "jsp": "JSP-001042",
+      "jsp": "JSP-001041",
       "title": "Grothendieck period conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -694,7 +694,7 @@
       }
     },
     {
-      "jsp": "JSP-001043",
+      "jsp": "JSP-001042",
       "title": "Existence of one-way permutations",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -712,7 +712,7 @@
       }
     },
     {
-      "jsp": "JSP-001044",
+      "jsp": "JSP-001043",
       "title": "Finiteness of Tate–Shafarevich groups for elliptic curves",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -730,7 +730,7 @@
       }
     },
     {
-      "jsp": "JSP-001045",
+      "jsp": "JSP-001044",
       "title": "Weight–monodromy conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -748,7 +748,7 @@
       }
     },
     {
-      "jsp": "JSP-001046",
+      "jsp": "JSP-001045",
       "title": "Zilber–Pink conjecture on unlikely intersections",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -766,7 +766,7 @@
       }
     },
     {
-      "jsp": "JSP-001047",
+      "jsp": "JSP-001046",
       "title": "Grothendieck–Teichmüller conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -784,7 +784,7 @@
       }
     },
     {
-      "jsp": "JSP-001048",
+      "jsp": "JSP-001047",
       "title": "Deligne's absolute Hodge conjecture",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -822,7 +822,7 @@
       }
     },
     {
-      "jsp": "JSP-001049",
+      "jsp": "JSP-001048",
       "title": "Mumford–Tate conjecture for abelian varieties over number fields",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",
@@ -840,7 +840,7 @@
       }
     },
     {
-      "jsp": "JSP-001050",
+      "jsp": "JSP-001049",
       "title": "Effective Mordell conjecture for curves of genus at least two",
       "catalog": "problems/catalog-1001-1022.md",
       "workflow": "mathdb",

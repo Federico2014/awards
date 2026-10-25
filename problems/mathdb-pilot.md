@@ -26,11 +26,12 @@ scope update and migration announcement. Contribution dates and notice periods r
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | [MathDB #315851](https://mathdb.com/p/315851/hodge-conjecture) |  |  |  |
 | JSP-000005 | [Existence and smoothness of the 3D Navier–Stokes equations](catalog-0001-0100.md#JSP-000005) | [MathDB #315852](https://mathdb.com/p/315852/navier-stokes-existence-and-smoothness) |  |  |  |
 | JSP-000003 | [Birch–Swinnerton-Dyer conjecture (BSD)](catalog-0001-0100.md#JSP-000003) | [MathDB #315850](https://mathdb.com/p/315850/birch-and-swinnerton-dyer-conjecture) |  |  |  |
+| JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | [MathDB #316224](https://mathdb.com/p/316224/poincare-conjecture) |  |  |  |
 | JSP-001023 | [Global Langlands functoriality conjecture](catalog-1001-1022.md#JSP-001023) | [MathDB #405775](https://mathdb.com/p/405775/global-langlands-functoriality-conjecture) |  |  |  |
 | JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | [MathDB #316096](https://mathdb.com/p/316096/abc-conjecture) |  |  |  |
 | JSP-000021 | [Schanuel conjecture](catalog-0001-0100.md#JSP-000021) | [MathDB #316100](https://mathdb.com/p/316100/schanuel-s-conjecture) |  |  |  |
 | JSP-001024 | [Strominger–Yau–Zaslow Conjecture](catalog-1001-1022.md#JSP-001024) | [MathDB #397030](https://mathdb.com/p/397030/strominger-yau-zaslow-conjecture) |  |  |  |
-| JSP-001073 | [Mirror symmetry conjecture](catalog-1001-1022.md#JSP-001073) | [MathDB #408863](https://mathdb.com/p/408863/hodge-theoretic-mirror-symmetry-conjecture-katzarkov-kontsev) |  |  |  |
+| JSP-001072 | [Mirror symmetry conjecture](catalog-1001-1022.md#JSP-001072) | [MathDB #408863](https://mathdb.com/p/408863/hodge-theoretic-mirror-symmetry-conjecture-katzarkov-kontsev) |  |  |  |
 | JSP-001025 | [Existence of one-way functions](catalog-1001-1022.md#JSP-001025) | [MathDB #405776](https://mathdb.com/p/405776/existence-of-one-way-functions) |  |  |  |
 | JSP-000015 | [Kakeya dimension conjecture (general dimension)](catalog-0001-0100.md#JSP-000015) | [MathDB #315983](https://mathdb.com/p/315983/kakeya-conjecture) |  |  |  |
 | JSP-001026 | [Grothendieck's standard conjectures](catalog-1001-1022.md#JSP-001026) | [MathDB #315943](https://mathdb.com/p/315943/standard-conjectures) |  |  |  |
@@ -41,32 +42,31 @@ scope update and migration announcement. Contribution dates and notice periods r
 | JSP-000009 | [Twin prime conjecture](catalog-0001-0100.md#JSP-000009) | [MathDB #316128](https://mathdb.com/p/316128/twin-prime-conjecture) |  |  |  |
 | JSP-001028 | [Tate conjecture for algebraic cycles](catalog-1001-1022.md#JSP-001028) | [MathDB #315944](https://mathdb.com/p/315944/tate-conjecture) |  |  |  |
 | JSP-000037 | [Jacobian conjecture](catalog-0001-0100.md#JSP-000037) | [MathDB #315779](https://mathdb.com/p/315779/jacobian-conjecture) |  |  |  |
-| JSP-001029 | [Smooth four-dimensional Poincaré conjecture](catalog-1001-1022.md#JSP-001029) | [MathDB #402982](https://mathdb.com/p/402982/smooth-four-dimensional-poincare-conjecture) |  |  |  |
-| JSP-001030 | [Bombieri–Lang conjecture for varieties of general type](catalog-1001-1022.md#JSP-001030) | [MathDB #395886](https://mathdb.com/p/395886/bombieri-lang-conjecture-on-zariski-density) |  |  |  |
-| JSP-001031 | [Novikov conjecture on higher signatures](catalog-1001-1022.md#JSP-001031) | [MathDB #316146](https://mathdb.com/p/316146/novikov-conjecture) |  |  |  |
-| JSP-001032 | [Farrell–Jones conjecture in algebraic K- and L-theory](catalog-1001-1022.md#JSP-001032) | [MathDB #315862](https://mathdb.com/p/315862/farrell-jones-conjecture) |  |  |  |
+| JSP-001029 | [Bombieri–Lang conjecture for varieties of general type](catalog-1001-1022.md#JSP-001029) | [MathDB #395886](https://mathdb.com/p/395886/bombieri-lang-conjecture-on-zariski-density) |  |  |  |
+| JSP-001030 | [Novikov conjecture on higher signatures](catalog-1001-1022.md#JSP-001030) | [MathDB #316146](https://mathdb.com/p/316146/novikov-conjecture) |  |  |  |
+| JSP-001031 | [Farrell–Jones conjecture in algebraic K- and L-theory](catalog-1001-1022.md#JSP-001031) | [MathDB #315862](https://mathdb.com/p/315862/farrell-jones-conjecture) |  |  |  |
 | JSP-000012 | [Legendre conjecture](catalog-0001-0100.md#JSP-000012) | [MathDB #316127](https://mathdb.com/p/316127/legendre-s-conjecture) |  |  |  |
 | JSP-000013 | [Hadamard matrix conjecture](catalog-0001-0100.md#JSP-000013) | [MathDB #315867](https://mathdb.com/p/315867/hadamard-conjecture) |  |  |  |
 | JSP-000029 | [Dickson conjecture](catalog-0001-0100.md#JSP-000029) | [MathDB #316119](https://mathdb.com/p/316119/dickson-s-conjecture) |  |  |  |
-| JSP-001033 | [Grothendieck's generalized Hodge conjecture](catalog-1001-1022.md#JSP-001033) | [MathDB #395066](https://mathdb.com/p/395066/generalized-hodge-grothendieck-conjecture) |  |  |  |
-| JSP-001034 | [Matrix-multiplication exponent equals two](catalog-1001-1022.md#JSP-001034) | [MathDB #346080](https://mathdb.com/p/346080/the-exponent-two-conjecture-for-matrix-multiplication) |  |  |  |
-| JSP-001035 | [Generalized Ramanujan conjecture for GL_n](catalog-1001-1022.md#JSP-001035) | [MathDB #405783](https://mathdb.com/p/405783/generalized-ramanujan-conjecture-for-gl-n) |  |  |  |
-| JSP-001036 | [Extended states in the Anderson model in dimension at least three](catalog-1001-1022.md#JSP-001036) | [MathDB #389103](https://mathdb.com/p/389103/extended-states-in-the-anderson-model) |  |  |  |
-| JSP-001037 | [Extension of Kronecker's theorem to arbitrary number fields (Hilbert's twelfth problem)](catalog-1001-1022.md#JSP-001037) | [MathDB #405786](https://mathdb.com/p/405786/extension-of-kroneckers-theorem-on-abelian-fields-to-any-alg) |  |  |  |
-| JSP-001038 | [Spacetime Penrose inequality](catalog-1001-1022.md#JSP-001038) | [MathDB #405787](https://mathdb.com/p/405787/prove-the-penrose-inequality-or-present-a-counterexample) |  |  |  |
-| JSP-001039 | [Modularity of elliptic curves over number fields](catalog-1001-1022.md#JSP-001039) | [MathDB #405788](https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z) |  |  |  |
-| JSP-001040 | [Fontaine–Mazur conjecture on geometric Galois representations](catalog-1001-1022.md#JSP-001040) | [MathDB #389372](https://mathdb.com/p/389372/fontaine-mazur-geometric-galois-representation-conjecture) |  |  |  |
-| JSP-001041 | [Fourier restriction conjecture](catalog-1001-1022.md#JSP-001041) | [MathDB #403784](https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere-stein) |  |  |  |
-| JSP-001042 | [Grothendieck period conjecture](catalog-1001-1022.md#JSP-001042) | [MathDB #356355](https://mathdb.com/p/356355/grothendieck-s-period-conjecture-for-motivic-galois-groups) |  |  |  |
-| JSP-001043 | [Existence of one-way permutations](catalog-1001-1022.md#JSP-001043) | [MathDB #405793](https://mathdb.com/p/405793/existence-of-one-way-permutations) |  |  |  |
-| JSP-001044 | [Finiteness of Tate–Shafarevich groups for elliptic curves](catalog-1001-1022.md#JSP-001044) | [MathDB #355259](https://mathdb.com/p/355259/shafarevich-tate-finiteness-conjecture-for-elliptic-curves) |  |  |  |
-| JSP-001045 | [Weight–monodromy conjecture](catalog-1001-1022.md#JSP-001045) | [MathDB #378011](https://mathdb.com/p/378011/the-weight-monodromy-conjecture-for-proper-smooth-varieties) |  |  |  |
-| JSP-001046 | [Zilber–Pink conjecture on unlikely intersections](catalog-1001-1022.md#JSP-001046) | [MathDB #316098](https://mathdb.com/p/316098/zilber-pink-conjecture) |  |  |  |
-| JSP-001047 | [Grothendieck–Teichmüller conjecture](catalog-1001-1022.md#JSP-001047) | [MathDB #348860](https://mathdb.com/p/348860/grothendieck-teichmuller-conjecture) |  |  |  |
-| JSP-001048 | [Deligne's absolute Hodge conjecture](catalog-1001-1022.md#JSP-001048) | [MathDB #370916](https://mathdb.com/p/370916/the-absolute-hodge-conjecture-for-hodge-classes) |  |  |  |
+| JSP-001032 | [Grothendieck's generalized Hodge conjecture](catalog-1001-1022.md#JSP-001032) | [MathDB #395066](https://mathdb.com/p/395066/generalized-hodge-grothendieck-conjecture) |  |  |  |
+| JSP-001033 | [Matrix-multiplication exponent equals two](catalog-1001-1022.md#JSP-001033) | [MathDB #346080](https://mathdb.com/p/346080/the-exponent-two-conjecture-for-matrix-multiplication) |  |  |  |
+| JSP-001034 | [Generalized Ramanujan conjecture for GL_n](catalog-1001-1022.md#JSP-001034) | [MathDB #405783](https://mathdb.com/p/405783/generalized-ramanujan-conjecture-for-gl-n) |  |  |  |
+| JSP-001035 | [Extended states in the Anderson model in dimension at least three](catalog-1001-1022.md#JSP-001035) | [MathDB #389103](https://mathdb.com/p/389103/extended-states-in-the-anderson-model) |  |  |  |
+| JSP-001036 | [Extension of Kronecker's theorem to arbitrary number fields (Hilbert's twelfth problem)](catalog-1001-1022.md#JSP-001036) | [MathDB #405786](https://mathdb.com/p/405786/extension-of-kroneckers-theorem-on-abelian-fields-to-any-alg) |  |  |  |
+| JSP-001037 | [Spacetime Penrose inequality](catalog-1001-1022.md#JSP-001037) | [MathDB #405787](https://mathdb.com/p/405787/prove-the-penrose-inequality-or-present-a-counterexample) |  |  |  |
+| JSP-001038 | [Modularity of elliptic curves over number fields](catalog-1001-1022.md#JSP-001038) | [MathDB #405788](https://mathdb.com/p/405788/modularity-of-elliptic-curves-over-number-fields-end-k-e-z) |  |  |  |
+| JSP-001039 | [Fontaine–Mazur conjecture on geometric Galois representations](catalog-1001-1022.md#JSP-001039) | [MathDB #389372](https://mathdb.com/p/389372/fontaine-mazur-geometric-galois-representation-conjecture) |  |  |  |
+| JSP-001040 | [Fourier restriction conjecture](catalog-1001-1022.md#JSP-001040) | [MathDB #403784](https://mathdb.com/p/403784/fourier-restriction-conjecture-for-the-sphere-stein) |  |  |  |
+| JSP-001041 | [Grothendieck period conjecture](catalog-1001-1022.md#JSP-001041) | [MathDB #356355](https://mathdb.com/p/356355/grothendieck-s-period-conjecture-for-motivic-galois-groups) |  |  |  |
+| JSP-001042 | [Existence of one-way permutations](catalog-1001-1022.md#JSP-001042) | [MathDB #405793](https://mathdb.com/p/405793/existence-of-one-way-permutations) |  |  |  |
+| JSP-001043 | [Finiteness of Tate–Shafarevich groups for elliptic curves](catalog-1001-1022.md#JSP-001043) | [MathDB #355259](https://mathdb.com/p/355259/shafarevich-tate-finiteness-conjecture-for-elliptic-curves) |  |  |  |
+| JSP-001044 | [Weight–monodromy conjecture](catalog-1001-1022.md#JSP-001044) | [MathDB #378011](https://mathdb.com/p/378011/the-weight-monodromy-conjecture-for-proper-smooth-varieties) |  |  |  |
+| JSP-001045 | [Zilber–Pink conjecture on unlikely intersections](catalog-1001-1022.md#JSP-001045) | [MathDB #316098](https://mathdb.com/p/316098/zilber-pink-conjecture) |  |  |  |
+| JSP-001046 | [Grothendieck–Teichmüller conjecture](catalog-1001-1022.md#JSP-001046) | [MathDB #348860](https://mathdb.com/p/348860/grothendieck-teichmuller-conjecture) |  |  |  |
+| JSP-001047 | [Deligne's absolute Hodge conjecture](catalog-1001-1022.md#JSP-001047) | [MathDB #370916](https://mathdb.com/p/370916/the-absolute-hodge-conjecture-for-hodge-classes) |  |  |  |
 | JSP-000030 | [Elliott–Halberstam conjecture](catalog-0001-0100.md#JSP-000030) | [MathDB #316120](https://mathdb.com/p/316120/elliott-halberstam-conjecture) |  |  |  |
-| JSP-001049 | [Mumford–Tate conjecture for abelian varieties over number fields](catalog-1001-1022.md#JSP-001049) | [MathDB #332879](https://mathdb.com/p/332879/the-mumford-tate-conjecture-for-abelian-varieties) |  |  |  |
-| JSP-001050 | [Effective Mordell conjecture for curves of genus at least two](catalog-1001-1022.md#JSP-001050) | [MathDB #332964](https://mathdb.com/p/332964/algorithmic-mordell-conjecture) |  |  |  |
+| JSP-001048 | [Mumford–Tate conjecture for abelian varieties over number fields](catalog-1001-1022.md#JSP-001048) | [MathDB #332879](https://mathdb.com/p/332879/the-mumford-tate-conjecture-for-abelian-varieties) |  |  |  |
+| JSP-001049 | [Effective Mordell conjecture for curves of genus at least two](catalog-1001-1022.md#JSP-001049) | [MathDB #332964](https://mathdb.com/p/332964/algorithmic-mordell-conjecture) |  |  |  |
 | JSP-000016 | [Littlewood conjecture](catalog-0001-0100.md#JSP-000016) | [MathDB #316099](https://mathdb.com/p/316099/littlewood-conjecture) |  |  |  |
 | JSP-000024 | [Invariant subspace problem for Hilbert spaces](catalog-0001-0100.md#JSP-000024) | [MathDB #315900](https://mathdb.com/p/315900/invariant-subspace-problem) |  |  |  |
 | JSP-000025 | [Lehmer–Mahler measure problem](catalog-0001-0100.md#JSP-000025) | [MathDB #315901](https://mathdb.com/p/315901/lehmer-s-conjecture) |  |  |  |

@@ -27,8 +27,8 @@ JSP identifiers are catalog references. They do not establish original authorshi
 
 ## Coverage and award status
 
-The [50-problem MathDB pilot](../problems/mathdb-pilot.md) adds 29 new
-problems while retaining 21 existing JSP records. It uses the
+The [50-problem MathDB pilot](../problems/mathdb-pilot.md) includes 28 newly added
+problems and 22 existing JSP records. It uses the
 [new MathDB process](award-process-mathdb.md), with category-specific qualification
 and claim records. A MathDB mapping identifies the problem; it does not verify a
 solution or establish entitlement. The shared legacy eligibility convention below
