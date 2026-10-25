@@ -37,9 +37,11 @@ Keep **Current status: Open/Solved** consistent between the index and detail
 tables, and preserve proof evidence qualifications.
 Keep **Eligible to claim** synchronized between the index and detail tables.
 Maintain **Solver claim status** and **Lean claim status** only in the index.
-Eligibility requires **Current status** to be **Solved** and **Lean proof**
-to be **Yes**. When eligibility is
-**No** or **Pending verification**, both claim statuses are **Unavailable**.
+Use only **Yes** and **No** for legacy eligibility; do not introduce additional
+eligibility states. Record **Yes** for a **Solved** result with a complete Lean
+proof recorded or reported in the catalog. Keep evidence qualifications in the
+proof fields and review notes. When eligibility is **No**, both claim statuses
+are **Unavailable**.
 When eligibility is **Yes**, mark each role **Claimed** if it is registered in
 `candidates/` or has a confirmed award record in `awards/`; otherwise mark it
 **Unclaimed**. Update the shared eligibility and

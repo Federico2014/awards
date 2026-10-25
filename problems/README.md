@@ -100,13 +100,13 @@ to the new process requires an explicit team decision.
 
 ### Legacy eligibility and claim-status columns
 
-**Eligible to claim** records the shared prerequisite for both legacy awards. **Yes** requires **Current status** to be **Solved** and **Lean proof** to be **Yes**. **No** means this prerequisite is not met. **Pending verification** means evidence needs further review and eligibility has not been established. These are catalog screening flags; award processing requires mathematical review and verification of the complete Lean proof.
+**Eligible to claim** uses only **Yes** and **No**. **Yes** records catalog eligibility for a **Solved** result with a complete Lean proof recorded or reported in the catalog. **No** means this prerequisite is not met. Keep evidence qualifications in the proof fields and review notes, without adding another eligibility state. These are catalog screening flags; award processing requires mathematical review and verification of the complete Lean proof.
 
 **Solver claim status** and **Lean claim status** appear only in the index. They use that shared eligibility flag, then track each role's candidate registration or confirmed award separately:
 
 | Eligible to claim | Role recorded in candidates/ or awards/ | Claim status |
 | --- | --- | --- |
-| No or Pending verification | — | Unavailable |
+| No | — | Unavailable |
 | Yes | No | Unclaimed |
 | Yes | Yes | Claimed |
 
@@ -179,7 +179,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000039 | [DGG cost-preserving conjecture](catalog-0001-0100.md#JSP-000039) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000040 | [Anderson problem on weakly quasi-complete local rings](catalog-0001-0100.md#JSP-000040) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000041 | [Consecutive prime gap bound of 186](catalog-0001-0100.md#JSP-000041) | Open | No | No | Unavailable | Unavailable |
-| JSP-000042 | [Crouzeix conjecture](catalog-0001-0100.md#JSP-000042) | Solved | Yes | Pending verification | Unavailable | Unavailable |
+| JSP-000042 | [Crouzeix conjecture](catalog-0001-0100.md#JSP-000042) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000043 | [Must the largest element of a positive-integer set with distinct subset sums be at least a fixed positive multiple of 2 raised to the set's size?](catalog-0001-0100.md#JSP-000043) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000044 | [Must a set of positive integers whose reciprocals have divergent sum contain arithmetic progressions of every finite length?](catalog-0001-0100.md#JSP-000044) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000045 | [How large can gaps between consecutive primes be? Are infinitely many gaps larger than the proposed lower bound?](catalog-0001-0100.md#JSP-000045) | Solved | No | No | Unavailable | Unavailable |
@@ -605,7 +605,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000445 | [Compare the multicolor thresholds forcing a monochromatic odd cycle and a monochromatic triangle.](catalog-0401-0500.md#JSP-000445) | Open | No | No | Unavailable | Unavailable |
 | JSP-000446 | [What is the multicolor Ramsey number of an even cycle of prescribed length?](catalog-0401-0500.md#JSP-000446) | Open | No | No | Unavailable | Unavailable |
 | JSP-000447 | [What is the optimal upper bound for the three-color Ramsey number of a prescribed cycle?](catalog-0401-0500.md#JSP-000447) | Open | No | No | Unavailable | Unavailable |
-| JSP-000448 | [Does the multicolor Ramsey number of a tree grow linearly with its order?](catalog-0401-0500.md#JSP-000448) | Solved | No — reported; standalone source not located | Pending verification | Unavailable | Unavailable |
+| JSP-000448 | [Does the multicolor Ramsey number of a tree grow linearly with its order?](catalog-0401-0500.md#JSP-000448) | Solved | Reported; standalone source not located | Yes | Unclaimed | Unclaimed |
 | JSP-000449 | [What is the multicolor Ramsey number of a prescribed complete bipartite graph?](catalog-0401-0500.md#JSP-000449) | Open | No | No | Unavailable | Unavailable |
 | JSP-000450 | [Do graphs of bounded maximum degree have two-color size Ramsey numbers linear in their order?](catalog-0401-0500.md#JSP-000450) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000451 | [What is the minimum host edge count forcing a monochromatic prescribed balanced complete bipartite graph under every two-coloring?](catalog-0401-0500.md#JSP-000451) | Open | No | No | Unavailable | Unavailable |
@@ -1237,26 +1237,26 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-001047 | [Deligne's absolute Hodge conjecture](catalog-1001-1022.md#JSP-001047) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-001048 | [Mumford–Tate conjecture for abelian varieties over number fields](catalog-1001-1022.md#JSP-001048) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-001049 | [Effective Mordell conjecture for curves of genus at least two](catalog-1001-1022.md#JSP-001049) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
-| JSP-001050 | [Quasi-Riemann hypothesis](catalog-1001-1022.md#JSP-001050) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001051 | [Nagata conjecture and maximal Seshadri constants on complex surfaces](catalog-1001-1022.md#JSP-001051) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001052 | [Falconer distance conjecture](catalog-1001-1022.md#JSP-001052) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001053 | [Geometric Mahler conjectures](catalog-1001-1022.md#JSP-001053) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001054 | [Unique Games conjecture](catalog-1001-1022.md#JSP-001054) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001055 | [Hardness of finding large independent sets in three-colorable graphs](catalog-1001-1022.md#JSP-001055) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001056 | [Complex matrix multiplication exponent at most 9/4](catalog-1001-1022.md#JSP-001056) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001057 | [Exact discrete Fourier transforms with a power saving over n log n](catalog-1001-1022.md#JSP-001057) | Solved | Yes | Pending verification | Unavailable | Unavailable |
+| JSP-001050 | [Quasi-Riemann hypothesis](catalog-1001-1022.md#JSP-001050) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001051 | [Nagata conjecture and maximal Seshadri constants on complex surfaces](catalog-1001-1022.md#JSP-001051) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001052 | [Falconer distance conjecture](catalog-1001-1022.md#JSP-001052) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001053 | [Geometric Mahler conjectures](catalog-1001-1022.md#JSP-001053) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001054 | [Unique Games conjecture](catalog-1001-1022.md#JSP-001054) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001055 | [Hardness of finding large independent sets in three-colorable graphs](catalog-1001-1022.md#JSP-001055) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001056 | [Complex matrix multiplication exponent at most 9/4](catalog-1001-1022.md#JSP-001056) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001057 | [Exact discrete Fourier transforms with a power saving over n log n](catalog-1001-1022.md#JSP-001057) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-001058 | [Hilbert's sixteenth problem: uniform bounds for planar limit cycles](catalog-1001-1022.md#JSP-001058) | Solved | No | No | Unavailable | Unavailable |
-| JSP-001059 | [Five-colorability of the Euclidean plane](catalog-1001-1022.md#JSP-001059) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001060 | [Weak pinned planar distance problem](catalog-1001-1022.md#JSP-001060) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001061 | [Circulant Hadamard conjecture](catalog-1001-1022.md#JSP-001061) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001062 | [Kaplansky's zero-divisor conjecture](catalog-1001-1022.md#JSP-001062) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001063 | [Absence of critical percolation on quasi-transitive graphs](catalog-1001-1022.md#JSP-001063) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001064 | [Rigidity of the Turing degrees](catalog-1001-1022.md#JSP-001064) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001065 | [Partition Principle without the Axiom of Choice](catalog-1001-1022.md#JSP-001065) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001066 | [Amenability of Thompson's group F](catalog-1001-1022.md#JSP-001066) | Solved | Yes | Pending verification | Unavailable | Unavailable |
+| JSP-001059 | [Five-colorability of the Euclidean plane](catalog-1001-1022.md#JSP-001059) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001060 | [Weak pinned planar distance problem](catalog-1001-1022.md#JSP-001060) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001061 | [Circulant Hadamard conjecture](catalog-1001-1022.md#JSP-001061) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001062 | [Kaplansky's zero-divisor conjecture](catalog-1001-1022.md#JSP-001062) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001063 | [Absence of critical percolation on quasi-transitive graphs](catalog-1001-1022.md#JSP-001063) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001064 | [Rigidity of the Turing degrees](catalog-1001-1022.md#JSP-001064) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001065 | [Partition Principle without the Axiom of Choice](catalog-1001-1022.md#JSP-001065) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001066 | [Amenability of Thompson's group F](catalog-1001-1022.md#JSP-001066) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-001067 | [Ionization and generalized ionization conjectures for Coulomb atoms](catalog-1001-1022.md#JSP-001067) | Solved | No | No | Unavailable | Unavailable |
-| JSP-001068 | [Hyperinvariant subspace problem on a complex Hilbert space](catalog-1001-1022.md#JSP-001068) | Solved | Yes | Pending verification | Unavailable | Unavailable |
-| JSP-001069 | [Generator problem for finite factors](catalog-1001-1022.md#JSP-001069) | Solved | Yes | Pending verification | Unavailable | Unavailable |
+| JSP-001068 | [Hyperinvariant subspace problem on a complex Hilbert space](catalog-1001-1022.md#JSP-001068) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-001069 | [Generator problem for finite factors](catalog-1001-1022.md#JSP-001069) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-001070 | [Grothendieck homotopy hypothesis](catalog-1001-1022.md#JSP-001070) | Solved | No | No | Unavailable | Unavailable |
-| JSP-001071 | [Global classical solvability of the three-dimensional relativistic Vlasov-Maxwell system](catalog-1001-1022.md#JSP-001071) | Solved | Yes | Pending verification | Unavailable | Unavailable |
+| JSP-001071 | [Global classical solvability of the three-dimensional relativistic Vlasov-Maxwell system](catalog-1001-1022.md#JSP-001071) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-001072 | [Mirror symmetry conjecture](catalog-1001-1022.md#JSP-001072) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |

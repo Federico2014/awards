@@ -165,10 +165,11 @@ For Lean or both-role claims, the repository remains a review requirement;
 maintainers request a missing URL before approving the claim.
 
 Both awards require an accepted mathematical solution and a verified complete
-Lean proof. The catalog's shared **Eligible to claim** flag is **Yes** only when
-**Current status** is **Solved** and **Lean proof** is **Yes**. The two claim-status
-columns are maintained only in the index. While eligibility
-is **No** or **Pending verification**, both **Solver claim status** and **Lean
+Lean proof. The catalog's shared **Eligible to claim** flag uses only **Yes** and
+**No**. **Yes** records catalog eligibility for a **Solved** result with a complete
+Lean proof recorded or reported in the catalog; evidence qualifications remain in
+the proof fields and review notes. The two claim-status columns are maintained
+only in the index. While eligibility is **No**, both **Solver claim status** and **Lean
 claim status** are **Unavailable**. Once eligible, each role is **Unclaimed**
 until registered in `candidates/`, then **Claimed**. The role remains **Claimed**
 when it moves to a confirmed award record in `awards/`, even after its candidate
