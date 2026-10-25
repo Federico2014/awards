@@ -5,7 +5,7 @@
 This catalog contains **1,073 mathematical problems**.
 
 **New MathDB cooperation pilot:** [50 selected problems](mathdb-pilot.md) use
-[mathdb](../docs/award-process-mathdb.md), including 29 newly added entries.
+[mathdb](../docs/award-process-mathdb.md), including 28 newly added entries.
 We recommend that process for participating problems and will expand it gradually.
 Each pilot entry records its workflow and either a confirmed/provisional MathDB
 link or a missing matching page. Unresolved mappings or page statements cannot
@@ -144,7 +144,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001073** in d
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000005 | [Existence and smoothness of the 3D Navier–Stokes equations](catalog-0001-0100.md#JSP-000005) | Solved | Yes | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000006 | [Yang–Mills existence and mass gap](catalog-0001-0100.md#JSP-000006) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
-| JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | No | No | Unavailable | Unavailable |
+| JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | Solved | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000008 | [Goldbach conjecture (strong Goldbach)](catalog-0001-0100.md#JSP-000008) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000009 | [Twin prime conjecture](catalog-0001-0100.md#JSP-000009) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
@@ -1216,7 +1216,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001073** in d
 | JSP-001026 | [Grothendieck's standard conjectures](catalog-1001-1022.md#JSP-001026) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-001027 | [Termination of flips in the minimal model program](catalog-1001-1022.md#JSP-001027) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-001028 | [Tate conjecture for algebraic cycles](catalog-1001-1022.md#JSP-001028) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
-| JSP-001029 | [Smooth four-dimensional Poincaré conjecture](catalog-1001-1022.md#JSP-001029) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
+| JSP-001029 | [Smooth four-dimensional Poincaré conjecture](catalog-1001-1022.md#JSP-001029) | Open | No | No | Unavailable | Unavailable |
 | JSP-001030 | [Bombieri–Lang conjecture for varieties of general type](catalog-1001-1022.md#JSP-001030) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-001031 | [Novikov conjecture on higher signatures](catalog-1001-1022.md#JSP-001031) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-001032 | [Farrell–Jones conjecture in algebraic K- and L-theory](catalog-1001-1022.md#JSP-001032) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |

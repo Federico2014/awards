@@ -116,6 +116,24 @@
       }
     },
     {
+      "jsp": "JSP-000007",
+      "title": "Poincaré conjecture",
+      "catalog": "problems/catalog-0001-0100.md",
+      "workflow": "mathdb",
+      "scope": "Every closed, connected, simply connected topological three-manifold is homeomorphic to the three-sphere. This is the three-dimensional conjecture proved by Perelman, distinct from the open smooth four-dimensional Poincaré conjecture JSP-001029.",
+      "mathdb": {
+        "status": "confirmed",
+        "id": 316224,
+        "url": "https://mathdb.com/p/316224/poincare-conjecture",
+        "title": "Poincaré conjecture",
+        "checked_at": "2026-10-25",
+        "evidence": [
+          "https://mathdb.com/p/316224/poincare-conjecture"
+        ],
+        "note": "Public page statement checked against the solved three-dimensional conjecture and catalog scope on 2026-10-25. Added to the 50-problem pilot in place of the smooth four-dimensional conjecture JSP-001029, which remains outside the pilot. This mapping is not proof acceptance or a reward decision."
+      }
+    },
+    {
       "jsp": "JSP-001023",
       "title": "Global Langlands functoriality conjecture",
       "catalog": "problems/catalog-1001-1022.md",
@@ -382,24 +400,6 @@
         "checked_at": "2026-10-12",
         "evidence": [
           "https://mathdb.com/p/315779/jacobian-conjecture"
-        ],
-        "note": "Public page statement checked against the selected problem and catalog scope; this mapping is not technical acceptance or a reward decision."
-      }
-    },
-    {
-      "jsp": "JSP-001029",
-      "title": "Smooth four-dimensional Poincaré conjecture",
-      "catalog": "problems/catalog-1001-1022.md",
-      "workflow": "mathdb",
-      "scope": "Is every smooth closed four-manifold homotopy equivalent to the four-sphere diffeomorphic to the standard four-sphere? This is distinct from the topological three-dimensional Poincaré conjecture JSP-000007.",
-      "mathdb": {
-        "status": "confirmed",
-        "id": 402982,
-        "url": "https://mathdb.com/p/402982/smooth-four-dimensional-poincare-conjecture",
-        "title": "Smooth four-dimensional Poincaré conjecture",
-        "checked_at": "2026-10-12",
-        "evidence": [
-          "https://mathdb.com/p/402982/smooth-four-dimensional-poincare-conjecture"
         ],
         "note": "Public page statement checked against the selected problem and catalog scope; this mapping is not technical acceptance or a reward decision."
       }

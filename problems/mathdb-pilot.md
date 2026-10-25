@@ -26,6 +26,7 @@ scope update and migration announcement. Contribution dates and notice periods r
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | [MathDB #315851](https://mathdb.com/p/315851/hodge-conjecture) |  |  |  |
 | JSP-000005 | [Existence and smoothness of the 3D Navier–Stokes equations](catalog-0001-0100.md#JSP-000005) | [MathDB #315852](https://mathdb.com/p/315852/navier-stokes-existence-and-smoothness) |  |  |  |
 | JSP-000003 | [Birch–Swinnerton-Dyer conjecture (BSD)](catalog-0001-0100.md#JSP-000003) | [MathDB #315850](https://mathdb.com/p/315850/birch-and-swinnerton-dyer-conjecture) |  |  |  |
+| JSP-000007 | [Poincaré conjecture](catalog-0001-0100.md#JSP-000007) | [MathDB #316224](https://mathdb.com/p/316224/poincare-conjecture) |  |  |  |
 | JSP-001023 | [Global Langlands functoriality conjecture](catalog-1001-1022.md#JSP-001023) | [MathDB #405775](https://mathdb.com/p/405775/global-langlands-functoriality-conjecture) |  |  |  |
 | JSP-000010 | [abc conjecture](catalog-0001-0100.md#JSP-000010) | [MathDB #316096](https://mathdb.com/p/316096/abc-conjecture) |  |  |  |
 | JSP-000021 | [Schanuel conjecture](catalog-0001-0100.md#JSP-000021) | [MathDB #316100](https://mathdb.com/p/316100/schanuel-s-conjecture) |  |  |  |
@@ -41,7 +42,6 @@ scope update and migration announcement. Contribution dates and notice periods r
 | JSP-000009 | [Twin prime conjecture](catalog-0001-0100.md#JSP-000009) | [MathDB #316128](https://mathdb.com/p/316128/twin-prime-conjecture) |  |  |  |
 | JSP-001028 | [Tate conjecture for algebraic cycles](catalog-1001-1022.md#JSP-001028) | [MathDB #315944](https://mathdb.com/p/315944/tate-conjecture) |  |  |  |
 | JSP-000037 | [Jacobian conjecture](catalog-0001-0100.md#JSP-000037) | [MathDB #315779](https://mathdb.com/p/315779/jacobian-conjecture) |  |  |  |
-| JSP-001029 | [Smooth four-dimensional Poincaré conjecture](catalog-1001-1022.md#JSP-001029) | [MathDB #402982](https://mathdb.com/p/402982/smooth-four-dimensional-poincare-conjecture) |  |  |  |
 | JSP-001030 | [Bombieri–Lang conjecture for varieties of general type](catalog-1001-1022.md#JSP-001030) | [MathDB #395886](https://mathdb.com/p/395886/bombieri-lang-conjecture-on-zariski-density) |  |  |  |
 | JSP-001031 | [Novikov conjecture on higher signatures](catalog-1001-1022.md#JSP-001031) | [MathDB #316146](https://mathdb.com/p/316146/novikov-conjecture) |  |  |  |
 | JSP-001032 | [Farrell–Jones conjecture in algebraic K- and L-theory](catalog-1001-1022.md#JSP-001032) | [MathDB #315862](https://mathdb.com/p/315862/farrell-jones-conjecture) |  |  |  |

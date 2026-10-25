@@ -36,16 +36,16 @@ class PilotTests(unittest.TestCase):
         path.write_text(path.read_text().replace(separator, separator+row, 1))
         return row
 
-    def test_initial_cohort_and_deduplication(self):
+    def test_approved_cohort_and_deduplication(self):
         problems = self.manifest["problems"]
-        # Preserve the initial cohort while permitting future approved expansion.
-        initial_existing = {f"JSP-{i:06d}" for i in
-                            (1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 15,
+        # The approved 50-problem cohort replaces smooth 4D Poincaré with 3D Poincaré.
+        existing = {f"JSP-{i:06d}" for i in
+                            (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15,
                              16, 21, 24, 25, 28, 29, 30, 37)}
-        initial_new = {f"JSP-{i:06d}" for i in range(1023, 1051)}
-        self.assertGreaterEqual(len(problems), 49)
-        self.assertTrue((initial_existing | initial_new).issubset(
-            {p["jsp"] for p in problems}))
+        new = ({f"JSP-{i:06d}" for i in range(1023, 1051)}
+               - {"JSP-001029"}) | {"JSP-001073"}
+        self.assertEqual(len(problems), 50)
+        self.assertEqual(existing | new, {p["jsp"] for p in problems})
         bombieri = [p for p in problems if "Bombieri" in p["title"]]
         self.assertEqual(len(bombieri), 1)
 
