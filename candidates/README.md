@@ -33,8 +33,14 @@ identity confirmation; identity checks and written confirmation remain required.
 
 | Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
+| [JSP-000110](jsp-000110.md) | Pending publication | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) | Pending publication | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) |
+| [JSP-000697](jsp-000697.md) |  |  | Pending publication | [peilinliu66-dev](https://github.com/peilinliu66-dev) |
 
-No active legacy candidates remain. Contributions whose public-review periods ran
+The linked notices record the accepted submissions, fixed proof versions,
+claimants, pending checks and scheduled review ends. Publication is pending until the actual UTC start and scheduled end are
+recorded. Candidate publication does not confirm an award.
+
+Contributions whose public-review periods ran
 from 2026-09-19 to 2026-10-03 or from 2026-09-30 to 2026-10-14
 have moved to the [award register](../awards/README.md#award-register).
 
