@@ -170,10 +170,12 @@ Lean proof. The catalog's shared **Eligible to claim** flag uses only **Yes** an
 Lean proof recorded or reported in the catalog; evidence qualifications remain in
 the proof fields and review notes. The two claim-status columns are maintained
 only in the index. While eligibility is **No**, both **Solver claim status** and **Lean
-claim status** are **Unavailable**. Once eligible, each role is **Unclaimed**
-until registered in `candidates/`, then **Claimed**. The role remains **Claimed**
-when it moves to a confirmed award record in `awards/`, even after its candidate
-entry is removed. A claim issue alone does not change the status to **Claimed**.
+claim status** are **Unavailable**. Once eligible, each role remains **Unclaimed**
+while its application or candidate public review is in progress. Change only
+the awarded role to **Claimed** when its contribution moves from `candidates/`
+to a confirmed award record in `awards/`; retain that status after its candidate
+entry is removed. Opening a claim issue, publishing a candidate or completing
+its review period alone does not change the status to **Claimed**.
 A solver whose complete solution PR has merged, or who meets the
 recorded-solver exception, may register an application while formalization is
 missing. Both claim statuses remain **Unavailable**; the application does not
@@ -298,8 +300,11 @@ An elapsed clock alone does not permit an award.
 
 Once the applicable review and confirmation requirements are complete, maintainers
 publish the confirmed contribution record in Markdown under
-[awards/](../awards/README.md) and publish the announcement. They then send the
-prize money and medal and confirm delivery.
+[awards/](../awards/README.md) and publish the announcement. When moving that
+contribution from the candidate register to the award register, change only its
+role's claim status to **Claimed** in the problem index; any other eligible role
+still in candidate review remains **Unclaimed**. They then send the prize money
+and medal and confirm delivery.
 
 ## Email template
 

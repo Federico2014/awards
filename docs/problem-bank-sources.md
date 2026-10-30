@@ -40,7 +40,7 @@ The catalog includes all seven Millennium Prize Problems (JSP-000001 through JSP
 
 Records can include human contributions and AI-assisted work where supported by public evidence. AI involvement is recorded as part of the contribution history; it does not define the source of the problem bank.
 
-Inclusion in the catalog is separate from award approval. Each entry has a shared **Eligible to claim** field requiring both a mathematical solution and a Lean proof. The index also displays separate **Solver claim status** and **Lean claim status** fields for candidate registration and confirmed awards. See the [reading conventions](../problems/README.md#reading-conventions). Formal candidates and announced awards have separate records and review requirements.
+Inclusion in the catalog is separate from award approval. Each entry has a shared **Eligible to claim** field requiring both a mathematical solution and a Lean proof. The index also displays separate **Solver claim status** and **Lean claim status** fields for confirmed awards. Eligible roles remain **Unclaimed** during candidate public review and become **Claimed** only when the contribution moves from `candidates/` to a confirmed award record in `awards/`. See the [reading conventions](../problems/README.md#reading-conventions). Formal candidates and announced awards have separate records and review requirements.
 
 ## Tracing a particular problem
 

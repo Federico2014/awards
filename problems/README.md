@@ -102,17 +102,17 @@ to the new process requires an explicit team decision.
 
 **Eligible to claim** uses only **Yes** and **No**. **Yes** records catalog eligibility for a **Solved** result with a complete Lean proof recorded or reported in the catalog. **No** means this prerequisite is not met. Keep evidence qualifications in the proof fields and review notes, without adding another eligibility state. These are catalog screening flags; award processing requires mathematical review and verification of the complete Lean proof.
 
-**Solver claim status** and **Lean claim status** appear only in the index. They use that shared eligibility flag, then track each role's candidate registration or confirmed award separately:
+**Solver claim status** and **Lean claim status** appear only in the index. They use that shared eligibility flag, then track each role's confirmed award separately:
 
-| Eligible to claim | Role recorded in candidates/ or awards/ | Claim status |
+| Eligible to claim | Role recorded as a confirmed award in awards/ | Claim status |
 | --- | --- | --- |
 | No | — | Unavailable |
-| Yes | No | Unclaimed |
+| Yes | No (including candidates under public review) | Unclaimed |
 | Yes | Yes | Claimed |
 
-If either the mathematical solution or complete Lean proof is missing, both claim statuses are **Unavailable**. Once eligible, registering one role changes only that role's claim status. Opening a claim issue alone does not mark a role **Claimed**. A solver may register an application while formalization is missing, but both statuses remain **Unavailable**; such an application does not start public review or permit payment.
+If either the mathematical solution or complete Lean proof is missing, both claim statuses are **Unavailable**. Once eligible, each role remains **Unclaimed** during application and candidate public review. A solver may register an application while formalization is missing, but both statuses remain **Unavailable**; such an application does not start public review or permit payment.
 
-**Claimed** covers a role registered in [candidates/](../candidates/README.md) or recorded as a confirmed award in [awards/](../awards/README.md). Moving a contribution from candidates to awards preserves **Claimed**, even after its candidate entry is removed. The status alone does not indicate award approval or payment. Public review requires mathematical review and verified complete Lean formalization; awards also require completed public review, resolution of relevant challenges, identity verification and written recipient confirmation. See the [award process](../docs/award-process.md) and the candidate or award record for each role's outcome and review dates.
+Change only the awarded role to **Claimed** when its contribution moves from [candidates/](../candidates/README.md) to a confirmed award record in [awards/](../awards/README.md). Retain **Claimed** after its candidate entry is removed. Opening a claim issue, publishing a candidate or completing its review period alone does not change the status to **Claimed**. The status does not confirm payment. Public review requires mathematical review and verified complete Lean formalization; awards also require completed public review, resolution of relevant challenges, identity verification and written recipient confirmation. See the [award process](../docs/award-process.md) and the candidate or award record for each role's outcome and review dates.
 
 ## Volumes
 
@@ -252,7 +252,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000107 | [Are there essentially different geometric configurations minimizing the number of distinct distances among planar points?](catalog-0101-0200.md#JSP-000107) | Open | No | No | Unavailable | Unavailable |
 | JSP-000108 | [If every point has many neighbors at one common distance from it, how large a count can be guaranteed at every point? Is it smaller than every fixed positive power of the number of points?](catalog-0101-0200.md#JSP-000108) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000109 | [What is the maximum number of unit-distance pairs among the vertices of a convex polygon?](catalog-0101-0200.md#JSP-000109) | Open | No | No | Unavailable | Unavailable |
-| JSP-000110 | [Does every convex polygon have a vertex from which no distance to the other vertices repeats too often?](catalog-0101-0200.md#JSP-000110) | Solved | Yes | Yes | Claimed | Claimed |
+| JSP-000110 | [Does every convex polygon have a vertex from which no distance to the other vertices repeats too often?](catalog-0101-0200.md#JSP-000110) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000111 | [How many distinct distances must a planar point set in general position determine?](catalog-0101-0200.md#JSP-000111) | Open | No | No | Unavailable | Unavailable |
 | JSP-000112 | [Must a minimum-diameter point set satisfying the prescribed distance constraints contain an equilateral triangle of side length one?](catalog-0101-0200.md#JSP-000112) | Open | No | No | Unavailable | Unavailable |
 | JSP-000113 | [How large must a planar point set's diameter be if its distinct distances have the prescribed separation?](catalog-0101-0200.md#JSP-000113) | Open | No | No | Unavailable | Unavailable |
@@ -864,7 +864,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000694 | [How many subsets of a planar point set in general position are in convex position?](catalog-0601-0700.md#JSP-000694) | Open | No | No | Unavailable | Unavailable |
 | JSP-000695 | [How dense can an integer sequence be if no new term is a sum of consecutive earlier terms?](catalog-0601-0700.md#JSP-000695) | Open | No | No | Unavailable | Unavailable |
 | JSP-000696 | [How much can allowing very few repeated pairwise sums increase the maximum size over that of a Sidon set?](catalog-0601-0700.md#JSP-000696) | Open | No | No | Unavailable | Unavailable |
-| JSP-000697 | [How short a following interval supplies larger integers whose product with a given integer is a square?](catalog-0601-0700.md#JSP-000697) | Solved | Yes | Yes | Unclaimed | Claimed |
+| JSP-000697 | [How short a following interval supplies larger integers whose product with a given integer is a square?](catalog-0601-0700.md#JSP-000697) | Solved | Yes | Yes | Unclaimed | Unclaimed |
 | JSP-000698 | [Is every graph formed by vertex-disjoint triangles and a spanning Hamilton cycle three-colorable?](catalog-0601-0700.md#JSP-000698) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000699 | [Under every two-coloring of the squares, is every sufficiently large integer a sum of distinct squares of one color?](catalog-0601-0700.md#JSP-000699) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000700 | [If every finite part of a planar set contains a fixed proportion in general position, can the whole set be partitioned into finitely many general-position sets?](catalog-0601-0700.md#JSP-000700) | Solved | Yes | Yes | Unclaimed | Unclaimed |

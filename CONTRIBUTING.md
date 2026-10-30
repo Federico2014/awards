@@ -84,7 +84,9 @@ may change **Current status** (including **Proof contributors:**), **Lean proof*
 **Attribution basis**, and **Publication details**. Use **Open** or **Solved** as
 the status in both the index and detail tables.
 Maintainers reconcile the index and eligibility fields after review, and maintain
-each role's claim status in the index using the candidate and confirmed award records.
+each role's claim status in the index. Eligible roles remain **Unclaimed** during
+candidate public review; change only the awarded role to **Claimed** when its
+contribution moves from `candidates/` to a confirmed award record in `awards/`.
 Use an issue for other corrections or requests.
 
 Provide evidence for the contribution you are submitting:

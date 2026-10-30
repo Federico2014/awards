@@ -14,9 +14,10 @@ Record each awarded contribution in English Markdown, identifying the JSP
 problem, contribution type, recipients, announcement link,
 completed public-review dates and supporting evidence. Mathematical solution and
 Lean formalization contributions are recorded separately. Update the candidate
-register for the awarded contribution. Keep that role's claim status **Claimed**
-in the problem index after it moves from `candidates/` to
-`awards/`, even when its candidate entry is removed.
+register for the awarded contribution. Change only that role's claim status
+from **Unclaimed** to **Claimed** in the problem index when it moves from
+`candidates/` to `awards/`, and retain that status after its candidate entry is
+removed. Any other eligible role still in candidate review remains **Unclaimed**.
 
 See the [record guide](../docs/records.md) and optional [Markdown templates](../docs/templates/).
 

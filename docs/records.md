@@ -42,14 +42,14 @@ eligibility states. Record **Yes** for a **Solved** result with a complete Lean
 proof recorded or reported in the catalog. Keep evidence qualifications in the
 proof fields and review notes. When eligibility is **No**, both claim statuses
 are **Unavailable**.
-When eligibility is **Yes**, mark each role **Claimed** if it is registered in
-`candidates/` or has a confirmed award record in `awards/`; otherwise mark it
-**Unclaimed**. Update the shared eligibility and
-both statuses if a solution or proof is invalidated; update the corresponding
-role when a candidate is registered or withdrawn. A claim
-issue alone does not mark a role **Claimed**. Retain **Claimed** when a registered
-contribution moves to a confirmed award record in `awards/`, even after its
-candidate entry is removed, preserving its registration history.
+When eligibility is **Yes**, each role remains **Unclaimed** throughout
+application and candidate public review. Change only the awarded role to
+**Claimed** when its contribution moves from `candidates/` to a confirmed award
+record in `awards/`. Existing confirmed awards remain **Claimed** after their
+candidate entries are removed. Opening a claim issue, publishing a candidate or
+completing its review period alone does not change the status to **Claimed**.
+Update the shared eligibility and both statuses if a solution or proof is
+invalidated; preserve the contribution and award history.
 
 Before concluding review, use the optional [citation template](templates/citation.md)
 to record the check for relevant pending PRs and its outcome. Record candidate
