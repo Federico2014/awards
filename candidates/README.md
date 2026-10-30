@@ -33,8 +33,8 @@ identity confirmation; identity checks and written confirmation remain required.
 
 | Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
-| [JSP-000110](../problems/catalog-0101-0200.md#JSP-000110) | Pending publication | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) | Pending publication | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) |
-| [JSP-000697](../problems/catalog-0601-0700.md#JSP-000697) |  |  | Pending publication | [peilinliu66-dev](https://github.com/peilinliu66-dev) |
+| [JSP-000110](../problems/catalog-0101-0200.md#JSP-000110) | 2026-10-30 | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) | 2026-10-30 | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) |
+| [JSP-000697](../problems/catalog-0601-0700.md#JSP-000697) |  |  | 2026-10-30 | [peilinliu66-dev](https://github.com/peilinliu66-dev) |
 
 Contributions whose public-review periods ran
 from 2026-09-19 to 2026-10-03 or from 2026-09-30 to 2026-10-14
