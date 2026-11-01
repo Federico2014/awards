@@ -864,7 +864,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 | JSP-000694 | [How many subsets of a planar point set in general position are in convex position?](catalog-0601-0700.md#JSP-000694) | Open | No | No | Unavailable | Unavailable |
 | JSP-000695 | [How dense can an integer sequence be if no new term is a sum of consecutive earlier terms?](catalog-0601-0700.md#JSP-000695) | Open | No | No | Unavailable | Unavailable |
 | JSP-000696 | [How much can allowing very few repeated pairwise sums increase the maximum size over that of a Sidon set?](catalog-0601-0700.md#JSP-000696) | Open | No | No | Unavailable | Unavailable |
-| JSP-000697 | [How short a following interval supplies larger integers whose product with a given integer is a square?](catalog-0601-0700.md#JSP-000697) | Solved | Yes | Yes | Unclaimed | Unclaimed |
+| JSP-000697 | [How short a following interval supplies larger integers whose product with a given integer is a square?](catalog-0601-0700.md#JSP-000697) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000698 | [Is every graph formed by vertex-disjoint triangles and a spanning Hamilton cycle three-colorable?](catalog-0601-0700.md#JSP-000698) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000699 | [Under every two-coloring of the squares, is every sufficiently large integer a sum of distinct squares of one color?](catalog-0601-0700.md#JSP-000699) | Solved | No | No | Unavailable | Unavailable |
 | JSP-000700 | [If every finite part of a planar set contains a fixed proportion in general position, can the whole set be partitioned into finitely many general-position sets?](catalog-0601-0700.md#JSP-000700) | Solved | Yes | Yes | Unclaimed | Unclaimed |
