@@ -248,6 +248,7 @@ class PilotTests(unittest.TestCase):
             with self.subTest(old=old), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
                 self.copy_fixture(root)
+                self.register_row(root, "candidates", "Lean")
                 path = root / "candidates/README.md"
                 path.write_text(path.read_text().replace(old, new, 1))
                 with self.assertRaises(pilot.InvalidPilot):

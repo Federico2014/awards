@@ -35,7 +35,7 @@ identity confirmation; identity checks and written confirmation remain required.
 
 | Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
-| [JSP-000007](../problems/catalog-0001-0100.md#JSP-000007) |  |  | Pending actual publication | [Ziyang Qin; Yuan Liao; Ayush Khaitan; Bennett Chow (Qin and Liao contributed equally)](https://github.com/TheJustinSunPrize/awards/issues/5558) |
+| [JSP-000007](../problems/catalog-0001-0100.md#JSP-000007) |  |  | 2026-11-11 | [Ziyang Qin; Yuan Liao; Ayush Khaitan; Bennett Chow (Qin and Liao contributed equally)](https://github.com/TheJustinSunPrize/awards/issues/5558) |
 | [JSP-000110](../problems/catalog-0101-0200.md#JSP-000110) | 2026-10-30 | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) | 2026-10-30 | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) |
 | [JSP-000697](../problems/catalog-0601-0700.md#JSP-000697) |  |  | 2026-10-30 | [peilinliu66-dev](https://github.com/peilinliu66-dev) |
 
