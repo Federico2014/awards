@@ -87,7 +87,7 @@ including Exposition. Each category uses independent public-registration states:
 | Awarded | At least one announced award record exists for this category. Consult the registers for any other claimant's pending conditions, later corrections/revocation and payment; this is not proof of payment or current eligibility. |
 
 The pilot page and these index cells are generated from the category-specific
-[candidate](../candidates/README.md#mathdb-pilot-candidates) and
+[candidate](../candidates/README.md#candidate-register) and
 [award](../awards/README.md#mathdb-pilot-awards) tables. A published Exposition
 record changes only Exposition on the pilot page. Candidate publication may
 precede complete Lean verification; an award announcement requires that verification,
