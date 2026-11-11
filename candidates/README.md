@@ -66,10 +66,9 @@ prerequisite for announcement and payment, separately from public review.
 Exposition also requires its committee decision. Identity may be
 pending during notice but is required before announcement.
 
-No MathDB pilot candidates have been published yet.
-
 | Problem ID | Category | Public claimant | Rules version | MathDB problem | Claim issue | Fixed material and review/selection evidence | Review start (UTC) | Scheduled end (UTC) | Outstanding condition / status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [JSP-000007](../problems/catalog-0001-0100.md#JSP-000007) | Lean | Ziyang Qin; Yuan Liao; Ayush Khaitan; Bennett Chow (Qin and Liao contributed equally) | mathdb | [MathDB #316224](https://mathdb.com/p/316224/poincare-conjecture) | [#5558](https://github.com/TheJustinSunPrize/awards/issues/5558) | [Fixed Lean source](https://github.com/liao9yuan/differential-geometry-mathdb/blob/9f65eaf95b9ff5f1b39cfb2d2d24e51aed891568/Submission.lean); [MathDB verification](https://mathdb.com/p/316224#s8) | Pending actual publication | Actual start + 14 full days | Proposed public notice; recipient identity and personal written confirmations pending. |
 
 Only administrators publish or amend these rows. Link holds, disputes and team
 decisions; preserve unchanged notice dates during migration. A substantive
