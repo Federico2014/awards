@@ -138,7 +138,7 @@ The **No.** column runs consecutively from **JSP-000001** to **JSP-001072** in d
 
 | No. | Problem | Current status | Lean proof | Eligible to claim | Solver claim status | Lean claim status |
 | --- | --- | --- | --- | --- | --- | --- |
-| JSP-000001 | [Riemann hypothesis](catalog-0001-0100.md#JSP-000001) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
+| JSP-000001 | [Riemann hypothesis](catalog-0001-0100.md#JSP-000001) | Solved | Yes | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000002 | [P versus NP problem](catalog-0001-0100.md#JSP-000002) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000003 | [Birch–Swinnerton-Dyer conjecture (BSD)](catalog-0001-0100.md#JSP-000003) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
 | JSP-000004 | [Hodge conjecture](catalog-0001-0100.md#JSP-000004) | Open | No | [See MathDB pilot](mathdb-pilot.md#pilot-register) |  |  |
