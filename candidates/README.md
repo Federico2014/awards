@@ -35,11 +35,10 @@ identity confirmation; identity checks and written confirmation remain required.
 
 | Problem ID | Solver review start (UTC) | Mathematical solver | Lean review start (UTC) | Lean formalizer |
 | --- | --- | --- | --- | --- |
-| [JSP-000007](../problems/catalog-0001-0100.md#JSP-000007) |  |  | 2026-11-11 | [Ziyang Qin; Yuan Liao; Ayush Khaitan; Bennett Chow (Qin and Liao contributed equally)](https://github.com/TheJustinSunPrize/awards/issues/5558) |
 
 Contributions whose public-review periods ran
 from 2026-09-19 to 2026-10-03, from 2026-09-30 to 2026-10-14,
-or from 2026-10-30 to 2026-11-13
+from 2026-10-30 to 2026-11-13, or from 2026-11-11 to 2026-11-25
 have moved to the [award register](../awards/README.md#award-register).
 
 For legacy records, when a role is awarded, replace its active candidate cell

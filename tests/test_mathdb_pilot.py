@@ -255,9 +255,10 @@ class PilotTests(unittest.TestCase):
             root = Path(directory)
             self.copy_fixture(root)
             self.register_row(root, "candidates", "Solution", "JSP-000011")
+            self.register_row(root, "candidates", "Lean")
             states = pilot.claim_states(root, self.manifest)
             self.assertNotIn("JSP-000011", states)
-            self.assertEqual(states["JSP-000007"], {
+            self.assertEqual(states["JSP-000001"], {
                 "Solution": "", "Lean": "Candidate", "Exposition": ""})
 
     def test_award_link_in_shared_register_is_not_an_active_candidate(self):

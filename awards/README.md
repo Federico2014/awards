@@ -30,6 +30,7 @@ Problem links provide the recorded contribution attribution and proof evidence.
 
 | Problem ID | Contribution type | Recipients | Public-review start (UTC) | Public-review end (UTC) |
 | --- | --- | --- | --- | --- |
+| [JSP-000007](../problems/catalog-0001-0100.md#JSP-000007) | Lean formalization | Ziyang Qin; Yuan Liao; Ayush Khaitan; Bennett Chow | 2026-11-11 | 2026-11-25 |
 | [JSP-000110](../problems/catalog-0101-0200.md#JSP-000110) | Mathematical solution | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) | 2026-10-30 | 2026-11-13 |
 | [JSP-000110](../problems/catalog-0101-0200.md#JSP-000110) | Lean formalization | Liam Kruer; Jensen Kohlmeyer; Liam Price (equal coauthors) | 2026-10-30 | 2026-11-13 |
 | [JSP-000239](../problems/catalog-0201-0300.md#JSP-000239) | Mathematical solution | Neel Somani | 2026-09-30 | 2026-10-14 |
